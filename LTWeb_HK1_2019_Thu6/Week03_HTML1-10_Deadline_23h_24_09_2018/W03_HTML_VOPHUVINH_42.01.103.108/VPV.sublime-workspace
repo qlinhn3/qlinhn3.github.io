@@ -1,0 +1,377 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"start\tAttr"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"c",
+				"colspan\tAttr"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"border-co",
+				"border-collapse\tproperty"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"border-c",
+				"border-collapse\tproperty"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"f",
+				"fixed\tbackground-attachment"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title> Tạo bảng, trộn dòng và cột</title>\n</head>\n<style>\n\ttable,th,td{\n\t\tborder: 1px solid;\n\t\tborder-color: red;\n\t\tborder-collapse: collapse;\n\t}\n\tth,td{\n\t\tpadding: 5px;\n\t}\n</style>\n<body>\n\t<table width=\"100%\">\n\t<tr>\n\t\t<th colspan=\"2\" rowspan=\"2\" style=\"color:#FFFFFF;background-color:#FF0000;text-align: right;\" >Công nghệ dầu gội dưỡng tóc mới</th>\n\t\t<td colspan=\"2\" rowspan=\"4\"><img src=\"C:\\Users\\kuybigan\\Desktop\\W03_HTML_VOPHUVINH_4201103108\\Bai10.jpg\" width=\"100\" height=\"150\"></td>\n\t</tr>\n\t<tr></tr>\n\t<tr>\n\t\t<th colspan=\"2\" rowspan=\"2\"><h1 style=\"color: #FF0000; background-color: #FFBBBB;\">Tỏa sáng cùng DOUBLE RICH</h1></th>\n\t</tr>\n\t\n\t</table>\n<table width=\"100%\">\n\t<tr>\n\t<td colspan=\"2\"><b style=\"color:#FF0000;\">\n\t\t<ul style=\"list-style-type:square;\"><li>Sản phẩm khuyến mãi :</li></ul></b>\n\t<ul style=\"list-style-type:circle;\"><li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li></ul>\n\n\t<b style=\"color:#FF0000;\"><ul style=\"list-style-type:square;\"><li> Đối tượng tham gia :</li></ul></b>\n\n\t<ul style=\"list-style-type:circle;\"><li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi. \n\tChương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina, công ty quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này, nhân viên siêu thị</li></ul>\n</td>\n\t<td colspan=\"2\"><b style=\"color:#FF0000;\"><ul style=\"list-style-type:square;\"><li>Cách thức nhận giải :</li></ul></b>\n\t<ol><li><b>Giải khuyến khích :</b> Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005</li></ol>\n\n\t<ol start=\"2\"><li><b>Giải đặc biệt, nhất, nhì :</b> khách hàng cắt phần mã vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi). Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng</li></ol>\n</td>\n</tr>\n\t\n\n</table>\t\n</body>\n</html>",
+			"file": "bt10.html",
+			"file_size": 2448,
+			"file_write_time": 131819623234453704,
+			"settings":
+			{
+				"buffer_size": 2123,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title> Tạo bảng, trộn dòng và cột </title>\n\t<style>\n\t\ttable, th, td{\n\t\t\tborder: 2px solid red;\n\t\t\tborder-collapse: collapse;\n\t\t}\n\t\tth,td{\n\t\t\tpadding: 1px;\n\t\t}\n\t</style>\n</head>\n<body>\n\t<table width=\"100%\"; align=\"center\">\n\t\t<tr>\n\t\t\t<td colspan=\"3\" style=\"background-color:#FF0000;text-align:right;color:#FFFFFF;\">\n\t\t\t\tCông nghệ dầu gội dưỡng tóc mới</th>\n\t\t\t<td rowspan=\"3\";><img src=\"C:\\Users\\kuybigan\\Desktop\\W03_HTML_VOPHUVINH_4201103108\\Bai10.jpg\"></td>\n\t\t\t\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"3\"></td>\n\n\n\t\t</tr>\n\t\t<tr style=\"background-color: #FFBBBB;color:#FF0000;\">\n\t\t\t<th colspan=\"3\"><font size=\"6\">Tỏa sáng cùng DOUBLE RICH</font></th>\n\t\t</tr>\n\t\t<tr width=\"100px\">\n\t\t\t<td colspan=\"2\";>\n\t\t\t\tSản phẩm khuyến mãi:\n\t\t\t\t<ul style=\"list-style-type: disc\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\tDầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi\n\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\tĐối tượng tham gia:\n\t\t\t\t\t\t<ul style=\"list-style-type: disc\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\tÁp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi. \n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\tChương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina, công ty quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này, nhân viên siêu thị\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</ul>\n\t\t\t<td colspan=\"2\">\n\t\t\tCách thức nhận giải:\n\t\t\t<ol type=\"1\">\n\t\t\t\t<li>\n\t\t\t\t\tGiải khuyến khích : Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005\n\t\t\t\t</li>\n\t\t\t\t<li>\n\t\t\t\t\tGiải đặc biệt, nhất, nhì : khách hàng cắt phần mã vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi). Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng \n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t</td>\n\t\t</tr>\n\t</table>\n\t\n</body>\n</html>",
+			"file": "/C/Users/kuybigan/Desktop/ád.html",
+			"file_size": 2291,
+			"file_write_time": 131819764324070785,
+			"settings":
+			{
+				"buffer_size": 1994,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bt10.html",
+			"settings":
+			{
+				"buffer_size": 2123,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108"
+	],
+	"file_history":
+	[
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt05.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt07.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt09.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt08.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt 06.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt04.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt03.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt01.html",
+		"/C/Users/kuybigan/Desktop/W03_HTML_VOPHUVINH_4201103108/bt02.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "bt10.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/kuybigan/Desktop/ád.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								653,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bt10.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2123,
+								2123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 445.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "VPV.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,19 @@
+body{text-align:center}
+.container
+{text-align: center}
+h1
+{
+	display:block;
+	color: green;
+	text-align: center;
+}
+table,tr,td
+{
+	border: 1px green solid;
+	border-collapse:collapse;
+}
+table
+{
+	background-color: #6CF79A;
+}
+td{padding:5px}

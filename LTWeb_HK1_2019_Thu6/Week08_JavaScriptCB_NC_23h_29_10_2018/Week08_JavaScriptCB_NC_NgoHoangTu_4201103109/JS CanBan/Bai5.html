@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc switch</title>
+	<link rel="stylesheet" href="js.css">
+</head>
+
+<body>
+	<h1 style="text-align: center; color: #008000">Tính tiền thưởng cuối năm</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td>Tiền lương: </td>
+    			<td><input type="text" size="10" id="TienLuong"></td>
+  			</tr>
+
+ 			<tr>
+    			<td>Xếp loại: </td>
+    			<td>
+    				<select id="XLoai" onchange="Tinh_tien_thuong()">
+  						<option value="Loại A">Loại A</option>
+  						<option value="Loại B">Loại B</option>
+  						<option value="Loại C">Loại C</option>
+  						<option value="Loại D">Loại D</option>
+					</select>
+    			</td>
+  			</tr>
+
+  			<tr>
+    			<td colspan="2">
+    				<input type="button" onclick="Tinh_tien_thuong()" value="Tính">
+    			</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="color: #ff0000; text-align: center"><span id="TienThuong"></span></td>
+			
+			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+					function Tinh_tien_thuong() {
+						var luong = document.getElementById("TienLuong").value;
+						var xl = document.getElementById("XLoai").value;
+						var hsl;
+
+						switch (xl) {
+							case 'Loại A':
+								hsl = 2; break;
+							case 'Loại B':
+								hsl = 1,8; break;
+							case 'Loại C':
+								hsl = 1,2; break;
+							case 'Loại D':
+								hsl = 0,8;
+						}
+						var thuong = luong * hsl;
+						document.getElementById("TienThuong").innerText = "Tiền thưởng là: " + thuong + " đồng";
+					}
+				</script>
+
+</html>

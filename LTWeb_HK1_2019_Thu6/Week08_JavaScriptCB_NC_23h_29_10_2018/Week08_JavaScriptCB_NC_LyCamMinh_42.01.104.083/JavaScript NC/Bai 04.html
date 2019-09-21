@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.04 - Các thao tác trên mảng</title>
+
+</head>
+
+<body>
+<h3 align="center" style="color:#C09">Các thao tác trên mảng</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#039" bordercolor="#039" cellpadding="3">
+<tr>
+	<td width = 20%><input type = "button" value = "Tạo mảng" onclick="mangbd.innerHTML=taoMang()" ></td>
+	<td><label id = "mangbd" ></label></td>
+</tr>
+<tr>
+	<td colspan = "2"><label id = "mangkq" style="color:#F90"> Giá trị mảng sau khi xử lý</label></td>
+</tr>
+<tr>
+	<td colspan = "2" align="center">
+		 <input type = "radio" name = "kieusx" value ="tang" onclick="mangkq.innerHTML=sapXep(1)" > Sắp xếp tăng 
+		 <input type = "radio" name = "kieusx" value ="giam" onclick="mangkq.innerHTML=sapXep(0)" > Sắp xếp giảm 
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	 Thêm vào vị trí: <input type = "text" id = "vitrithem" size = "10">
+	 Giá trị:<input type = "text" id = "giatri" size = "10"> &nbsp;
+	 <input type = "button" id = "them" value = "Thêm" onclick="mangkq.innerHTML=themPT(vitrithem.value,giatri.value)"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+<script language="javascript">
+	var mang=[];
+	//Xóa mảng cũ
+	function taoMang(){
+		if (mang.length>0) mang.length=0;
+		var n =Math.floor(Math.random()*6)+5;
+		var i;
+		for (i=0;i<n;++i) 
+			mang.push(Math.floor(Math.random()*100)+1);
+		return mang;
+	}
+	function compare(a,b){
+		return a>b;
+	}
+	function sapXep(tang){
+		if (tang)
+		mang.sort(function(a,b){return a-b;});
+		else{
+			mang.sort(function(a,b){return b-a;});
+		}
+		return mang;
+	}
+	function addElement(value,position){
+		var i;
+		for(i=mang.length;i>position;--i){
+			mang[i]=mang[i-1];
+		}
+		mang[position]=value;
+		window.alert(mang);
+	}
+	function themPT(viTri,giaTri){
+		if (viTri==''||giatri==''||isNaN(viTri)||isNaN(giaTri)||viTri<0||viTri>mang.length)
+			alert("Please enter a number!");
+		else{
+			 mang.splice(viTri,0,giaTri);
+			 //Hàm này vừa có thể thêm vừa có thể xóa
+			 //Tham số đầu là vị trí bắt đầu
+			 //Tham số ở giữa là xóa bao nhiêu phần tử kể từ vị trí của tham số đầu
+			 //Tham số cuối là danh sách các tham số cần thêm vào kể từ vị trí của tham số đầu
+		}
+		return mang;
+	}
+</script>

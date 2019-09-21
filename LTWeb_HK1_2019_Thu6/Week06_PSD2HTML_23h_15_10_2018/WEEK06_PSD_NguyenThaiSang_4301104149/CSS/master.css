@@ -1,0 +1,64 @@
+.list-inline{
+  margin: auto;
+  text-align: center;
+}
+header{
+  margin-bottom: 10px;
+  position: static;
+}
+header a img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0%);
+  width: 75%;
+  height: 145px;
+}
+header #clock {
+  position: absolute;
+  top: 107px;
+  left: 33.5%;
+  width: 8.25%;
+  height: 23px;
+  color:white;
+  /* background: green; */
+}
+header marquee {
+  width: 46%;
+  height: 40px;
+  position: absolute;
+  top:107px;
+  left: 40%;
+}
+
+main {
+  height: 550px;
+}
+main #left,#right {
+  float: left;
+}
+main #right{
+  width: 25%;
+  box-sizing: border-box;
+}
+#left {
+  width: 70%;
+  height: 550px;
+  margin: 15px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+#left article{
+  border-bottom: 1px solid black;
+  height: 120px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+
+#left article p {
+  padding: 0px 40px;
+}
+
+footer {
+  clear:left;
+}

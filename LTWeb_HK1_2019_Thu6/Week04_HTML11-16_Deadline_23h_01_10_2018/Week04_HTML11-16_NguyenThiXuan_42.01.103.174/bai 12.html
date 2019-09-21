@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style >
+		h1{
+				text-align: center;
+				color: blue
+			}
+			table{
+				
+				border: 1;
+				border-collapse: collapse;
+
+			}
+			table, td{
+				background-color: #b0e0e6;
+				border: 1px solid black;
+				padding: 5px;
+				margin: auto;
+				text-align: left;
+
+			}
+	</style>
+</head>
+<body>
+	<title>Xuannt</title>
+	<h1> Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td ><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Địa Chỉ</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Điện Thoại</td>
+				<td><input type="number" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td><input type="radio" name="gioitinh" value ="Nam">Nam <input type="radio" name="gioitinh" value="Nữ">Nữ</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td><select>
+					<option value="giaovien">Gíao viên</option>
+					<option value="bacsi">Bác sĩ</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td><form>
+					<select id="sanpham" size="4" multiple="multiple">
+						<option value="kemdanhrang">Kem đánh răng</option>
+						<option value="botgiat">Bột giặt</option>
+						<option value="daugoidau">Dầu gội đầu</option>
+						<option value="suatam">Sữa Tắm</option>
+					</select>
+				</form></td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="number" name="songuoidudoan"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><input type="button" name="DongY" value="Đồng Ý" ></center></td>
+				
+			</tr>
+			<tr>
+				<td colspan="2" style="color: #ff0000"><i><center>Bạn đã đăng kí thành công!!!</center></i></td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

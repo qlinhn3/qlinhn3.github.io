@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: green; text-align: center;">Tiền thưởng cuối năm</h2>
+		<table>
+			<tr>
+				<td>Tiền lương</td>
+				<td><input type="text" id="txtSalary" required=""></td>
+			</tr>
+			<tr>
+				<td>Xếp loại</td>
+				<td>
+					<select id="hsl">
+						<option value="A">Loại A</option>
+						<option value="B">Loại B</option>
+						<option value="C">Loại C</option>
+						<option value="D">Loại D</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan ="2" >
+					<input type="button" value="Tính" onclick="tinhLuong()" >
+				</td>
+			</tr>
+			<tr>
+				<td colspan ="2" style="color: #ff0066; text-align: center;"><label id="salary"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function tinhLuong() {
+		var a=hsl.value;
+		var s=parseFloat(txtSalary.value);
+		if(isNaN(s) || s<0) return alert('Nhập sai dữ liệu');
+		if(a==='A') return salary.innerHTML='Tiền thưởng là: '+ s*2 +' đồng';
+		if(a==='B') return salary.innerHTML='Tiền thưởng là: '+ s*1.8 +' đồng';
+		if(a==='C') return salary.innerHTML='Tiền thưởng là: '+ s*1.2 +' đồng';
+		if(a==='D') return salary.innerHTML='Tiền thưởng là: '+ s*0.8 +' đồng';
+
+	}
+</script>

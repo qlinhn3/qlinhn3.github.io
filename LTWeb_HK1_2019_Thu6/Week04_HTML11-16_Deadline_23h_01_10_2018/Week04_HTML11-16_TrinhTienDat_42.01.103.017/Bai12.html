@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		table,td,tr{
+			border-color: blue;
+			color: green;
+			text-align: left;
+			background-color: chartreuse;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: green;">Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form id="Phieudk">
+		<table style="border-collapse: collapse;" align="center" border="1">
+			<tr>
+				<td>Họ và tên:</td>
+				<td><input type="text" name="fullname"></ins></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="telnum"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td><input type="radio" name="gender" value="male" checked>Nam
+					<input type="radio" name="gender" value="female">Nữ<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select name="job">
+						<option value="doctor">Bác sĩ</option>
+						<option value="engineer">Kĩ sư</option>
+						<option value="teacher">Giáo viên</option>
+						<option value="other">Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select name="products" size="4" multiple>
+						<option value="kemdanhrang">Kem đánh răng</option>
+						<option value="botgiat">Bột giặt</option>
+						<option value="daugoidau">Dầu gội đầu</option>
+						<option value="suatam">Sữa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" name="num_people"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><input type="button" name="dongy" value="Đồng ý" onclick="display.innerText= 'Bạn đã đăng ký thành công!!!'"></center></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display" style="text-align: center;color: deeppink"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

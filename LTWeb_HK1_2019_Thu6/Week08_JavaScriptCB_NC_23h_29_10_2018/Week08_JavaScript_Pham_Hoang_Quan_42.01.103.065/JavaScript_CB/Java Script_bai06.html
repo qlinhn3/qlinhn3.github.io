@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vong Lặp For While</title>
+</head>
+<style type="text/css">
+ table,td,th{
+ 	 margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    border-color: brown;
+    color:brown;
+    background-color: #FAAC58;
+	}
+	h1{
+		text-align: center;
+		color: brown;
+	}
+</style>
+<body>
+<h1> In bảng cửu chương</h1>
+<script>
+function laso(so){
+	return isNaN(so.value) ;
+	}
+function inbangcuuchuong(so){
+	var i= parseInt(so.value);
+	if(laso(i)==true) document.getElementById('demo').innerHTML="Số nhập không hợp lệ !";
+	var n=[0,1,2,3,4,5,6,7,8,9];
+	var a;
+	var text=" ";
+	if(i==2){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*2"+"="+n[a]*2+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==3){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*3"+"="+n[a]*3+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==4){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*4"+"="+n[a]*4+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==5){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*5"+"="+n[a]*5+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==6){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*6"+"="+n[a]*6+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==7){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*7"+"="+n[a]*7+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+if(i==8){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*8"+"="+n[a]*8+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+}
+if(i==9){
+	for(a=0;a<n.length;a++){
+	text+=n[a]+"*9"+"="+n[a]*9+"<br>";
+	}
+	document.getElementById('demo').innerHTML= text;
+}
+</script>
+<table>
+  <tr>
+    <th>Nhập cửu chương</th>
+    <th>
+    	<form>
+    		<input id="so" type="Text" name="number";>
+    		 <button type="button" onclick="inbangcuuchuong(so)">In </button>
+    		</form>
+    </th> 
+    
+  </tr>
+  <tr>
+    <th colspan="2"> <p id="demo"></p>
+    	
+    </th>
+  </tr>
+</table>
+
+</body>
+</html>

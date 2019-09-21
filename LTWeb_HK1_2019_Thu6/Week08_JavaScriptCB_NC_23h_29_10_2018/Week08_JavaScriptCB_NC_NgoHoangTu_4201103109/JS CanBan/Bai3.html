@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="js.css">
+
+</head>
+
+
+
+<body>
+	<h1 style="text-align: center; color:  #008000">Kết quả cuối năm học</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td>Điểm trung bình: </td>
+    			<td><input type="text" size="10" id="DiemTB"></td>
+  			</tr>
+			
+			<tr>
+				<td>Kết quả: </td>
+				<td><input type="text" size="10" id="KetQua"></td>
+			</tr>
+
+  			<tr>
+    			<td colspan="2"style="text-align: center">
+    				<input type="button" onclick="Xuat_ket_qua()" value="Xuất kết quả">
+    			</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+					function Xuat_ket_qua() {
+						var dtb = document.getElementById('DiemTB').value;
+						var kq;
+
+						if (dtb < 5) {
+							kq = "Ở lại lớp";
+						}
+						else {
+							kq = "Được lên lớp";
+						}
+						document.getElementById("KetQua").value = kq;
+					}
+				</script>
+
+</html>

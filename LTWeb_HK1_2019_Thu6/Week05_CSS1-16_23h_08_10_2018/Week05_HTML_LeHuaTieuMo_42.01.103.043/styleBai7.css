@@ -1,0 +1,23 @@
+
+		h2{
+			color: deeppink; 
+			text-align: center
+		}
+		ol font{
+			background-color: deeppink;
+			color: #FFFFFF; 
+			font-weight: bold;
+		}
+		ul.a{
+			list-style-type: square
+		}
+		ul.b{
+			list-style-type: circle
+		}
+		font{
+			background-color:LightPink
+		}
+		a{
+			color: MediumBlue
+		}
+	

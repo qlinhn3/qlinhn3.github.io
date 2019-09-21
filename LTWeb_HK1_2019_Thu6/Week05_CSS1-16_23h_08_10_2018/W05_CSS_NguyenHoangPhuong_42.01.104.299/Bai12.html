@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai12</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="Hoten"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="Diachi"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="number" name="Dienthoai"></td>	
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td><input type="radio" name="gender" value="male" checked>Nam<input type="radio" name="gender" value="female">Nữ</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td><select name="jobs" >
+					<option value="Giaovien" selected>Giáo viên</option>
+					<option value="Kysu">Kỹ sư</option>
+					<option value="Nhabao">Nhà báo</option>
+					<option value="Bacsi">Bác sĩ</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select name="product" size="4">
+						<option value="Kemdanhrang">Kem đánh răng</option>
+						<option value="Botgiat">Bột giặt</option>
+						<option value="Daugoidau">Dầu gội đầu</option>
+						<option value="Suatam">Sữa tắm</option>
+					</select>
+				</td>	
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="number" name="Songuoidudoan"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="Dongy" value="Đồng ý" onclick="display.innerText='Bạn đã đăng ký thành công!!!' "> </td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

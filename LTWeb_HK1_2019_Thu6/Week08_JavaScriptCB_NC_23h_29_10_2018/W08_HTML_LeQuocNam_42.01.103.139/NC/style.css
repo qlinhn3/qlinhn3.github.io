@@ -1,0 +1,13 @@
+
+		h1{
+			color: #B41017;
+			font-weight: bold;
+			text-align: center;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		table,tr,td{
+			border: 1px solid #200D51;
+			margin: auto;
+		}

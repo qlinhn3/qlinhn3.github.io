@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+			<h2 rowspan="2">Kết quả cuối năm học</h2>
+		<tr>
+			<td>Điểm trung bình:</td>
+			<td><input type="text" id="diem"></td>
+		</tr>
+		<tr>
+			<td>Kết quả:</td>
+			<td><input type="text" id="ketqua"></td>
+		</tr>
+		<tr>
+			<td rowspan="2"><button onclick="myfunction()">Xuất kết quả</button></td>
+		</tr>
+	</table>
+	<script>
+		function myfunction(){
+			var x = document.getElementById("diem").value;
+			if(x > 5){
+				document.getElementById("ketqua").value = "Được lên lớp"
+			}else{
+				document.getElementById("ketqua").value = "Ở lại lớp"
+			}
+		}
+	</script>
+</body>
+</html>

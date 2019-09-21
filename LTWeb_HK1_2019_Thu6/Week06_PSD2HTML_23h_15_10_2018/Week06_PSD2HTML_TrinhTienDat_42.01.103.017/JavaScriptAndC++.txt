@@ -1,0 +1,29 @@
+- JavaScript files have the file extension .js.
+- For testing purposes, it is convenient to use document.write()
+- Ending statements with semicolon (;) is not required, but highly recommended.
+- Use 'var' to declares a variable.
+- Strings are text, written within double quotes (" and ") or single quotes (' and ')
+- Names can contain dollar sign ($)
+- JavaScript variables can hold many data types: numbers, strings, objects and more
+- When adding a number and a string, JavaScript will treat the number as a string.
+- A JavaScript function is defined with the 'function' keyword
+- You can access object properties in two ways:
+	objectName.propertyName
+		or
+	objectName["propertyName"]
+- JavaScript will try to convert strings to numbers in all numeric operations.
+	example: 	var x = "100";
+		var y = "10";
+		var z = x / y;       // z will be 10
+- JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+- Methods and properties are also available to primitive values, 
+because JavaScript treats primitive values as objects when executing methods and properties.
+- Syntax creating an array: var array_name = [item1, item2, ...];
+- Operator === means: equal value and equal type
+- Operator !== means: not equal value or not equal type
+- The For Loop: you can omit statement 1 (like when your values are set before the loop starts),
+Statement 3 can also be omitted (like when you increment your values inside the loop)
+- The JavaScript for/in statement loops through the properties of an object
+- When JavaScript tries to operate on a "wrong" data type, it will try to convert the value to a "right" type.
+- In JavaScript, objects and functions are also variables.
+

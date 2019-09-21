@@ -1,0 +1,12 @@
+img
+{
+	display: inline-block;
+}
+div 
+{
+	display: inline-block;
+	float: right;
+	border: dashed;
+	
+
+}

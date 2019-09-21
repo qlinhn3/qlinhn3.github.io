@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Cấu trúc if...else if...else</title>
+	<link rel="stylesheet" type="text/css" href="../css/bai4.css">
+</head>
+<body>
+	<h2>Xếp loại cuối năm học</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Điểm trung bình HKI: </td>
+				<td><input type="text" id="diemhk1"></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình HKII: </td>
+				<td><input type="text" id="diemhk2"></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình cuối năm: </td>
+				<td><input type="text" id="diemtb"></td>
+			</tr>
+			<tr>
+				<td>Xếp loại: </td>
+				<td><label id="xeploai" style="color: red; font-weight: bold;"></label></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" id="xuat" value="Xuất xếp loại" onclick="Xuat(diemhk1.value,diemhk2.value)"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
+<script type="text/javascript" src="../js/bai4.js">
+</script>

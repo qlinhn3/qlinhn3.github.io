@@ -1,0 +1,99 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background:#cccccc;
+	margin: 0px;
+}
+.main-wrapper{
+	width: 70%;
+	margin: 0 auto;
+	background: #666666;
+	color: black;
+}
+header, footer{
+	background: #333333;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+nav{
+	background-color: orange;
+}
+nav ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #666666;
+}
+nav li{
+	float: left;
+	border-right: 1px solid #333333;
+	padding: 0px;
+}
+nav li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav li a:hover{
+	background-color: #111;
+}
+.main-content{
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+}
+section{
+	width: 75%;
+	background: #ffffff;
+	height: 100%;
+	padding: 20px;
+}
+aside{
+	width: 25%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	background: #e5e5e5;
+	padding: 20px;
+}
+a{
+	color: orange;
+}
+aside ul{
+	list-style-type: none;
+}
+aside a{
+	text-decoration: none;
+}
+aside li a{
+	text-decoration: none;
+}
+ul #sidebar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+aside ul li{
+	list-style-type: none;
+	padding: 5px;
+}
+div .fake-image{
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-right: 15px;
+}
+ul a{
+	text-decoration: none;
+}
+ul li {
+	padding: 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="file.css">
+	<title>Tạo form và các điều khiển trên form</title>
+	<meta charset="UTF-8">
+	<Style>
+	h1{
+		text-align: center;
+		color: blue;
+	}
+	
+
+	</style>
+</head>
+<body>
+<h1>ĐĂNG NHẬP</h1>
+<form>
+<table >
+	<tr>
+		<td>Mã người dùng</td>
+		<td><input type="text" id="usrename" ></td>
+	</tr>
+	<tr>
+		<td>Mật khẩu</td>
+		<td><input type="password" id="password" ></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="Đồng ý" id="dongy" onclick="hienthi.innerText =  usrename.value"></td>
+	</tr>
+	<tr >
+		<td colspan="2"><span id="hienthi"></span></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

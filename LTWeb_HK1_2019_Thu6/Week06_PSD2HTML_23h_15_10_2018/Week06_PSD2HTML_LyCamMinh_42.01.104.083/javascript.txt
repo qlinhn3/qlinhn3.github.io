@@ -1,0 +1,45 @@
+﻿Các chức năng của Javascript 
+	+Có thể thay đổi nội dung HTML bằng cách sử dụng innerHTML
+	+Có thể thay đổi thuộc tính của thẻ HTML như: src(Thẻ <img>), href(Thẻ <a>)...
+	+Có thể thay đổi Style của HTML 
+	+Có thể tạo hộp cảnh báo để hiển thị dữ liệu bằng window.alert()
+	+Đối với mục đích gỡ lỗi, có thể sử dụng console.log() để hiển thị nội dung trong bảng console của trang web
+
+Lệnh Javascript phải được đặt trong thẻ <script> và </script> trong HTML, Javascript có thể đặt ở các vị trí sau:
+   	+Đặt trong tệp HTML trong phần head hoặc body hoặc ở cả hai
+   	+Đặt bên ngoài tệp, lưu dưới đuôi file .js
+
+Khác với C++, Javascript sử dụng từ khóa "var" cho tất cả các kiểu dữ liệu
+Cú pháp:
+	var x, y;          				//Khai báo 2 biến x,y
+	x = 5; y = 6;      				//gán cho x=5 và y=6
+	z = x + y;         				//Khai báo biến z và gán biến z bằng tổng 2 biến x và y
+	var pi = 3.14;	  	 			//Khai báo biến pi=3.14
+	var person = "John Doe"; 			//Khai báo biến person là "John Doe"
+	var x = "John" + " " + "Doe";  			//Cộng 2 chuỗi với nhau
+	var x = "51" + 2 + 3;				//Khi cộng các giá trị với nhau, nếu có 1 giá trị là chuỗi
+							//thì các giá trị còn lại sẽ chuyển thành chuỗi sau đó theo quy tắc cộng chuỗi lại với nhau
+							//Kết quả sẽ là 5123
+	var x = "Minh" + 14 + 3;			//Kết quả sẽ là Minh143
+
+	
+	var cars=["Honda", "Ducati","Yamaha"];		//Khai báo mảng trong Javascript
+	var type=cars[0] 				//Truy xuất phần từ đầu tiên của mảng, chỉ số mảng được tính từ 0 như các ngôn ngữ khác
+	
+	var person={firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; //Khai báo một đối tượng trong Javascript
+	var name=person.firstName; 						//Truy xuất tên của đối tượng
+
+	Lưu ý: Khai báo đối tượng phải được đặt trong dấu "{" và "}", còn trong mảng thì phải đặt trong dấu "[" và "]"
+
+Khai báo hàm trong Javascript
+Cú pháp:
+	function [Tên Hàm] (Tham số truyền vào){
+		//Lệnh xử lý
+	}
+
+	VD: function Sum(a,b){
+		return a+b;
+	}
+	Lưu ý: Javascript có thể trả về bất kỳ kiểu dữ liệu nào mà không cần phải khai báo kiểu dữ liệu trả về như C++
+
+	

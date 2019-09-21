@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: url(Anh.jpg);
+    font-family: serif;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.hieuung {
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.motkhoi h3 {
+	background: #b8eaff;
+	padding: 10px 12px;
+	border: 1px solid black;
+}
+
+.ndmotkhoi {
+    padding: 10px;
+    border: 1px solid #eef7c8;
+    background: #b3bd6e99;
+    color: #3e1313;
+}
+
+.motkhoi h3:hover {
+    background: #c4b5de;
+}
+
+h3.chuyenmau {
+    background: greenyellow;
+}

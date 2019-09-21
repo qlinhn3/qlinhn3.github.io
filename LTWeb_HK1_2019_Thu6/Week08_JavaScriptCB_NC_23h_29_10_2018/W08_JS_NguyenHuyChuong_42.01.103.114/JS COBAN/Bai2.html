@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai2</title>
+	<style type="text/css">
+		table, tr{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+		}
+		#demo{
+			color: deeppink;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table align="center">
+			<tr>
+				<td colspan="2"><lable id="demo"></lable></td>
+			</tr>
+			<tr>
+				<td>Nhập tên mới:</td>
+				<td><input type="text" id="nhapten"> </td>
+			</tr>
+			<tr class="giua" align="center">
+				<td colspan="2"><button type="button" onclick="xinchao()">Thay đổi câu chào</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+       
+         window.onload=function myFunction(){
+         	var t = prompt("Hãy nhập tên của bạn", '');
+          	if(t!=null){
+          	document.getElementById("demo").innerHTML = "Chào bạn "+t;
+          	}
+      	}
+      	function xinchao(){
+      		var ten=document.getElementById("nhapten");
+      		document.getElementById("demo").innerHTML= "Chào bạn " + ten.value;
+      	}
+
+ </script>
+<!-- <script>
+	function xinchao(){
+		var  tent = document.getElementById("ten");
+		if(ten.value == ''){
+			alert('Vui lòng nhập tên');
+		}else{
+			alert("Xin chào " + tent.value);
+		}
+	}
+</script>
+ -->
+   

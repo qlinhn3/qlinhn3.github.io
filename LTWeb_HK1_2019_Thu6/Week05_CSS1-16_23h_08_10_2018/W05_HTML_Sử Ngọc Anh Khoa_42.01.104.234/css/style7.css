@@ -1,0 +1,30 @@
+body{
+	
+	
+}
+h2{
+	color: red;
+	 text-align: center;
+}
+img{
+	
+	 height:500px;
+	 
+}
+#qq{
+	list-style-type:disc;
+}
+.aa{
+	color: white;
+	 background-color: red
+}
+hr{
+	 width:900px;
+}
+.bb{
+	color:gray;
+	 background-color: violet;
+}
+a{
+	color: blue;
+}

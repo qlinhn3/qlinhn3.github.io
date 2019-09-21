@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ... else</title>
+</head>
+<style>
+	table,td{
+			border : 1px solid #48B506;
+			border-collapse: collapse;
+			background-color: #8EFCBA;
+		}
+</style>
+<body>
+	<script type="text/javascript">
+		function xuat_ket_qua()
+		{
+			var tb = document.getElementById('diemtb');
+			var xltb = document.getElementById('kq');
+			if (tb < 5) {
+				kq.innerText = "Ở lại lớp";
+			}
+			else{
+				kq.innerText = "Được lên lớp";	
+			}
+		}
+	</script>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Điểm trung bình</td>
+				<td ><input type="text" id="diemtb"></td>
+			</tr>
+			<tr>
+				<td>Kết quả</td>
+				<td ><input type="text" id="kq"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Xuất kết quả" onclick="tb.value=xuat_ket_qua()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

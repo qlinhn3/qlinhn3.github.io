@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp for</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #e67300;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #e67300;
+			background-color: #ffdd99;
+			color: #e67300;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<table>
+		<h1>In bảng cửu chương</h1>
+		<tr>
+			<td>Nhập cửu chương</td>
+			<td><input type="text" id="num"><button type="button" onclick="ketqua.innerText=in_bang_cc(num)">In</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><label id="ketqua" ></label>
+			</td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function la_so(so){
+		var a = parseInt(so.value);
+		return isNaN(a);
+	}
+	function in_bang_cc(so){
+		if (la_so(so)==true) {
+			document.getElementById("ketqua").innerText = "Số nhập không hợp lệ!";
+		}
+		else {
+			var a = parseInt(so.value);
+			var i;
+			var text = " ";
+			for (i=1; i<=10; i++) {
+				text += a + " * " + i + " = " + a*i + '<br>';
+			}
+			return text;
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp while</title>
+	<style type="text/css">
+		body{
+			width:40%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 70%;
+			margin: auto;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">Tìm số đầu tiên chia hết cho 5 và 7</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="width: 90%">
+					<label style="color: red">Nhập từ số </label><input type="text" id="from" style="width: 25%">
+					<label style="color: red">đến số </label> <input type="text" id="to" style="width:25%">
+				</td>
+				<td style="width: 10%">
+					<input type="button" value="In" onclick="ketqua.innerHTML=Chia_het_5_7(from.value,to.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><label id="ketqua" style="color: blue"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="")
+	}
+	function Chia_het_5_7(from,to) {
+		if (la_so(from)&&la_so(to)){
+			from=Number(from);
+			to=Number(to);
+			var html="Số đầu tiên nằm trong khoảng từ "+from+" đến "+to+" chia hết cho 5 và 7 là: ";
+			while(from<=to){
+				if (from%5===0&&from%7===0) {
+					html+=from;
+					return html;
+				}
+				from++;
+			}
+		}
+		return "Nhập số không hợp lệ";
+	}
+</script>

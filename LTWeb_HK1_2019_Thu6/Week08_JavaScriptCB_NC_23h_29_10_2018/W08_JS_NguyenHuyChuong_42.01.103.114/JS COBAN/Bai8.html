@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai7 Vòng lặp for </title>
+	<style type="text/css">
+	
+		h2{
+			text-align: center;
+			color: #009900;
+		}
+		table, tr,td{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		width: 25%;
+    		color: #009900;
+
+		}
+			#kq{
+			color: red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Tìm các số chia hết cho 6 và 9</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Nhập một số</td>
+				<td><input type="text" id="input" size="6"> <button type="button" onclick="xuat()">In</button></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="kq"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function laso(n){
+		if(isNaN(n)) return true;
+		else return false;
+	}
+	function xuatketqua(n){
+			var xuatso="";
+			for(var i=1;i<=n;i++){
+				if(i%6==0 && i%9==0) xuatso+=i+',';
+			}
+			return xuatso;
+	} 
+	function xuat(){
+		var so=document.getElementById('input').value,
+		xuatkq=document.getElementById('kq');
+		if(laso(so)==true) xuatkq.innerHTML="Số nhập không hợp lệ!";
+		else{
+		xuatkq.innerHTML= "Các số từ 1 đến " + so + "chia hết 6 và 9 là: " + xuatketqua(so);
+		}
+	}
+</script>

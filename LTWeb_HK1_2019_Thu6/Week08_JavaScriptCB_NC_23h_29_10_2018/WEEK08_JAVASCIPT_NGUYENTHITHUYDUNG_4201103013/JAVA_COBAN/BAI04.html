@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script language="javascript">
+		function ketqua(diemHK1,diemHK2){
+			if (diemHK1 == null || diemHK2 == "")
+        		document.getElementById("xl").innerHTML ="Please enter the score!";
+        	else{
+        		var tb = (parseInt(diemHK1)+parseInt(diemHK2)*2)/3;
+        		return tb;
+			}
+
+		}
+		function xeploai(diemtb){
+			if (diemtb == null || diemtb == "")
+				document.getElementById("xl").innerHTML ="Không thể xếp loại";
+			else{
+				if(diemtb>=9 && diemtb<=10)
+					document.getElementById("xl").innerHTML ="Giỏi";
+				else if(diemtb>=7 && diemtb<9)
+					document.getElementById("xl").innerHTML ="Khá";
+				else if(diemtb>=5 && diemtb<7)
+					document.getElementById("xl").innerHTML ="Trung bình";
+				else if(diemtb<5)
+					document.getElementById("xl").innerHTML ="Kém";
+			}
+		}
+	</script>
+	<title></title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<h1 style="color: #008000; text-align: center"> Xếp loại cuối năm học</h1>
+	<form>
+	<table align="center">
+		<tr>
+			<td width="60%">Điểm trung bình HKI: </td>
+			<td><input type="text" name="dtb1" id="tb1" size="20"></td>
+		</tr>
+		<tr>
+			<td >Điểm trung bình HKII: </td>
+			<td ><input type="text" name="dtb2" id="tb2" size="20"></td>
+		</tr>
+		<tr>
+			<td>Điểm trung bình cuối năm: </td>
+			<td><textarea type="text" name="dtb" id="dtb" size="20"></textarea></td>
+		</tr>
+		<tr>
+			<td >Xếp loại: </td>
+			<td><output type="text" style="color: #ff0000" name="xl" id="xl"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center"><button type="button" name="xuat" id="xuat" onclick="dtb.innerHTML=ketqua(tb1.value,tb2.value);xeploai(dtb.value)">Xuất xếp loại</button></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

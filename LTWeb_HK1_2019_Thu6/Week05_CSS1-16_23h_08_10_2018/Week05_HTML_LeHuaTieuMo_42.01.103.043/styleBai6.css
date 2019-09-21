@@ -1,0 +1,27 @@
+
+		h2{
+			text-align: center;
+			color:#ff3300 ; 
+			border:double tomato
+		}
+		.pdropcap:first-letter {
+			float: top;
+			color: red;
+			font: Georgia, Times, serif;
+			font-size: 60px;
+}
+		span{
+			color: red;
+			font-weight: bold
+
+		}
+		.BTH{
+			text-align: right;
+			background-color:#FF6600;
+			font-weight: bold;
+			font-size: 20px;color:#FFFFFF
+
+		}
+		
+
+	

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Tạo form và các điều khiển</title>
+		<style type="text/css">
+	h1{
+		text-align: center;
+		color : blue;
+}
+table {
+	border-collapse: collapse;
+}
+table, td {
+	border: 1px solid black; 
+	padding: 5px;
+	/*width: 300px;*/
+	margin: auto;
+	text-align: center;
+}
+	 </style>
+</head>
+<body>
+	<h1> ĐĂNG KÝ DU LỊCH </h1>
+	<form>
+		<table style="background-color: yellow">
+			<!-- tr*9< tr*2 -->
+			<tr>
+			<td style="text-align:left"> Họ và tên </td>
+			<td style="text-align:left"> <input type="text" id="name" size="36"> </td>
+		</tr>
+		<tr>
+			<td style="text-align:left"> Địa chỉ </td>
+			<td style="text-align:left"> <input type="text" id="adress" size="36"> </td>
+			</td>
+		</tr>
+  <tr>
+			<td style="text-align:left"> Điện thoại </td>
+			<td style="text-align:left"> <input type="text" id="telephone" size="12"> </td> </td>
+</tr>
+<tr>
+			<td style="text-align:left"> Khách Việt Nam </td>
+			<td style="text-align:left"> <input type="checkbox" name="yesno" value="yes"> </td>
+		</tr>
+		<tr>
+			<td style="text-align:left"> Chọn tour </td>
+<td style="text-align:left"> 
+<select>
+  <optgroup label="Miền Bắc">
+    <option value="Hanoihalongsapa"> Hà Nội- Hạ Long- Sapa </option>
+    <option value="Hanochuahuongninhbinh"> Hà Nội-Chùa Hương- Ninh Bình </option>
+    <option value="Hanoicatbatuanchau"> Hà Nội- Cát Bà- Tuân Châu</option>
+  </optgroup>
+  <optgroup label="Miền Trung">
+    <option value="Huebachmadanang"> Huế- Bạch Mã- Đà Nẵng </option>
+    <option value="Nhatrangdalat"> Nha Trang- Đà Lạt </option>
+    <option value="Buonmethuocgialaikontum">Buôn Mê Thuộc- Gia Lai- KonTum </option>
+  </optgroup>
+  <optgroup label="Miền Nam">
+    <option value="Tphcmcanthocamau"> TP.HCM- Cần Thơ- Cà Mau </option>
+    <option value="Tphcmmytho"> TP.HCM- Mỹ Tho</option>
+  </optgroup>
+</select>
+</td>
+</tr>
+<tr>
+			<td style="text-align:left"> Phương tiện </td>
+			<td style="text-align:left"> <input type="radio" id="phuongtien" value="Máy bay"> Máy bay
+  <input type="radio" id="phuongtien" value="Xe ô tô"> Xe ô tô </td>		</tr>
+		<tr>
+
+ <td colspan="2"> <fieldset> <legend style=" border: 1px; width:350px; height:55px; font-style:italic; color: yellow; text-align: left"> Số lượng đoàn khách :</legend>
+  Người lớn: <input type="text">
+  Trẻ em: <input type="text">
+ </fieldset>
+</tr>
+
+<tr>
+			<td style="text-align:left"> Ghi chú thêm </td>
+			<td style="text-align:left"> <input type="text" name= "note" size= 100 > </td>
+		</tr>
+	<tr>
+		<div>
+			<tr>
+			<td colspan="2"> <input type="button" name="DongY" value= "Đồng Ý" onclick="display.
+			innerText='Bạn đã đăng ký thành công' "> </td>
+`		</tr>
+			<td colspan="2" id="display"> </td>
+		</div>
+		</tr>
+        </table>
+       </form>
+</body>
+</html>

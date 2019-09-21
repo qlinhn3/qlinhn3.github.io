@@ -1,0 +1,14 @@
+       h1{text-align: center;
+			color: green}
+		table{
+			background-color: lightgreen;
+			border-collapse: collapse;
+			color: blue;
+		}
+		table, td{
+			border: 1px solid black;
+			padding: 5px;
+			margin: auto;
+			/*width: 300px;*/
+			text-align: center
+		}

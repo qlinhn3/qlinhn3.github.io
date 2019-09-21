@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if...else</title>
+	<style type="text/css">
+		body{
+			width:30%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 100%;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">Kết quả cuối năm học</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="color: red">Điểm trung bình</td>
+				<td><input type="text" id="dtb"></td>
+			</tr>
+			<tr>
+				<td style="color: red">Kết quả</td>
+				<td><input type="text" id="kq"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" value="Xuất kết quả" onclick="kq.value=XuatKetQua(dtb.value)">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="")
+	}
+	function XuatKetQua(dtb){
+		if (la_so(dtb)){
+			if(dtb>=5) return "Được lên lớp";
+			return "Ở lại lớp";
+		}
+		return "Xin hãy nhập số";
+	}
+</script>
+
+

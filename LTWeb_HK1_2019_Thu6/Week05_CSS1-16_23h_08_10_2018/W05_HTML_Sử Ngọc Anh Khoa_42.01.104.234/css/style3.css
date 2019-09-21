@@ -1,0 +1,12 @@
+body{
+	background-color: #A06D21;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-image: url(hinh/Bai03.jpg);
+	  background-position: center;
+	 color: white;
+}
+h2{
+	color: yellow;
+	 text-align: center;
+}

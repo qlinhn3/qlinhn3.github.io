@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai5 Cấu trúc swich</title>
+	<style type="text/css">
+		h2{
+			text-align: center;
+			color: #009900;
+		}
+		table, tr,td{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		width: 27%;
+    		color: #009900;
+
+		}
+		#kq{
+			color: red;
+			text-align: center;
+		}
+	</style>;
+</head>
+<body>
+	<h2>Tính tiền thưởng cuối năm</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Tiền lương</td>
+				<td><input type="text" size="4" id="luong"></td>
+			</tr>
+			<tr>
+				<td>Xếp loại</td>
+				<td>
+					<select id="loai">
+						<option id="Loại A">Loại A</option>
+						<option id="Loại B">Loại B</option>
+						<option id="Loại C">Loại C</option>
+						<option id="Loại D">Loại D</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><button type="button" onclick="tienthuong()">Tính</button></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="kq"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function tienthuong(){
+		var tienluong=document.getElementById('luong').value;
+		var tienthuong, heso;
+		if(document.getElementById('loai').value==="Loại A") heso=2;
+		if(document.getElementById('loai').value==="Loại B") heso=1.8;
+		if(document.getElementById('loai').value==="Loại C") heso=1.2;
+		if(document.getElementById('loai').value==="Loại D") heso=0.8;
+		return document.getElementById('kq').innerHTML="Tiền thưởng là: " + parseFloat(tienluong)*parseFloat(heso) + " đồng";
+	}
+</script>

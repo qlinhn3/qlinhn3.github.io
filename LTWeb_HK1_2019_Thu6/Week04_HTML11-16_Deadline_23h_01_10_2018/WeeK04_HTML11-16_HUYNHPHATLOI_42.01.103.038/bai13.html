@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Tạo form và các điều khiển </title>
+	<link rel="stylesheet" type="text/css" href="style13.css">
+</head>
+<body>
+	<h1>Đăng ký du lịch</h1>
+	<form action="">
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="text" value="Phạm Ngọc Cẩm Đào"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="Dia chi" value="227 Nguyễn Văn Cừ"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="dien thoai" value="8351056"></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" checked></td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+						<optgroup label="Miền Bắc">
+							<option value="Hà Nội - Hạ Long - Sapa">Hà Nội - Hạ Long - Sapa</option>
+							<option value="Hà Nội - Chùa Hương - Ninh Bình">Hà Nội - Chùa Hương - Ninh Bình</option>
+							<option value="Hà Nội - Cát Bà - Tuấn Châu">Hà Nội - Cát Bà - Tuấn Châu</option>
+						</optgroup>
+						<optgroup label="Miền Trung">
+							<option value="Hếu - Bạch Mã - Đà Nẵng">Hếu - Bạch Mã - Đà Nẵng</option>
+							<option value="Nha Trang - Đà Lạt">Nha Trang - Đà Lạt</option>
+							<option value="Buôn Mê Thuộc - Gia Lai - Kontum">Buôn Mê Thuộc - Gia Lai - Kontum</option>
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option value="TP.HCM - Cần Thơ - Cà Mau">TP.HCM - Cần Thơ - Cà Mau</option>
+							<option value="TP.HCM - Mỹ Tho">TP.HCM - Mỹ Tho</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td><input type="radio" name="PT" value="Máy bay">Máy bay
+					<input type="radio" name="PT" value="Xe ô tô" checked>Xe ô tô</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<fieldset style="border:2px solid #880808;">
+					<legend style="color:#B8820D"><i> Số lượng đoàn khách</i></legend>
+					Người lớn <input type="text" name="SL" value="6" >
+					Trẻ em <input type="text" name="SL" value="4">
+				</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td style="width: 300px"><textarea  cols="25" rows="2">Có 2 trẻ em dưới 6 tuổi  Có 2 người ăn chay </textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center"><input type="button" name="Dong Y" value="Đồng Ý" onclick="KQ.innerText='Bạn đã đăng ký thành công'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="KQ" style="color:#F77C0E;text-align:center"></td>
+			</tr>
+		</table>
+	</form>
+
+	
+</body>
+</html>

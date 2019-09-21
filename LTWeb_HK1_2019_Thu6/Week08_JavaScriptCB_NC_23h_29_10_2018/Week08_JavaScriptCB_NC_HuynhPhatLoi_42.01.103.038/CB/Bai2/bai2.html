@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sử dụng hộp thoại</title>
+	<style>
+		table,td{
+			border : 1px solid #48B506;
+			border-collapse: collapse;
+			background-color: #8EFCBA;
+		}
+	</style>
+</head>
+<body>
+	<body onload="box1()">
+  <script>
+    function box1(){
+    var fullname = prompt("Script prompt: \nHãy nhập tên của bạn");
+    	display.innerText = "Chào bạn " + fullname;
+	}
+    </script>
+  <form>
+  	<table align="center">
+  		<tr>
+  			<td id="display">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td>
+  				Nhập tên mới: <input type="text" name="newname" id="newname">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td align="center">
+  				<input type="button" value="Thay đỗi câu chào" onclick="display.innerText='Chào bạn '+newname.value">
+  			</td>
+  		</tr>
+  	</table>
+  </form>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp while</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #e67300;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #e67300;
+			background-color: #ffdd99;
+			color: #e67300;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<table>
+		<h1>Tìm các số chia hết cho 5 và 7</h1>
+		<tr>
+			<td>Nhập từ số <input type="text" id="tuso">đến số <input type="text" id="denso"></td>
+			<td><button type="button" onclick="xuat_ket_qua(tuso,denso)">In</button></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="color: blue"><label id="ketqua"></label>
+			</td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function xuat_ket_qua(tuso, denso){
+		if (!isNaN(parseInt(tuso.value)) && !isNaN(parseInt(denso.value)) && (tuso.value < denso.value)){
+			var text = "Số đầu tiên nằm trong khoảng từ " + eval(tuso) + " đến " + eval(denso) + "chia hết cho 5 và 7 là: ";
+			var i=tuso.value;
+			while (i<=denso.value){
+				if (i%5==0 && i%7==0) {
+					break;
+				}
+				else i++;
+			}
+			text += i;
+			document.getElementById("ketqua").innerText = text;
+			
+		}
+	}
+</script>
+</body>
+</html>

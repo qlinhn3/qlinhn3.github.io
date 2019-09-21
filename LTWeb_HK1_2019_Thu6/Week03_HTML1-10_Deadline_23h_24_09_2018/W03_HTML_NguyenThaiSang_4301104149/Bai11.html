@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> </meta>
+	<head>
+		<title> Tạo form và các điều khiển trên form</title>
+		<style>
+			body{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Đăng nhập</h1>
+		<form action="#">	
+			<label>Mã người dùng</label>
+			<input type="username" name="u_name" placeholder="Mã người dùng"> <br>
+			<label>Mật khẩu</label>
+			<input type="password" name="u_pass" placeholder="password"> <br>
+				<hr>
+			<input type="submit" value="Đồng ý">
+		</form>
+		<div id='u_name'></div>
+		<script>
+			var u = window.location.search;
+			if(u) {
+				var u_name = u.slice(8,u.indexOf('&'))
+				document.getElementById('u_name').innerHTML = u_name
+			}
+		</script>
+		</body>
+</html
+		

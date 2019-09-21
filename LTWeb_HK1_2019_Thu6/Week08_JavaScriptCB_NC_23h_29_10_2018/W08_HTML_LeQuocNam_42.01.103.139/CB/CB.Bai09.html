@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script language="javaScript">
+		function la_so(tuso,denso){
+			if(isNaN(parseInt(tuso)) || isNaN(parseInt(denso)) || parseInt(tuso)>parseInt(denso))
+				return true;
+			return false;
+		}
+		function xuat_ket_qua(tuso,denso){
+			var i;
+			var kq=""; var n=tuso;
+			if(la_so(tuso,denso)==true)
+				alert("Số nhập không hợp lệ!");
+			else{
+				while(tuso<=denso){
+					if(tuso%5==0 && tuso%7==0){
+						kq = tuso;
+						break;
+					}
+					tuso++;
+				}
+				document.getElementById("hienthi").innerHTML = "Số đầu tiên nằm trong khoảng từ"+" "+n+" "+"đến"+" "+denso+" "+"chia hết cho 5 và 7 là:"+ kq;
+			}
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Vòng lặp While</title>
+	<link rel="stylesheet" type="text/css" href="js3.css">
+</head>
+<body>
+	<h1 style="color: #b30000; text-align: center"> Tìm số đầu tiên chia hết cho 5 và 7</h1>
+	<form>
+		<table>
+			<tbody>
+				<tr>
+					<td width="50%" style="color: #b30000">Nhập từ số <input type="text" name="tu" id="tu"> đến số <input width="5%" type="text" name="den" id="den">
+					</td>
+					<td>
+						<button type="button" name="in" id="in" onclick="xuat_ket_qua(tu.value,den.value)">In</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="color: #003399">
+						<label id="hienthi"></label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

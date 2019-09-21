@@ -1,0 +1,32 @@
+
+		h1{
+			text-align: center;
+			color: #006600
+		}
+		h1+h2{
+			text-decoration: underline; color: #0000FF
+		}
+		p+h2{
+			text-align: center; 
+			color: #FF3399;
+			background-color:pink; 
+			font-weight: bold
+		}
+		div{
+			text-align: center; 
+			font-style: italic;
+			background-color: #FFFFCC
+		}
+		#p1{
+			color:#0000FF
+		}
+		#p2{
+			color:red
+		}
+		#p3{
+			color:#006600
+		}
+		hr{
+			width: 20%;
+		}
+	

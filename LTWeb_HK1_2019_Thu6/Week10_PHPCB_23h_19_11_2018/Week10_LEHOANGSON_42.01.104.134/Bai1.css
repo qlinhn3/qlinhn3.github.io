@@ -1,0 +1,31 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 25%;
+	margin: auto;
+	margin-top:50px; 
+}
+table,th{
+	border-collapse: collapse;
+
+}
+tr,th{	
+	height: 35px;
+	margin: 3px;
+}
+th{
+	color: white;;
+	background-color: #ff8533;
+}
+td{
+	background-color: #ffccff;
+	text-align: center;
+}
+#id1{
+	text-align: center;
+	background-color: white;*/
+	color: red;
+	font-weight: bold;
+}

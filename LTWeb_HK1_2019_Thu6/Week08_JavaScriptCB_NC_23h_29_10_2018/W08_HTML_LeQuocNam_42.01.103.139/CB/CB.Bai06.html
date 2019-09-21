@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script language="javaScript">
+		function la_so(so){
+			if(isNaN(parseInt(so)))
+				return true;
+			return false;
+		}
+		function in_bang_cc(so){
+			var i;
+			var kq="";
+			if(la_so(so)==false){
+				for(i=1;i<=10;i++){
+					kq +=so +" "+"*"+" "+ i+" "+"="+" "+so*i +"<br>";
+				}
+				document.getElementById("hienthi").innerHTML = kq;
+			}
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Vòng lặp for</title>
+	<link rel="stylesheet" type="text/css" href="js2.css">
+</head>
+<body>
+	<h1 style="color: #cc7a00; text-align: center"> In bảng cửu chương</h1>
+	<form>
+		<table>
+			<tbody>
+				<tr>
+					<td width="30%">Nhập cửu chương </td>
+					<td>
+						<input type="text" name="isso" id="isso">
+						<button type="button" name="in" id="in" onclick="in_bang_cc(isso.value)">In</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center">
+						<label id="hienthi"></label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+index.html => mainpage
+
+VueComponent : Vuejs(dùng cho trang single-product)
+
+Login : Username = 'sa'; Password = 'sa'

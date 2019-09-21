@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai4 Cấu trúc if .. else if ... else</title>
+	<style type="text/css">
+		h2{
+			text-align: center;
+			color: #009900;
+		}
+		table, tr,td{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		width: 27%;
+    		color: #009900;
+
+		}
+		#xeploai{
+			color: red;
+		}
+	</style>;
+</head>
+<body>
+	<h2>Kết quả cuối năm học</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Điểm trung bình HKI:</td>
+				<td><input type="text" size="4" id="diemhk1"></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình HKII:</td>
+				<td><input type="text" size="4" id="diemhk2"></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình cuối năm:</td>
+				<td><input type="text" size="4" id="diemcuoinam"></td>
+			</tr>
+			<tr>
+				<td>Xếp loại:</td>
+				<td id="xeploai"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><button type="button" onclick="ketqua()">Xuất kết quả</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function dtbcuoinam(d1, d2){
+		return (parseFloat(d1)+parseFloat(d2)*2)/3;
+	}
+	function ketqua(){
+		var diem1=document.getElementById("diemhk1").value;
+		diem2=document.getElementById("diemhk2").value;
+		dtb=dtbcuoinam(diem1,diem2);
+		document.getElementById("diemcuoinam").value = dtb;
+		var xl=document.getElementById('xeploai')
+	if(dtb>=9 && dtb<=10) xl.innerHTML="Giỏi";
+	if(dtb>=7 && dtb<9) xl.innerHTML="Khá";
+	if(dtb>=5 && dtb<7) xl.innerHTML="Trung bình";
+	if(dtb<5) xl.innerHTML="Yếu";
+	}
+</script>

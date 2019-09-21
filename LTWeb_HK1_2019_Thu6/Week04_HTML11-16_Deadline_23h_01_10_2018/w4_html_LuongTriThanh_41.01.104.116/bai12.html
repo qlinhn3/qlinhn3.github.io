@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanhdeptrai</title>
+	<h1 style="text-align: center;color: green">PHIẾU ĐĂNG KÍ THAM GIA CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+	<link rel="stylesheet" type="text/css" href="bang.css">
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Họ Và Tên</th>
+				<td><input type="text" name="hovaten" size="70%"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="diachi" size="50%"></td>
+			</tr>
+			<tr>
+				<td>Điện Thoại</td>
+				<td><input type="number" name="sdt"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<th colspan="2" style="text-align: left;"><input type="radio" name="phai">Nam <input type="radio" name="phai">Nữ</th>
+				
+			</tr>
+			<tr>
+				<td>Nghề Nghiệp</td>
+				<td>
+				<input list="nghe">
+
+				<datalist id="nghe">
+  					<option value="Giáo Viên">
+  					<option value="Học Sinh">
+  					<option value="Diễn Viên">
+ 					<option value="Thanh đẹp trai">
+					
+				</datalist>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>CHọn Sản phẩm tham gia</td>
+				<td><select>
+					<option>Kem Đánh Răng</option>
+					<option>Bột Giặt</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số Người Tham gia </td>
+				<td><input type="number" name=""></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" name="Dong Y" value="Đồng ý" onclick="thanhh.innerText='Chúc mừng bạn đã đăng kí thành công'""></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="thanhh" style="text-align: center;" rowspan="2"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

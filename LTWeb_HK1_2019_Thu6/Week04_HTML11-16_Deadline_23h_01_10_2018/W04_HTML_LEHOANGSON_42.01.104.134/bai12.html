@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 12</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		h1{
+			color: #00b300;
+		}
+
+		table{
+			width: 50%;
+			background-color:  #b3ffb3;
+		}
+		td{
+			text-align: left;
+			color:green;
+
+		}
+		fieldset{
+			border: 2px solid red;
+			width: 350px;
+			height: 55px;
+			margin: auto;
+		}
+		legend{
+			font-style: italic;
+			color: orange;
+		}
+		
+		#result{
+			text-align: center;
+			color: #ff33cc;
+			margin: auto; 
+			padding: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="number" name=""></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td>
+					<input type="radio" name="" value="Nam">Nam
+					<input type="radio" name="" value="Nữ">Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select>
+						<option value="Giaovien">Giáo viên</option>
+						<option value="Bacsi">Bác sĩ</option>
+						<option value="Kysu">Kỹ sư</option>
+						<option value="Khac">Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select>
+						<option value="Kemdanhrang">Kem đánh răng</option>
+						<option value="Botgiat">Bột giặt</option>
+						<option value="Daugoidau">Dầu gọi đầu</option>
+						<option value="Suatam">Sữa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" value="Đồng ý" onclick="result.innerHTML='Bạn đã đăng ký thành công !!!'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="result"></td>
+				
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

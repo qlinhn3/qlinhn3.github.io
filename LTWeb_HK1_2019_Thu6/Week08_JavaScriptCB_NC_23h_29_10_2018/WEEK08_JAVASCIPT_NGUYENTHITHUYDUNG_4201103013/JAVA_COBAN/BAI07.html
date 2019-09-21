@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css2.css">
+	<script language="javascript">
+		function la_so(so){
+			if(isNaN(parseInt(so)))
+				return true;
+			return false;
+		}
+		function xuat_ket_qua(so){
+			var i;
+			var kq="";
+			if(la_so(so)==true)
+				alert("Số nhập không hợp lệ!");
+			else{
+				for(i=1;i<=so;i++){
+					if(i%6==0 && i%9==0){
+						kq += i +",";
+					}
+				}
+				document.getElementById("hienthi").innerHTML = "Các số từ 1 đến"+" "+so+" "+"chia hết cho 6 và 9 là:"+kq;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1> Tìm các số chia hết cho 6 và 9</h1>
+	<form>
+	<table align="center">
+		<tr>
+			<td width="50%" style="color: #b30000">Nhập một số </td>
+			<td><input type="text" name="isso" id="isso">
+			<button type="button" name="in" id="in" onclick="xuat_ket_qua(isso.value)">In</button></td>
+		</tr>
+		<tr>
+			<td colspan="2" style= "color:#003399"><label id="hienthi"></label></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

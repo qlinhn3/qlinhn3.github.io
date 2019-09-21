@@ -1,0 +1,22 @@
+*
+{
+	margin:3px;
+	padding: 0;
+}
+h1
+{
+	color: orange;
+}
+table
+{
+	background-color:#6CD4F7
+}
+table,tr,td
+{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+td
+{
+	padding:10px;
+}

@@ -1,0 +1,23 @@
+iframe {
+  border: none;
+  border-top: 2px solid black;
+}
+header {
+  margin-bottom: 5px;
+}
+.block-slider img{
+  margin-left: 10%;
+  width: 100px;
+  height: 150px;
+}
+.product-f-image img {
+  height: 295px;
+}
+.single-wid-product a img{
+  border:1px solid black;
+}
+@media (max-width: 900px){
+  .block-slider li {
+    height: 220px;
+  }
+}

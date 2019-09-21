@@ -1,0 +1,36 @@
+h1{
+	color: green;
+	 text-align: center;
+	  font-weight: bold;
+	  
+}
+h2.aaa{
+	color: blue;
+	 font-weight: bold;
+	  text-decoration: underline;
+}
+p{
+	font-weight: bold;
+}
+h2.aa{
+	text-align: center;
+	color: red;
+	 background-color: pink;
+}
+div{
+	text-align: center;
+	background-color: #FFFFCC ;
+	 font-style: italic;
+}
+div p.d{
+	color: blue;
+}
+div p.dd{
+	color: orange;
+}
+div p.ddd{
+	color: green;
+}
+div hr{
+	width:200px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai1</title>
+	<style type="text/css">
+		table, tr{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		color: #009900;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Nhập tên bạn:</td>
+				<td><input type="text" id="ten"> </td>
+			</tr>
+			<tr class="giua" align="center">
+				<td colspan="2"><button type="button" onclick="xinchao()">Xuất câu chào</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function xinchao(){
+		var  tent = document.getElementById("ten");
+		if(ten.value == ''){
+			alert('Vui lòng nhập tên');
+		}else{
+			alert("Xin chào " + tent.value);
+		}
+	}
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<!-- tr+9>td+2 -->
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="user"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td>Nam<input type="radio" name="phai" value="Nam">
+					Nữ<input type="radio" name="phai" value="Nữ">
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select>
+						<option>Bác sĩ</option>
+						<option>Kỹ sư</option>
+						<option>Giáo viên</option>
+						<option>Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select size="4">
+						<option>Kem đánh răng</option>
+						<option>Bột giặt</option>
+						<option>Dầu gội đầu</option>
+						<option>Sữa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" name="songuoi"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="ok" value="Đồng ý" onclick="dis.innerText='Bạn đã đăng ký thành công!!!'" style="background-color: brown;"></td>
+				
+			</tr>
+			<tr>
+				<td colspan="2" id="dis" style="color: red;"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

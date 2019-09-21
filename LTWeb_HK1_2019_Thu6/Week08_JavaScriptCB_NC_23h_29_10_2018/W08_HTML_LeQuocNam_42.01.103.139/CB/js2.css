@@ -1,0 +1,13 @@
+
+		table{
+		border-collapse: collapse;
+		background-color: #fff0b3;
+	}
+	table,td{
+		border: 1px solid #cc7a00;
+		padding: 5px;
+		margin: auto;
+		border-color: #cc7a00;
+		color: #cc7a00;
+	}
+	

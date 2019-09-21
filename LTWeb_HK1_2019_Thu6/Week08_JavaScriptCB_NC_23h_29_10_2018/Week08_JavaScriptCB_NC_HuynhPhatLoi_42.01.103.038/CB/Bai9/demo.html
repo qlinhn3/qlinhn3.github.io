@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp while</title>
+	<style>
+		table,td{
+			border : 1px solid #CC7415;
+			border-collapse: collapse;
+			background-color: #DDBF6D;
+			width: 300px;
+			height: 10px;
+		}
+		h1{
+			text-align: center;
+			color: #63121F
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function la_so(so) {
+			if(isNaN(parseInt(so)))
+				return false
+			else 
+				return true
+		}
+		function xuat_ket_qua(tuso, denso)
+		{
+			if(!la_so(tuso) || !la_so(denso))
+			{
+				alert('Số nhập không hợp lệ, phải là kiểu số')
+				return false
+			}
+			if (eval(tuso) > eval(denso))
+			{
+				alert('Từ số phải >= đến số')
+				return false
+			}
+			str = ""
+			i = eval(tuso)
+			while(i <= eval(denso))
+			{
+				if(i%5==0 && i%7==0)
+				{
+					str = "Số đầu tiên chia hết cho 5 và 7 nằm trong khoảng từ " + tuso + ' đến ' + denso + ' là: ' + i
+					break
+				}
+				i++ 
+				}
+				if(str=="")
+					return "Không có số nào chia hết cho 5 và 7"
+				else
+					return str
+			}
+	</script>
+	<form action="">
+		<table align="center">
+			<tr>
+				<td>Nhập từ số<input size="10" type="text" id="tuso">đến số<input size="10" type="text" id="denso"></td>
+				<td align="center">
+					<input type="button" value="In" onclick="xuat_ket_qua(tuso.value,denso.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div ></div>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

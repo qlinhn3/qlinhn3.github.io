@@ -1,0 +1,30 @@
+#a{
+	border-color: orange;
+	text-align: center; 
+	color: orange;
+	padding: 10px; 
+	border: 10px double orange; 
+	margin: 10px; 
+}
+.b{
+	text-align: left;
+	font-family: VNI-Bodon-Poster;
+	font-size: 50px;
+	color: red;
+}
+.c{
+	color: red;
+}
+.d{
+	background-color: yellow;
+}
+p.p1{
+	text-align: right;
+	 background-color: orange;
+	  color: white;
+	 font-size: 20px;
+	  font-weight: bold;
+}
+p.p2{
+	text-align: right;
+}

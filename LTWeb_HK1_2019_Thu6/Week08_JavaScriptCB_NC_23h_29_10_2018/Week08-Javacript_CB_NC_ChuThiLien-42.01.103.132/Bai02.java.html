@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Explorer user prompt</title>
+
+</head>
+<body>
+			<div id="hello"></div>
+			<div>Nhập tên mới: <input type="text" name="yourname" id="yourname"></div>
+			<button onclick="myFunction()">Nhập lại tên!</button>
+			
+	<script>
+		var person = prompt("Please enter your name", "");
+		if (person != null) {
+		    document.getElementById("yourname").value = person;
+		}
+	    var test = document.getElementById("hello");
+	    test.innerHTML = `<p>Chào bạn : ${person}</p>`;
+
+
+		function myFunction(){
+			test.innerHTML = `Chào bạn : ${document.getElementById("yourname").value}`;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 06</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: #ff3300; text-align: center;">In bảng cửu chương</h2>
+		<table>
+			<tr>
+				<td>Nhập cửu chương</td>
+				<td>
+					<input type="text" id="txtPoint" required="">
+					<input type="button" value="Tính" onclick="txtKQ.innerHTML=tinhCuuChuong()" >
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+						<label id="txtKQ"></label>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function tinhCuuChuong() {
+		var kq='',i;
+		var s=parseInt(txtPoint.value);
+		if(isNaN(s) || s<0) return 'Số nhập không hợp lệ !';
+		for(i=1;i<=10;i++){
+			var tmp=s * i;
+			kq+=txtPoint.value + '*' + i.toString() + '=' + tmp + '<br>';
+		}
+		return kq;
+
+	}
+</script>

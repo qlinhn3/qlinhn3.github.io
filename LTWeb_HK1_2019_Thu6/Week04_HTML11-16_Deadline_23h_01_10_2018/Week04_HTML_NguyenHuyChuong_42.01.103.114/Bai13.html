@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" type="text/css" href="123.CSS">
+	<style type="text/css">
+	table{
+		background-color: lightyellow; 
+	}
+	#soluongdoankhach{
+		border: 1px solid orange;
+		width: 350px;
+		height: 55px;
+	}
+	#sldk{color: orange}
+	#ghichu{
+	width: 300px;
+	height: 50px;
+	}
+	td.xanh{
+		text-align: left;
+		color: green;
+	}
+	td.trang{
+	text-align: left;
+	}
+</style>
+</head>
+<body>
+	<h1 align="center">Đăng ký du lịch</h1>
+	<form >
+		<table>
+			<tr>
+				<td class="xanh">Họ và tên</td>
+				<td class="trang"><input type="text" name="ten" value="Phạm Ngọc Cẩm Đào" size="40"></td>
+			</tr>
+			<tr>
+				<td class="xanh">Địa chỉ</td>
+				<td class="trang"><input type="text" name="diachi" value="227 Nguyễn Văn Cừ" size="30"></td>
+			</tr>
+			<tr>
+				<td class="xanh">Điện thoại</td>
+				<td class="trang"><input type="number" name="sdt" value="8351056"></td>
+			</tr>
+			<tr>
+				<td class="xanh">Khách Việt Nam</td>
+				<td class="trang"><input type="checkbox" name="khachVN" checked></td>
+			</tr>
+			<tr>
+				<td class="xanh">Chọn tour</td>
+				<td class="trang">
+					<select>
+						<optgroup label="Miền Bắc">
+							<option>Hà Nội - Hạ Long - SaPa</option>
+							<option>Hà Nội - Chùa Hương - Ninh Bình</option>
+							<option>Hà Nội - Cát Bà - Tuần Châu</option>
+						</optgroup>
+						<optgroup label="Miền Trung">
+							<option>Huế - Bạch Mã - Đà Nẵng</option>
+							<option>Nha Trang - Đà Lạt</option>
+							<option selected>Buôn Mê Thuột - Gia Lai - KomTum</option>
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option>TP.HCM - Cần Thơ - Cà Mau</option>
+							<option>TP.HCM - Mỹ Tho</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="xanh">Phương tiện</td>
+				<td class="trang"><input type="radio" name="maybay">Máy bay
+					<input type="radio" name="xeoto" checked>Xe ô tô</td>
+			</tr>
+			<tr>
+				<td colspan="2" >
+					<fieldset id="soluongdoankhach">
+						<legend id="sldk" >Số lượng đoàn khách</legend>
+						<pan class="xanh">Người lớn</span><input type="text" value="6" size="5"><span class="xanh">Trẻ em</span><input type="text" value="4" size="5">
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td class="xanh">Ghi chú thêm</td>
+				<td class="trang">
+				<textarea id="ghichu">Có 2 trẻ em dưới 6 tuổi
+Có 2 người ăn chay
+				</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" name="DongY" value="Đồng ý" onclick="display.innerText='Bạn đã đăng ký thành công!!!'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display" align="center" style="color: orange"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

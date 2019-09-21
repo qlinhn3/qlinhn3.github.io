@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vòng lặp do ... while</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('button').click(function(){
+        if(!$('#output').length)
+        var x = parseFloat(prompt("nhập số"));
+        let i = 1;
+        if(!$('#output').length) $('table').append('<tr><td colspan=2 id="output"></td></tr>')
+        if($('#output').text() == "")
+        do {
+          $('#output').append(
+             x + " * " + i + " = " + x*i +"<br>"
+          )
+          i++
+        }while(i<= 10)
+      })
+    })
+    </script>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      table, tr, td {
+        margin : auto;
+        border: 2px solid black;
+        border-collapse : collapse;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>In bảng cửu chương</h1>
+    <table>
+      <tr>
+        <td>
+          <button type="button" style="width : 150px;">In</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

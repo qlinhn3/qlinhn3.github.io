@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cấu trúc switch</title>
+    <script src="jquery/jquery.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        $('button').click(function(){
+          // $('table').append("<tr><td>"+ parseFloat($('input').val()) * parseFloat($('select').val()) +'</td></tr>')
+        })
+      })
+    </script>
+    <style media="screen">
+    body {
+      text-align: center;
+    }
+      table, tr, td {
+        margin : auto;
+        border: 2px solid black;
+        border-collapse : collapse;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tính tiền thưởng cuối năm</h1>
+    <table>
+      <tr>
+        <td>Tiền lương</td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>Xếp loại</td>
+        <td>
+          <select>
+            <option value="2.0">Loại A</option>
+            <option value="1.8">Loại B</option>
+            <option value="1.2">Loại C</option>
+            <option value="0.8">Loại D</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2>
+          <button type="button">Đồng ý</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

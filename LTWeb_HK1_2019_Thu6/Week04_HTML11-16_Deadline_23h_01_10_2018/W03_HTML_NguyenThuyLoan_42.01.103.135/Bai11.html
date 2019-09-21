@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 11</title>
+	<style type="text/css">
+	h1{
+		text-align: center;
+		color : blue;
+}
+table {
+	border-collapse: collapse;
+}
+table, td {
+	border: 1px solid black; 
+	padding: 5px;
+	/*width: 300px;*/
+	margin: auto;
+	text-align: center;
+}
+	 </style>
+</head>
+<body>
+	<h1> Đăng nhập </h1>
+	<form>
+	<table style= "background-color: blue">
+		<!-- tr*4>tr*2 -->
+		<tr>
+			<td style="text-align:left"> Mã người dùng </td>
+			<td> <input type="text" name="username"> </td>
+		</tr>
+		<tr>
+			<td style="text-align:left"> Mật khẩu </td>
+			<td> <input type= "password" name= "password"> </td>
+		</tr>
+	
+		<tr>
+			<td colspan="2"> <input type="button" name="DongY" value= "Đồng Ý" onclick="display.
+			innerText= 'Hello '+ username.value"> </td>
+`		</tr>
+		<tr>
+			<td colspan="2" id="display"> </td>
+		</tr>
+	</table>
+</form>
+	
+</body>
+</html>

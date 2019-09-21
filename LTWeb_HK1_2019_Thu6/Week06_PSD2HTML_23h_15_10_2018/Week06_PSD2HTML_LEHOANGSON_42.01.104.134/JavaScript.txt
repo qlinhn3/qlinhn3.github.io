@@ -1,0 +1,141 @@
+﻿Code JS phải được đặt trong thẻ <script> và </script> trong HTML
+
+JS có thể đặt ở vị trí:
+   -Đặt trong tệp HTML trong phần head hoặc body
+   -Đặt bên ngoài tệp ,lưu dưới đuôi .js
+
+
+JavaScript sử dụng từ khóa var để khai báo cho tất cả dữ liệu.
+
+
+Tất cả các mã định danh JavaScript phân biệt chữ hoa chữ thường . 
+
+    VD Các biến lastName và lastname , là hai biến khác nhau.
+
+Trong JavaScript có 5 loại dữ liệu khác nhau có thể chứa các giá trị:
+	string
+	number
+	boolean
+	object
+	function
+Có 3 loại đối tượng:
+	Object
+	Date
+	Array
+Và 2 loại dữ liệu không thể chứa giá trị:
+	null
+	undefined
+
+
+Note :Nếu bạn khai báo lại biến JavaScript, nó sẽ không mất giá trị của nó.
+
+VD :Biến carName sẽ vẫn có giá trị "Volvo" sau khi thực thi các câu lệnh sau:
+	var carName = "Volvo";
+	var carName;
+
+
+Chuyển đổi loại tự động
+Khi JavaScript cố gắng hoạt động trên loại dữ liệu "sai", nó sẽ cố gắng chuyển đổi giá trị thành loại "đúng".
+
+Kết quả không phải luôn luôn là những gì bạn mong đợi:
+
+5 + null    // returns 5         because null is converted to 0
+"5" + null  // returns "5null"   because null is converted to "null"
+"5" + 2     // returns "52"      because 2 is converted to "2"
+"5" - 2     // returns 3         because "5" is converted to 5
+"5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
+
+JavaScript có các loại động. Điều này có nghĩa là cùng một biến có thể được sử dụng để giữ các loại dữ liệu khác nhau:
+VD:
+    var x;           // Now x is undefined
+    x = 5;           // Now x is a Number
+    x = "John";      // Now x is a String
+
+Cố gắng làm số học với một chuỗi không phải là số sẽ dẫn đến NaN (Not a number):
+
+	VD
+		var x = 100 / "Apple";  // x will be NaN (Not a Number)
+Ngoài ra, JS còn kiểu dữ liệu khai báo dạng đối tượng như String(), Date(), Number(),...
+
+Đối tượng JavaScript
+
+   -Các đối tượng JavaScript được viết với các dấu ngoặc nhọn.
+
+   -Các thuộc tính đối tượng được viết thành các cặp tên: giá trị, được phân tách bằng dấu phẩy.
+
+
+Truy cập thuộc tính đối tượng
+	Bạn có thể truy cập các thuộc tính đối tượng theo hai cách:
+
+		objectName.propertyName
+	hoặc là
+
+		objectName["propertyName"]
+
+Phương thức đối tượng
+	Các đối tượng cũng có thể có các phương thức .
+
+	Phương thức là các hành động có thể được thực hiện trên các đối tượng.
+
+	Các phương thức được lưu trữ trong các thuộc tính như các định nghĩa hàm 
+
+	VD 
+		var person = {
+    			firstName: "Le",
+    			lastName : "Son",
+    			fullName : function() {
+        	return this.firstName + " " + this.lastName;
+   			}
+		};
+
+
+
+
+Truy cập toàn bộ mảng
+	Với JavaScript, mảng đầy đủ có thể được truy cập bằng cách tham chiếu đến tên mảng:
+
+	VD
+		var cars = ["Saab", "Volvo", "BMW"];
+		document.getElementById("demo").innerHTML = cars;
+
+
+Bạn có thể sử dụng toán tử typeof JavaScript để tìm loại biến JavaScript.
+
+	typeof "John"                 // Returns "string" 
+	typeof 3.14                   // Returns "number"
+	typeof NaN                    // Returns "number"
+	typeof false                  // Returns "boolean"
+	typeof [1,2,3,4]              // Returns "object"
+	typeof {name:'John', age:34}  // Returns "object"
+	typeof new Date()             // Returns "object"
+	typeof function () {}         // Returns "function"
+	typeof myCar                  // Returns "undefined" *
+	typeof null                   // Returns "object"
+
+Trong JavaScript, một biến không có giá trị, có giá trị không xác định . Typeof cũng không được xác định
+
+Trong JavaScript null là "không có gì". Nó được cho là một cái gì đó không tồn tại.
+
+
+
+Sự khác biệt giữa Undefined và Null
+
+	Không xác định và null có giá trị bằng nhau nhưng khác nhau về loại:
+
+	typeof undefined           // undefined
+	typeof null                // object
+
+	null === undefined         // false
+	null == undefined          // true
+
+Toán tử : JS có toán tử === và có sự khác nhau giữa toán tử == và ===
+
+==: so sánh về giá trị
+===: so sánh về giá trị và kiểu dữ liệu
+
+
+JS còn có các hàm sự kiện như onClick(),....
+
+
+
+

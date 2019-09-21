@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai13</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Đăng ký du lịch</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="Hoten"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="Diachi"></td>
+			</tr>
+			<tr>
+				<td>Điện thoai</td>
+				<td><input type="number" name="Dienthoai"></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" checked ></td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td><select name="city">
+					<option value="HN-HL-SP">Hà Nội-Hạ Long-Sapa</option>
+					<option value="HN-CH-NB">Hà Nội-Chùa Hương-Ninh Bình</option>
+					<option value="HN-CB-TC">Hà Nội-Cát Bà-Tuần Châu</option>
+					<option value="H-BM-ĐN">Huế-Bạch Mã-Đà Nẵng</option>
+					<option value="NT-ĐL">Nha Trang-Đà Lạt</option>
+					<option value="BMT-GL-KT" selected>Buôn mê thuột-Gia lai-Kontum</option>
+					<option value="HCM-CT-CM">TP.HCM-Cần Thơ-Cà Mau</option>
+					<option value="HCM-MT">TP.HCM-Mỹ Tho</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td><input type="radio" name="vehicle" value="Maybay"  >Máy bay<input type="radio" name="vehicle" value="Oto" checked >Xe ô tô</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend style="text-align: left;">Số lượng khách hàng</legend>
+						Người lớn
+						<input type="number" name="Nguoilon">
+						Trẻ em
+						<input type="number" name="Treem">	
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td><select name="ghichu" size="2">
+					<option value="TreEm">Có 2 trẻ em dưới 6 tuổi</option>
+					<option value="AnChay">Có 2 người ăn chay</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="Dongy" value="Đồng ý" onclick="display.innerText='Bạn đã đăng ký thành công!!!' "> </td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

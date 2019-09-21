@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style table.css">
+	<script language="javascript">
+		function tinh_tien_thuong(tienluong,xeploai){
+			var heso;
+			switch(xeploai){
+				case 'Loại A':
+					heso=2;
+					break;
+				case 'Loại B':
+					heso=1.8;
+					break;
+				case 'Loại C':
+					heso=1.2;
+					break;
+				case 'Loại D':
+					heso=0.8;
+					break;
+			}
+			document.getElementById("hienthi").innerHTML ="Tiền thưởng là:"+tienluong*heso +" "+"đồng";
+		}
+	</script>
+</head>
+<body>
+	<h1 class="center">Tính tiền thưởng cuối năm </h1>
+	<table>
+		<tr>
+			<td width="50%">Tiền lương: </td>
+			<td><input type="text" name="luong" id="luong"></td>
+		</tr>
+		<tr>
+			<td width="50%">Xếp loại:</td>
+			<td>
+				<select id="loai">
+					<option>Loại A</option>
+					<option>Loại B</option>
+					<option>Loại C</option>
+					<option>Loại D</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="center"><button type="button" name="tinh" id="tinh" onclick="tinh_tien_thuong(luong.value,loai.value)">Tính</button></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="center"><span id="hienthi"></span></td>
+		</tr>
+	</table>
+</body>
+</html>

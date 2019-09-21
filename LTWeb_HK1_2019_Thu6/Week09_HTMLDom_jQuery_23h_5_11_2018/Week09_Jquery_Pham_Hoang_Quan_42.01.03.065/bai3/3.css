@@ -1,0 +1,36 @@
+*{
+	margin: auto;
+	padding: 0;
+}
+body{
+	margin: auto;
+	background-color:;
+	font-family: segoe ui light;
+}
+.container{
+	text-align: center;
+}
+.hieuung{
+	width: 40%;
+	margin: auto;
+	margin-top: 50px;
+}
+.motkhoi h3{
+	background-color: #66ffff;
+	color: black;
+	padding: 10px 12px;
+
+}
+.motkhoi h3:hover{
+	background: url(arrow-down-01-512.png) no-repeat 96% #f1c40f;
+}
+.ndmotkhoi{
+	padding:10px;
+	border: 1px solid gray;
+	background-color: white;
+	color: #666666;
+
+}
+.motkhoi h3.xanh:hover{
+background: url(arrow-up-01-512.png) no-repeat 96% lightblue;
+}

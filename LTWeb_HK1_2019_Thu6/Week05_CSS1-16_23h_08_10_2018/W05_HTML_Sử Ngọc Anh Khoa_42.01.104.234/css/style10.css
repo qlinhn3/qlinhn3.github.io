@@ -1,0 +1,20 @@
+table{
+	border:1px solid red;
+	border-collapse: collapse;
+	border-color: red;
+}
+table tr td.aa{
+	color: white;
+	 background-color: red;
+	  text-align: right;
+}
+table tr td.ab{
+	color: red;
+	 background-color: orange;
+	  text-align: center;
+	  font-size: 30px;
+}
+table tr td b.ac{
+	color: red;
+	 list-style-type: square;
+}

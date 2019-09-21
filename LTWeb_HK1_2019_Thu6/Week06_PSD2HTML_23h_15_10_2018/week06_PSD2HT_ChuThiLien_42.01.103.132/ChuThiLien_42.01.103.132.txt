@@ -1,0 +1,17 @@
+deffrence between C++ and Javacript
+
+
+
+-C++ is compiled programming language. JavaScript is interpreted scripting language.
+Most common known C++ databases are postgreSQL and MYSQL. Most common known JavaScript database are Cassandra and LevelDB.
+-C++ is not highly reliable. JavaScript is very reliable.
+-C++ does not support Java virtual machine implementation. JavaScript supports Java virtual machine implementation.
+-C++ supports type inference. JavaScript does not support type inference.
+-C++ includes static variables. JavaScript does not support static variable.
+-C++ support procedural and generic programming. JavaScript does not support procedural and generic programming,
+ it supports reflective programming.
+-C++ does not support algebraic data types. JavaScript support algebraic data types.
+-C++ uses 'delete' pointer for destruction of memory. JavaScript makes use if garbage collection in order to discharge unused memory.
+-C++ includes a constructor, destructor and finalizer. JavaScript includes constructor. JavaScript has no destructor and finalizer.
+-C++ includes integer data types, character types, complex numbers, union types, and fixed sized types. 
+JavaScript does not include integer data types, character types, complex numbers, union types, and fixed sized types

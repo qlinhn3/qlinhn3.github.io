@@ -1,0 +1,76 @@
+table{
+	border : 1px solid blue;
+    border-collapse: collapse;
+}
+
+div.gallery{
+	float: left;
+}
+
+h4{
+	background-color: blue;
+	color: white;
+}
+
+.td{
+	background-color: blue;
+	float: left;
+}
+
+.tdText{
+	margin: auto;
+	color: white;
+	font-weight: bold;
+}
+
+.td2{
+	color: #00a3cc;
+	font-weight: bold;
+	margin: auto;
+	height: 15%;
+	text-decoration: none;	
+}
+
+table tr td div{
+	text-align: left;
+	float: left;
+}
+
+table tr td div>img{
+	z-index:-1;
+	position:absolute;
+}
+
+table tr td div #sp01{
+	font-size: 54px; 
+	color:blue; 
+	font-weight: bold;
+}
+
+table tr td div #sp02{
+	font-size: 48px; 
+	color:blue; 
+	font-weight: bold;
+}
+
+table tr td div #sp03{
+	font-size: 36px; 
+	color:blue; 
+	font-weight: bold;
+}
+
+.imgLeft{
+	float: left;
+}
+
+.imgRight{
+	float: right;
+}
+
+.Content{
+	margin: auto;
+}
+
+.linkRight{
+	background-color: gray;float: right;
+}

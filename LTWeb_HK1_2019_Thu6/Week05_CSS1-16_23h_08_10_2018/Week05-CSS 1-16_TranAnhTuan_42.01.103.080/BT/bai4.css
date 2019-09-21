@@ -1,0 +1,24 @@
+title{
+  font-weight: bold;
+}
+body{
+  background-image: url(Bai04.jpg);
+  width: 500px;
+  height: 600px;
+}
+h1{
+  color:#008888;
+  text-align: center;
+}
+
+.td{
+  background-color:#339999;
+  font-style: italic;
+  color: #FFFFFF;
+}
+.p1{
+  color: #339999;
+}
+.p2{
+  color: #339999;
+}

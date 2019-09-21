@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Cấu trúc switch</title>
+	<link rel="stylesheet" type="text/css" href="../css/bai5.css">
+</head>
+<body>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Tiền lương</td>
+				<td><input type="text" id="tienluong"></td>
+			</tr>
+			<tr>
+				<td>Xếp loại</td>
+				<td><select id="xeploai">
+   					<option value="1">Loại A</option>
+   					<option value="2">Loại B</option>
+   					<option value="3">Loai C</option>
+   					<option value="4">Loại D</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" name="tinh" value="Tính" onclick="TinhTien(tienluong.value,xeploai.value)"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><label id="sotien" style="color: red"></label></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
+
+<script type="text/javascript" src="../js/bai5.js">
+</script>

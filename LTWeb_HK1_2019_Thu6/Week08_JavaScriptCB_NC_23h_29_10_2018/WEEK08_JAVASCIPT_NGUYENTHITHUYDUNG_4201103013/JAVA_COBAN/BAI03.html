@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script language="javascript">
+		function ketqua(diem){
+			if (diem == null || diem == "")
+        		document.getElementById("kq").innerHTML ="Please enter the score!";
+        	else{
+				if(diem>=5)
+					document.getElementById("kq").innerHTML ="Được lên lớp";
+				else document.getElementById("kq").innerHTML ="Ở lại lớp";
+			}
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<form>
+	<h2 style="color: #23CC4B; text-align: center;">KẾT QUẢ CUỐI NĂM HỌC</h2>
+	<table align="center">
+		<tr>
+			<td>Điểm trung bình: </td>
+			<td><input type="text" name="dtb" id="dtb"></td>
+		</tr>
+		<tr>
+			<td>Kết quả:</td>
+			<td><textarea type="text" name="kq" id="kq"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center"><button type="button" name="xuat" id="xuat" onclick="ketqua(dtb.value)">Xuất kết quả</button></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

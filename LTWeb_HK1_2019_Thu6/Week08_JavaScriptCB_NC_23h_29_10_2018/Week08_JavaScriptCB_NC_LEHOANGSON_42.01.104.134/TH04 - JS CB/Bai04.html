@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: green; text-align: center;">Xếp loại cuối năm học</h2>
+		<table>
+			<tr>
+				<td>Điểm trung bình HKI</td>
+				<td><input type="text" id="txtPointI" required=""></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình HKII</td>
+				<td><input type="text" id="txtPointII" required=""></td>
+			</tr>
+			<tr>
+				<td>Điểm trung bình cuối năm</td>
+				<td><input type="text" id="txtPointLast" disabled=""></td>
+			</tr>
+			<tr>
+				<td> Xếp loại</td>
+				<td style="color: #ff0000;"><label id="txtResult"></label></td>
+			</tr>
+			<tr>
+				<td colspan ="2" ><input type="button" value="Xuất kết quả" onclick="tinhKetQua()" ></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>	
+<script type="text/javascript">
+	function tinhKetQua(){
+		var x=parseFloat(txtPointI.value);
+		var y=parseFloat(txtPointII.value);
+		if(x<0 || x>10 || y<0 || y>10)  return alert('Dữ liệu nhập sai !');
+		var kq=(x+y*2)/3;
+		if(kq>=9 && kq<=10) {
+			txtPointLast.value=kq.toString();
+			txtResult.innerHTML='Giỏi';
+		}
+		else if(kq>=7 && kq<9) {
+			txtPointLast.value=kq.toString();
+			txtResult.innerHTML='Khá';
+		}
+		else if(kq>=5 && kq<7) {
+			txtPointLast.value=kq.toString();
+			txtResult.innerHTML='Trung bình';
+		}
+		else if(kq<5) {
+			txtPointLast.value=kq.toString();
+			txtResult.innerHTML='Yếu';
+		}
+	}
+</script>

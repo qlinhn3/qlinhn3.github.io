@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai06_CB</title>
+</head>
+
+<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			margin: auto;
+			text-align: center;
+			background-color: #CC7A00;
+			color: #FFFFB3;
+		}
+</style>
+
+<body>
+	<h1 style="text-align: center; color: brown">In bảng cửu chương</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td>Nhập cửu chương: </td>
+    			<td>
+    				<input type="text" size="10" id="Nhapso">
+    				<input type="button" value="In" onclick="In_bang_cc(Nhapso.value)">
+    			</td>
+  			</tr>
+
+ 			<tr>
+    			<td colspan="2"><div id="CuuChuong"></div></td>
+  			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+					function La_so(so) {
+
+						if (isNaN(parseInt(so)))
+							return false;
+						else 
+							return true;
+					}
+
+					function In_bang_cc(so) {
+						if (La_so(so)) {
+							var str = "";
+
+							for (i=1; i<=10; i++) 
+    							str += so + " x " + i + " = " + so*i + "</br>";
+
+							document.getElementById("CuuChuong").innerHTML = str;
+						}
+
+						else
+							document.getElementById("CuuChuong").innerHTML = "Số nhập không hợp lệ!";
+					}
+				</script>
+
+</html>

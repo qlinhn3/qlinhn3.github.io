@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai01_CB</title>
+</head>
+
+<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+			margin: auto;
+			background-color: #CC7A00;
+			color: #FFFFB3;
+		}
+</style>
+
+<body>
+	<form>
+		<table>
+ 			<tr>
+    		<td>Nhập tên bạn: <input type="text" id="hoten"></td>
+  			</tr>
+
+  			<tr>
+    		<td>
+				<button onclick="xinchao()">Xuất câu chào</button>
+    		</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+				var x = document.getElementById("hoten");
+					function xinchao() {
+ 						alert ("Chào bạn " + x.value + "!");
+						}
+				</script>
+
+</html>

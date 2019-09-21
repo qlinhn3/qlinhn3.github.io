@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp do ... while</title>
+</head>
+
+<style>
+	<style>
+		table{
+		border-collapse: collapse;
+		background-color:#ffffb3;
+	}
+	table,td{
+		border: 1px solid #cc7a00;
+		padding: 5px;
+		margin: auto;
+		border-color: #cc7a00;
+		color: red;
+	}
+</style>
+
+<body>
+	<h1 style="text-align: center; color: brown">In bảng cửu chương</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td width="500" style="text-align: center">
+    				<input type="button" value="In bảng cửu chương" onclick="Xuat_bang_cc()">
+    			</td>
+  			</tr>
+
+			<tr>
+				<td id="hienthi"></td>
+			</tr>
+
+ 			<tr>
+    			<td colspan="2" style=" text-align: center"><label id="KQua"></label></td>
+  			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+
+					function Tao_bang_cc(so) {
+							var str = "";
+							for (var i=1; i<=10; i++) 
+    							str += so + " * " + i + " = " + so*i + "<br>";
+							return str;
+					}
+
+					function La_so(so) {
+						if (isNaN(parseInt(so)))
+							return true;
+						else 
+							return false;
+					}
+
+					function Xuat_bang_cc() {
+						var nhap;
+						var txt;
+						do {
+							nhap = prompt("Xin mời nhập số:");
+							txt = nhap;
+						} 
+						while
+							(La_so(txt) == true);
+						document.getElementById("KQua").innerHTML = Tao_bang_cc(txt);
+						document.getElementById("hienthi").innerHTML = "Bảng cửu chương " + txt;
+					}
+
+				</script>
+
+</html>

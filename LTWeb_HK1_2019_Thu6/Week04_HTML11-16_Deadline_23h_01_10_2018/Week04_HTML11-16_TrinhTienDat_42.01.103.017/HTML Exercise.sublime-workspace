@@ -1,0 +1,372 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"tim",
+				"timSum"
+			],
+			[
+				"Tim",
+				"timMin"
+			],
+			[
+				"qu",
+				"quote"
+			],
+			[
+				"quot",
+				"quote"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"ele",
+				"eleToDoList"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"todo",
+				"todos"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"gi",
+				"giatri"
+			],
+			[
+				"vi",
+				"vitrithem"
+			],
+			[
+				"mang",
+				"mangkq"
+			],
+			[
+				"c",
+				"colspan\tAttr"
+			],
+			[
+				"gia",
+				"giaTri"
+			],
+			[
+				"man",
+				"mangkq"
+			],
+			[
+				"a",
+				"align\tAttr"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"clo",
+				"color"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"onl",
+				"onclick\tAttr"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"onC",
+				"onclick\tAttr"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Bai07.html",
+			"settings":
+			{
+				"buffer_size": 836,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/MAY/Desktop/W03_HTML_TrinhTienDat_4201103017"
+	],
+	"file_history":
+	[
+		"/C/Users/MAY/Desktop/W03_HTML_TrinhTienDat_4201103017/HTML Exercise.sublime-project",
+		"/C/xampp/htdocs/PHP/Bai 5.php",
+		"/C/xampp/htdocs/HH/Bai05.php",
+		"/C/Users/MAY/Desktop/PHP (Co Ban)/Bai 5.php",
+		"/C/xampp/New folder/Hello.php",
+		"/C/Users/MAY/Desktop/JavaScript_DOM_Exercises/ToDoList/index.html",
+		"/C/Users/MAY/Desktop/JavaScript_DOM_Exercises/ToDoList/app.js",
+		"/C/Users/MAY/Desktop/test.html",
+		"/C/Users/MAY/Desktop/test2.html",
+		"/C/Users/MAY/Desktop/thong.html",
+		"/C/Users/MAY/Desktop/thong.css",
+		"/C/Users/MAY/Desktop/style.html",
+		"/C/Users/MAY/Desktop/style12.css",
+		"/C/Users/MAY/Documents/lab2/lamStyle2.css",
+		"/C/Users/MAY/Documents/lab2/btbai12.html",
+		"/C/Users/MAY/Documents/lab2/btbai11.html",
+		"/C/Users/MAY/Desktop/Lab1_Bai12.html",
+		"/C/Users/MAY/Documents/lamStyle.css",
+		"/C/Users/MAY/Documents/btbai11.html",
+		"/C/Users/MAY/Desktop/Lab1_Bai11/lab1.html",
+		"/C/Users/MAY/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/MAY/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/MAY/Desktop/style.css",
+		"/C/Users/MAY/Desktop/lab1.html",
+		"/C/Users/MAY/Desktop/asdasdasd.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Bai07.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HTML Exercise.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

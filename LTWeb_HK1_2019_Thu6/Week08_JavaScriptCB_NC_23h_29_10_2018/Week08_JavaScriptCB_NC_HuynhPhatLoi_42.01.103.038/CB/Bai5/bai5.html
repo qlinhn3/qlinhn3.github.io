@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Cấu trúc switch </title>
+	<style>
+		table,td{
+			border : 1px solid #48B506;
+			border-collapse: collapse;
+			background-color: #8EFCBA;
+			width: 300px;
+			height: 10px;
+		}
+		h1{
+			text-align: center;
+			color: #0B7B1D
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function tinh_tien_thuong(tienluong,xeploai){
+			var heso;
+			switch (xeploai){
+				case 'A' : heso = 2;
+				break;
+				case 'B' : heso = 1.8;
+				break;
+				case 'C' : heso = 1.2;
+				break;
+				case 'D' : heso = 0.8;
+				break;
+			}
+			return 'Tiền thưởng là: '+ tienluong*heso     + ' đồng'
+
+		}
+	</script>
+	<h1>Tính tiền thưởng cuối năm</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td>
+					Tiền lương
+				</td>
+				<td>
+					<input type="text" name='luong' id="luong">
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Xếp loại
+				</td>
+				<td>
+					<select id="xl">
+						<option value="A">Loại A</option>
+						<option value="B">Loại B</option>
+						<option value="C">Loại C</option>
+						<option value="D">Loại D</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" name="tinh" value="Tính" id="tinh" onclick="tienthuong.innerText=tinh_tien_thuong(luong.value,xl.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label id='tienthuong' style="font-weight: bold;color: red"></label>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

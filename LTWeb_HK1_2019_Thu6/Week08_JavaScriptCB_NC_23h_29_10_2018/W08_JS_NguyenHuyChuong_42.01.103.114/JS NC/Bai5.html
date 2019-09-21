@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.04 - Các thao tác trên mảng</title>
+<script language="javascript">
+</script>
+</head>
+
+<body>
+<h3 align="center" style="color:#C09">Các thao tác trên mảng</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#039; width: 100%;" bordercolor="#039" cellpadding="3">
+<tr><td width = 20%><input onclick="create_arr()"" type = "button" id ="btn_create" value = "Tạo mảng" ></td><td><label id = "mangbd" ></label></td></tr>
+<tr><td colspan = "2"><label id = "mangkq" style="color:#F90"> Giá trị mảng sau khi xử lý</label></td></tr>
+<tr><td colspan = "2" align="center">
+    <input id="sxtang" type = "radio" name = "kieusx" value ="tang" checked = "checked" onclick="sapxep(true)"> Sắp xếp tăng 
+    <input id="sxtang" type = "radio" name = "kieusx" value ="giam" onclick="sapxep(false)"> Sắp xếp giảm </td></tr>
+<tr><td colspan="2"> Thêm vào vị trí: <input type = "text" id = "vitrithem" size = "10" > Giá trị:<input type = "text" id = "giatri" size = "10"> &nbsp;<input type = "button" id = "them" value = "Thêm" onclick="themvitri()" ></td></tr>
+
+</table>
+</form>
+<script>
+    function create_arr(){
+        var arr = Array();
+        var lenght = Math.floor(Math.random() * 10) + 10;
+        for (i = 0; i < lenght; i++) { 
+            var value = Math.floor(Math.random() * 100) + 1;
+            arr.push(value);
+        }
+        document.getElementById('mangbd').innerHTML = arr;
+        //return arr;
+    }
+    function sapxep(tang){
+        var mystr = document.getElementById('mangbd').textContent;
+
+        //Splitting it with : as the separator
+        var myarr = mystr.split(",");
+
+        //Then read the values from the array where 0 is the first
+        var myvar = myarr[0] + "," + myarr[1];
+        if(tang){
+            myarr.sort(function(a, b){return a-b});
+        }else{
+            myarr.sort(function(a, b){return b-a});
+        }
+        document.getElementById('mangkq').innerHTML = myarr;
+    }
+    function themvitri(){
+        var vitri = document.getElementById('vitrithem').value;
+        var giatri = document.getElementById('giatri').value;
+        var mystr = document.getElementById('mangbd').textContent;
+        var myarr = mystr.split(",");
+        var myvar = myarr[0] + "," + myarr[1];
+     
+        var mystr1 = document.getElementById('mangkq').textContent;
+        var myarr1 = mystr.split(",");
+        var myvar1 = myarr[0] + "," + myarr[1];
+    
+        if (myarr < myarr.length) {
+            alert('tao mang di');
+            return;
+        }
+        if(vitri ==''){
+            alert('nhap vao vi tri');
+        }else if(giatri =='')
+        if(giatri ==''){
+            alert('nhap vao gia tri');
+        }
+        if(myarr1 < myarr1.length) {
+            myarr.splice((vitri -1), 0, giatri);
+            document.getElementById('mangkq').innerHTML = myarr;
+            return;
+        }else{
+            myarr1.splice((vitri -1), 0, giatri);
+            document.getElementById('mangkq').innerHTML = myarr1;
+            return;
+        }
+
+	
+    }
+</script>
+</body>
+</html>

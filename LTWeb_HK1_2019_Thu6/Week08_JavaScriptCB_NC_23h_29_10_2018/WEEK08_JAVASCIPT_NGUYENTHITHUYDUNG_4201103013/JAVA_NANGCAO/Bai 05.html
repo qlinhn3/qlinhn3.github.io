@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 05 - Tính cạnh huyền</title>
+<script language="javascript">
+  function la_so(canh){
+    if(isNaN(parseInt(canh)))
+      return true;
+    return false;
+  }
+  function tinh_canh_huyen(canh_a,canh_b){
+    if(la_so(canh_a)==false && la_so(canh_b)==false){
+      var canh_c=Math.sqrt(Math.pow(canh_a,2)+Math.pow(canh_b,2));
+      return canh_c;
+    }
+    else return 0;
+  }
+</script>
+</head>
+
+<body>
+<h1 align="center" style="color:#009">Tính cạnh huyền</h1>
+<form>
+<table align = "center" border = "1" cellspacing="0" style=" border-collapse:collapse; color:#009 " bordercolor="#009" cellpadding="3">
+<tr><td>Cạnh A: <input type = "text" id = "A" size = "10">  </td><td>Cạnh B: <input type = "text" id = "B" size = "10">  </td></tr>
+<tr><td>Cạnh huyền</td><td align="left" style="background-color:#ccffff"><label id = "xuat" style="text-align: left"></label></td></tr>
+<tr><td align="center" colspan="2"> <button type = "button" onclick="xuat.innerHTML=tinh_canh_huyen(A.value,B.value)">Tính</td></tr>
+</table>
+</form>
+</body>
+</html>

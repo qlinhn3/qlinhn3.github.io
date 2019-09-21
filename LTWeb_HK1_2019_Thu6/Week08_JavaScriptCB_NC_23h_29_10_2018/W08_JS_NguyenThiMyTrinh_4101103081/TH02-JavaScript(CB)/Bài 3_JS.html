@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Cấu trúc if ... else</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#button').click(function(){
+        var txt;
+        if(parseFloat($('input').val()) < 5)
+          txt = "Ở lại lớp"
+        else txt = "Đuợc lên lớp"
+        console.log($('input').val())
+        $('#output').val(txt)
+      })
+    })
+    </script>
+    <style media="screen">
+      table,tr,td {
+        background-color: lightgreen;
+        margin: auto;
+        border:2px solid black;
+        border-collapse: collapse;
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:green; text-align:center">Kết quả cuối năm</h1>
+    <table>
+      <tr>
+        <td>Điểm trung bình :</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Kết quả :</td>
+        <td>
+          <input type="text" id="output" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2><button type="button" id="button">Đồng ý</button></td>
+      </tr>
+    </table>
+  </body>
+</html>

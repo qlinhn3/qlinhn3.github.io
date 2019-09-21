@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ... else if ... else</title>
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ... else</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #009933;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #009900;
+			background-color: #00ff00;
+			color: #009933;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Xếp loại cuối năm học</h3>
+	<form>
+	<table>
+		<tr>
+			<td>Điểm trung bình HKI:</td>
+			<td><input type="text" id="diemhk1"></td>
+		</tr>
+		<tr>
+			<td>Điểm trung bình HKII:</td>
+			<td><input type="text" id="diemhk2"></td>
+		</tr>
+		<tr>
+			<td>Điểm trung bình cuối năm:</td>
+			<td><input type="text" id="diemcn"></td>
+		</tr>
+		<tr>
+			<td>Xếp loại:</td>
+			<td style="color: red; font-weight: bold"><label id="xeploai"></label></td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><button type="button" onclick="xuat_xep_loai(diemhk1,diemhk2) ; ">Xuất xếp loại</button></center></td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function xuat_xep_loai(diemhk1,diemhk2){
+		var diemtb = (parseInt(diemhk1.value) + parseInt(diemhk2.value) * 2) / 3;
+		if (diemtb >= 9 && diemtb <= 10) {
+			document.getElementById("xeploai").innerText = "Giỏi" ;
+		} 
+		else {
+			if (diemtb >= 7){
+			document.getElementById("xeploai").innerText = "Khá";
+			}
+			else {
+				if (diemtb >= 5){
+			document.getElementById("xeploai").innerText = "Trung bình";
+				}
+				else {
+				document.getElementById("xeploai").innerText = "Yếu";
+				}
+			} 
+		}
+		diemcn.value = diemtb;
+	}
+</script>
+</body>
+</html>

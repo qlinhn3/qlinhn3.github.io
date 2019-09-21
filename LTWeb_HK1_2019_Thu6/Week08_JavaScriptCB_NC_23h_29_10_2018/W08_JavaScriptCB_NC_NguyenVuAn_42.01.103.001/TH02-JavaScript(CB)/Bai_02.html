@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai02_CB</title>
+</head>
+
+<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+			margin: auto;
+			background-color: #CC7A00;
+			color: #FFFFB3;
+		}
+</style>
+
+<body onload="Nhaphoten()">
+	<form>
+		<table>
+ 			<tr>
+    			<td id="person1"></td>
+  			</tr>
+			
+			<tr>
+				<td>Nhập tên mới: <input type="text" id="new"></td>
+			</tr>
+
+  			<tr>
+    			<td>
+    				<input type="button" value="Thay đổi câu chào" onclick="TextChange()">
+    				<label id="old"></label>
+    			</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+					function Nhaphoten() {
+						var person1 = prompt ("Hãy nhập họ tên của bạn:");
+						document.getElementById("person1").innerText = "Chào bạn " + person1;
+					}
+
+					function TextChange() {
+						var tenCu = document.getElementById("old");
+						var person2 = document.getElementById("new").value;
+						document.getElementById("person1").innerText = "Chào bạn " + person2; 
+					}
+				</script>
+
+</html>

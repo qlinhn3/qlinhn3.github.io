@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+			<h2 rowspan="2">Tính tiền thưởng cuối năm</h2>
+		<tr>
+			<td>Tiền lương:</td>
+			<td><input type="text" id="luong"></td>
+		</tr>
+		<tr>
+			<td>Xếp loại:</td>
+			<td>
+				<select id="dropbox">
+				  <option value="a">Loại A</option>
+				  <option value="b">Loại B</option>
+				  <option value="c">Loại C</option>
+				  <option value="d">Loại D</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2"><button onclick="myfunction()">Tính</button></td>
+		</tr>		
+		<tr id="ketqua">
+			
+		</tr>
+	</table>
+	<script>
+		var e = document.getElementById("dropbox");
+		var loai = e.options[e.selectedIndex].value;
+
+
+		var tienthuong = null;
+		var hesothuong = null;
+		var arrthuong = [2,1.8,1.2,0.8];
+
+		function myfunction(){
+
+		if(loai ==='a')
+			hesothuong = arrthuong[0];
+		if(loai ==='b')
+			hesothuong = arrthuong[1];
+				if(loai ==='c')
+			hesothuong = arrthuong[2];
+				if(loai ==='d')
+			hesothuong = arrthuong[3];
+
+		var luong = document.getElementById("luong").value;
+		tienthuong = luong*hesothuong;
+
+		document.getElementById("ketqua").innerHTML = `Tiền thưởng là: ${tienthuong}`;
+		}
+	</script>
+</body>
+</html>

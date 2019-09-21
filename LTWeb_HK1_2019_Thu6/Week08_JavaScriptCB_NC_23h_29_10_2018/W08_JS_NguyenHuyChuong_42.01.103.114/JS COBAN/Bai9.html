@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai9 Vòng lặp while</title>
+	<style type="text/css">
+			h2{
+			text-align: center;
+			color: #009900;
+		}
+		table, tr,td{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		color: #009900;
+
+		}
+			#kq{
+			color: red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Tìm số đầu tiên chia hết cho 5 và 7</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Nhập từ số <input type="text" id="tuso" size="4"> đến số <input type="text" id="denso" size="4"></td>
+				<td width="10%"><button type="button" onclick="xuatketqua()">In</button></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="kq"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function xuatketqua(){
+		var tuso=document.getElementById("tuso").value,
+			denso=document.getElementById("denso").value;
+			kq="", dem=0;
+		//for(var i=tuso;i<=denso;i++){
+			var i=tuso;
+			while(i<=denso){
+			if(i%5==0 && i%7==0){kq=i; dem+=1;}	
+			if(dem==1) document.getElementById('kq').innerHTML="Số đầu tiên nằm trong khoảng từ "+tuso+" đến "+denso+" chia hết cho 5 và 7 là: "+kq;
+			i++;
+			}
+		
+			
+
+	}
+</script>

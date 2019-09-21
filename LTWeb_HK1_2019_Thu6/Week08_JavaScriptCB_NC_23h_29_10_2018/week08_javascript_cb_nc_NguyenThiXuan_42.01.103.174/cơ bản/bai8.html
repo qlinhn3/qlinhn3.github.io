@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style table.css">
+	<script language="javascript">
+		function tao_bang_cc(so){
+			var i;
+			var kq="";
+			for(i=1;i<=10;i++){
+				kq +=so +" "+"*"+" "+ i+" "+"="+" "+so*i +"<br>";
+			}
+			return kq;
+		}
+		function la_so(so){
+			if(isNaN(parseInt(so)))
+				return true;
+			return false;
+		}
+		function xuat_bang_cc(){
+			var chuoi;
+			var txt;
+			do{
+				chuoi = prompt("Nhập vào một giá trị","");
+				txt = chuoi;
+			}while(la_so(txt)==true);
+			document.getElementById("hienthi").innerHTML = tao_bang_cc(txt);
+		}
+	</script>
+<body>
+	<h1 class="center"> In bảng cửu chương</h1>
+	<form>
+	<table>
+		<tr>
+			<td><button type="button" name="in" id="in" onclick="xuat_bang_cc()">In bảng cửu chương</button></td>
+		</tr>
+		<tr>
+			<td class="center"><label id="hienthi"></label></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

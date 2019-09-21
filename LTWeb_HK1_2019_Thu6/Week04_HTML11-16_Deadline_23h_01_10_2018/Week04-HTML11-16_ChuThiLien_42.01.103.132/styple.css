@@ -1,0 +1,18 @@
+
+	
+	h1{
+		text-align: center;
+		color: blue;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	table,td{
+		border: 1px solid black;
+		padding:15px;
+		margin:auto;
+		text-align: center;
+
+	}
+
+	

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Bài 12 | HTML</title>
+
+	<meta charset="utf8">
+	<meta name="keywords" content="bai,12,web">
+	<meta name="description" content="Bài 12 LẬp trình web cô Tiên">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="style12.css">
+</head>
+<body>
+	<script>
+		function Success()
+		{
+			document.getElementById('msg').innerHTML = "Đăng ký thành công";
+		}
+	</script>
+	<div class="container">
+		<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td>Họ và tên</td>
+					<td><input type="text" id="fullname"></td>
+				</tr>
+				<tr>
+					<td>Địa chỉ</td>
+					<td><input type="text" id="address"></td>
+				</tr>
+				<tr>
+					<td>Điện thoại</td>
+					<td><input type="text" id="mobile"></td>
+				</tr>
+				<tr>
+					<td>Phái</td>
+					<td>
+						<input type="radio" name="gender" value="male"> Nam
+						<input type="radio" name="gender" value="female"> Nữ
+					</td>
+				</tr>
+				<tr>
+					<td>Nghề nghiệp</td>
+					<td>
+						<select id="career">
+							<option value="teacher">Giáo viên</option>
+							<option value="doctor">Bác sĩ</option>
+							<option value="singer">Ca sĩ</option>
+							<option value="worker">Công nhân</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Chọn sản phẩm tham gia</td>
+					<td>
+						<select id="products" multiple="multiple">
+							<option value="shampo">Dầu gội đầu</option>
+							<option value="tooth-cream">Kem đánh răng</option>
+							<option value="bath-milk">Sữa tắm</option>
+							<option value="wash-bot">Bột giặt</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Số người dự đoán tham gia</td>
+					<td><input type="text" id="number"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" value="Đồng ý" onclick="Success()"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p id="msg"></p></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

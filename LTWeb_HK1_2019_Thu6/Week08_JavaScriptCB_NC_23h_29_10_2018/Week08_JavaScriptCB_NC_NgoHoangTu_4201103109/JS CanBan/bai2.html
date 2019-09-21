@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function nhaphoten() {
+	    var txt;
+	    var person=prompt("Script Prompt: Hãy nhập tên của bạn","");
+	    txt=person;
+    	document.getElementById("tencu").innerHTML = "Chào bạn"+" "+txt;
+	}
+</script>
+	<title>sử dụng hộp thọai</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="js.css">
+</head>
+<body onload="nhaphoten()">
+	<table>
+		<tr>
+			<td id="tencu" ></td>
+		</tr>
+		<tr>
+			<td>Nhập tên mới: <input type="text" name="hoten" id="hoten" ></td>
+		</tr>
+		<tr>
+			<td style="text-align: center"><button type="button" name="change" id="change" onclick="nhaphoten()">Thay đổi câu chào</td>
+		</tr>
+	</table>
+	<script>
+	function myNewFunction() {
+    	document.getElementById("demo").innerHTML = "Chào bạn"+" "+hoten.value;
+	}
+</script>
+</body>
+</html>

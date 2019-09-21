@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo bảng, trộn dòng và cột</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: Tahoma;
+			font-size: 12px;
+			
+		}
+		#A{
+			text-align: center;
+			color: #CC0033;
+		}
+		#t{
+			
+			position: absolute;
+		}
+		.c{
+			color: white;
+			background-color: #CC0033;
+			text-align: center;
+		}
+		.d{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function l(){
+			var a = document.getElementById("t");
+			a.style.top = ((parseInt(window.innerHeight) / 2) -(a.offsetHeight/2)) + "px";
+			a.style.left = ((parseInt(window.innerWidth) / 2)- (a.offsetWidth/2)) + "px";
+			//windown nên ghi đúng (không ghi "Windown" hay "Windowns")
+		}
+	</script>
+</head>
+<body onload="l();" onresize="l();">
+
+	<h1 id="A">Chương trình học - ngành lập trình</h1>
+	<table id="t"  border="1px solid red" cellpadding="10px" style="border-collapse: collapse; " >
+		<tr class="c">
+			<td rowspan="2">Nhóm học phần</td>
+			<td rowspan="2">Môn học</td>
+			<td colspan="2">Số tiết</td>
+		</tr>
+		<tr class="c">
+			<td>Lý thuyết</td>
+			<td>Thực hành</td>
+		</tr>
+		<tr>
+			<td rowspan="6" style="color: red;text-align: center;">I<br> Tin học văn phòng</td>
+			<td>Hệ điều hành Windowns</td>
+			<td class="d">3</td>
+			<td class="d">5</td>
+		</tr>
+		<tr>
+			<td>Sử dụng Internet</td>
+			<td class="d">3</td>
+			<td class="d">5</td>
+		</tr>
+		<tr>
+			<td>Soạn thảo văn bản với MS Word</td>
+			<td class="d">24</td>
+			<td class="d">40</td>
+		</tr>
+		<tr>
+			<td>Tạo bài trình diễn với MS PowerPoint</td>
+			<td class="d">9</td>
+			<td class="d">15</td>
+		</tr>
+		<tr>
+			<td>Xử lý số liệu cới MS Excel</td>
+			<td class="d">24</td>
+			<td class="d">40</td>
+		</tr>
+		<tr>
+			<td>Tạo trang Web với MS FrontPage</td>
+			<td class="d">9</td>
+			<td class="d">15</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="color: red;text-align: center;">II<br> Kỹ thuật lập trình (VB.NET)</td>
+			<td>Nhập môn lập trình</td>
+			<td class="d">36</td>
+			<td class="d">60</td>
+		</tr>
+		<tr>
+			<td>Kỹ thuật lập trình</td>
+			<td class="d">36</td>
+			<td class="d">60</td>
+		</tr>
+		<tr>
+			<td colspan="4">.......</td>
+		</tr>
+	</table>
+</body>
+</html>

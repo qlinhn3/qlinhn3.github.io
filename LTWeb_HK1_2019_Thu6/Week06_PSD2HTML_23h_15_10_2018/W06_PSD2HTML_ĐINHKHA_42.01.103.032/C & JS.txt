@@ -1,0 +1,19 @@
+﻿- Đầu tiên về cơ chế: Java run bởi cơ chế biên dịch (compile), JavaScript (JS) run bởi cơ chế thông dịch (interpreted). Cụ thể là để run một chương trình Java, ta phải build các file java thành file class (byte code), khi method có thay đổi, ta cần build lại file. Đối với JS, viết rồi run thôi chứ không cần phải build.
+- Thiết kế: Java là OOP (ngôn ngữ hướng đối tượng), mọi thứ đều là đối tượng (object), để sử dụng một variable hoặc method của Java, trước hết phải tạo class, sau đó truy cập variable, method đó thông qua object được tạo từ class đó. Còn đối với JS, chủ yếu là support functional programming language (tạm dịch là ngôn ngữ lập trình chức năng – mà thấy nó chuối chuối thế nào ấy -.-) ta chỉ việc define variable, mehthod và gọi. Lưu ý là đến phiên bản Java 8, Java đã support functional programming, xem lại bài Lambda Expression tại đây.
+- Run và debug: Để execute Java ta cần Java compiler và ta phải cần IDE như Eclipse, Netbeans, Intelij… để debug Java code. Trong HTML, JS được execute bởi web browser, ta có thể debug JS trực tiếp trên browser bằng cách mở chế độ deverloper tool, xem log JS trên browser ở chế độ console của browser.
+- Variable: dữ liệu Java là static type, JS là dynamic type. Cụ thể là trong Java, để định nghĩa một variable, ta phải định nghĩa cụ thể kiểu dữ liệu cho variable đó:
+Ví dụ: int a = 5;
+           boolean a = true;
+Đối với JS thì ta có thể dùng kiểu var để định nghĩa chung cho tất cả các kiểu dữ liệu. Khi ta gán giá trị cho variable thì mặc định chương trình sẽ gán kiểu dữ liệu cho variable đó.
+Ví dụ: var a = 5; // sử dụng a như int
+           var a = true; //sử dụng a boolean…
+- Method
+Định nghĩa method trong Java: access modifier returntype methodname(params)
+Định nghĩa method trong JS: function methodname(params)
+- Object
+Tạo object trong Java ta cần class và contructor
+Tạo object trong JSta có thể tạo trực tiếp mà không cần định nghĩa cụ thể kiểu dữ liệu cho từng thuộc tính như sau:
+var person = {firstName:“Thach”, lastName:“Le”}
+Trong Java ta truy cập property của object thông qua phương thức get(), set()… Đối với JS thì mặc định các property là public và ta có thể truy cập trực tiếp bằng cú pháp person.firstName hoặc person[“firstName”].
+- Compare: trong Java ta sử dụng == để so sánh dữ liệu theo value, và phương thức equal() để so sánh dữ liệu theo reference. Trong JS, == dùng để so sánh dữ liệu theo value, === dùng để so sánh dữ liệu theo value và data type.
+

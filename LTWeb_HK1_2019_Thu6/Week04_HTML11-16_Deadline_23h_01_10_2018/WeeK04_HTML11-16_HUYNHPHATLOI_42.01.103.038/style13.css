@@ -1,0 +1,13 @@
+	table,td{
+			border:1px solid #00FFFF;
+			background-color:#F0E68C;
+			border-collapse:collapse;
+			padding:5px;
+			margin:auto;
+			text-align:left;
+			color:#1193DE
+		}
+		h1{
+			text-align:center;
+			color:#4169E1
+		}

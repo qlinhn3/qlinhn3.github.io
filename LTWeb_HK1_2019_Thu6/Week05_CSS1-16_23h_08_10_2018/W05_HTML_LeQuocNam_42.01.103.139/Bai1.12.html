@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	<style>
+			h1
+		{
+			text-align: center;
+			color: green;
+		}
+		table
+		{
+			border-collapse: collapse;
+		}
+		table, td
+		{
+			border: 1px solid black;
+			padding: 3px;
+			margin: auto;
+			color: green;
+			border-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>Phiếu đăng kí tham gia chương trình khuyến mãi</h1>
+	
+	<form><table>
+		<tr>
+			<td>Họ và tên</td>
+			<td><input type="text" name="fullname"></td>
+		</tr>
+		<tr>
+			<td>Địa chỉ</td>
+			<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+			<td>Điện thoại</td>
+			<td><input type="text" name="phone"></td>
+		</tr>
+		<tr>
+			<td>Phái</td>
+			<td><input type="radio" name="gender" value=" male" checked="Nam">Nam <input type="radio" name="gender" value="female" checked="Nữ">Nữ</td>
+		</tr>
+		<tr>
+			<td>Nghề nghiệp</td>
+			<td>
+				<select>
+					<option value="doctor">	Bác sĩ</option>
+					<option value="Kysu">Kỹ sư</option>
+					<option value="teacher">Giáo viên</option>
+					<option value="other">Khác</option>
+				</select>		
+			</td>
+		</tr>
+		<tr>
+			<td>Chọn sản phẩm tham gia</td>
+			<td>
+				<select multiple size="4">
+					<option value="KemDanhRang">Kem đánh răng</option>
+					<option value="BotGiat">Bột giặt</option>
+					<option value="DauGoiDau">Dầu gội đầu</option>
+					<option value="SuaTam">Sữa tắm</option>
+				</select>	
+			</td>
+		</tr>
+		<tr>
+			<td>Số người dự đoán tham gia</td>
+			<td>
+				<input type="text" name="DuDoan">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"; align="center"><input type="button" name="=Yes" value="Đồng ý" onclick="xinchao.innerText='Bạn đã đăng kí thành công!!!'"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center; color: pink" colspan="2" id="xinchao"></td>
+		</tr>
+	</table></form>
+</body>
+</html>

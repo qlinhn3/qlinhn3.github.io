@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ... else if ... else</title>
+<style>
+	table,td{
+			border : 1px solid #48B506;
+			border-collapse: collapse;
+			background-color: #8EFCBA;
+		}
+</style>
+</head>
+<body>
+<script>
+function Tinhdiemtb()
+{
+ var x1=document.getElementById('diem1');
+ var x2=document.getElementById('diem2');
+ var tb=document.getElementById('dtb');
+ tb=(parseFloat(x1.value)+parseFloat(x2.value)*2)/3;
+ var tbfix=tb.toFixed(2);
+ var xltb=document.getElementById('xeploai');
+ if(tbfix<=10 && tbfix >=9)
+ {
+  xltb.innerText='Giỏi';
+ }
+ else if(tbfix>=7 && tbfix < 9)
+ {
+  xltb.innerText='Khá';
+ }
+ else if(tbfix>=5 && tbfix <7)
+ {
+  xltb.innerText='Trung bình';
+ }
+ else xltb.innerText='Yếu';
+ return tbfix;
+}
+</script>
+<form>
+ <table align="center">
+   <tr >
+    <td >TB HK1</td>
+    <td >
+     <input type='text' value="" name='diem1' id='diem1'>
+    </td>
+   </tr>
+   <tr >
+    <td >TB HK2</td>
+    <td >
+     <input type='text' value="" name='diem2' id='diem2'>
+    </td>
+   </tr>
+   <tr >
+    <td >Điểm TB</td>
+    <td >
+     <input type='text' value="" name='dtb' id='dtb'>
+    </td>
+   </tr>
+   <tr >
+    <td >Xếp loại</td>
+    <td  ><label id='xeploai' style="font-weight: bold;color:red"></label>
+    </td>
+   </tr>
+   <tr>
+    <td colspan='2'align="center">
+     <input type="button" value='Xếp loại' name="btnXeploai" id='btnXeploai' onclick="dtb.value=Tinhdiemtb()">
+    </td>
+   </tr> 
+ </table>
+ </form>
+</body>
+</html>

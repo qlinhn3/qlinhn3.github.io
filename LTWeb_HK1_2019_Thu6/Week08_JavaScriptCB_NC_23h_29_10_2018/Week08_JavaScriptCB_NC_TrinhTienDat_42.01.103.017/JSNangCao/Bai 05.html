@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.06 - Tính cạnh huyền</title>
+<script language="javascript">
+
+</script>
+
+</head>
+
+<body>
+<h3 align="center" style="color:#009">Tính cạnh huyền</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style=" border-collapse:collapse; color:#009 " bordercolor="#009" cellpadding="3">
+<tr><td>Cạnh A: <input type = "text" id = "A" size = "10">  </td><td>Cạnh B: <input type = "text" id = "B" size = "10">  </td></tr>
+<tr><td>Cạnh huyền</td><td style="background-color: #ccffff"><label id = "xuat" style="color:white background-color:#0FF"></label></td></tr>
+<tr><td align="center" colspan="2"> <input type = "button" value = "Tính" onclick="xuat.innerHTML=tinh_canh_huyen(A,B)"></td></tr>
+
+</table>
+</form>
+<script language="javascript">
+	function la_so(so){
+		var a = parseInt(so.value);
+		return !(isNaN(a));
+	}
+	function tinh_canh_huyen(canh_a, canh_b){
+		if (la_so(canh_a) && la_so(canh_b)){
+			var canhhuyen = Math.sqrt(Math.pow(canh_a.value,2) + Math.pow(canh_b.value,2));
+			return canhhuyen;
+		}
+	}
+</script>
+</body>
+</html>

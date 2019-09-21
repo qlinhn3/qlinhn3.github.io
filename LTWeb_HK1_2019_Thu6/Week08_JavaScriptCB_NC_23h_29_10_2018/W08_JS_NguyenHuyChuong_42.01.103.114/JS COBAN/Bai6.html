@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai6 Vòng lặp for</title>
+	<style type="text/css">
+		h2{
+			text-align: center;
+			color: #009900;
+		}
+		
+	table, tr,td{
+			border: 1px solid #00ff00;
+    		border-collapse: collapse;
+    		background-color: #e6ffe6;
+    		width: 27%;
+    		color: #009900;
+
+		}
+			#kq{
+			color: red;
+			text-align: center;
+		}
+		</style>
+</head>
+<body>
+	<h2>In bảng cửu chương</h2>
+	<form>
+		<table align="center">
+			<tr>
+				<td>Nhập cửu chương</td>
+				<td><input type="text" id="so" size="6">
+					<button type="button" onclick="xuat()">In</button></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="kq"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function xuat(){
+		var giatri=document.getElementById('so').value;
+		if(isNaN(giatri)) document.getElementById('kq').innerHTML="Số nhập không hợp lệ!";
+		else{
+		var c=document.getElementById("so").value;
+		  b='';
+ 		for(var i=1;i<=10;i++){
+  			d=c*i;
+  			b=b+c+"*"+i+"="+d+"<br>";
+   			document.getElementById('kq').innerHTML=b;
+			}
+		}
+	}
+
+</script>

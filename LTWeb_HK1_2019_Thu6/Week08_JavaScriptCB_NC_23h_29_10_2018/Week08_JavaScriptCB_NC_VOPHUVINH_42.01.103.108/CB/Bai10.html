@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vòng lặp while</title>
+    <script src="vinhjs/jquery.js"></script>
+    <script>
+
+      function check(x){
+        for(i=0;i<x.length;i++)
+          if(x[i]<'0' || x[i]>'9') return false
+        return true
+      }
+      $(document).ready(function(){
+        $('button').click(()=>{
+          if(!$('#output').length) $('table')
+            .append('<tr><td colspan=2 id="output"></td></tr>')
+          try{
+
+            let x = parseFloat($('#a').val());
+            let y = parseFloat($('#b').val());
+            if(!check($('#a').val()) || !check($('#b').val())
+                || x > y
+              ) throw "number err"
+            $('#output').text("")
+              while(x%5 != 0 || x%7 !=0 ) x++;
+            if(x%5==0 && x%7==0)
+              $('#output').append(
+                "số đầu tiên nằm trong khoảng từ "+
+                  $('#a').val()+
+                " đến "+ $('#b').val() +
+                " chia hết cho 5 và 7 là : "+
+                x
+              )
+            else throw "No number is available"
+          } catch (err){
+            $('#output').append(err)
+          }
+
+        })
+      })
+    </script>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      table, tr, td {
+        margin : auto;
+        border: 2px solid black;
+        border-collapse : collapse;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tìm số đầu tiên chia hết cho 5 và 7</h1>
+    <table>
+      <tr>
+        <td>
+          <label>Nhập từ số</label>
+            <input type="text" id=a value=50>
+          <label for="">đến số</label>
+            <input type="text" id=b value=105>
+          <button type="button">In</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

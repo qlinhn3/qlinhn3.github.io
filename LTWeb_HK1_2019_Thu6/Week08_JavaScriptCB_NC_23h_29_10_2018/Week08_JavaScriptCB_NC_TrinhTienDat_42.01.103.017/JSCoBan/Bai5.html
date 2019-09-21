@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc switch</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #009933;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #009900;
+			background-color: #00ff00;
+			color: #009933;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tính tiền thưởng cuối năm</h1>
+	<form>
+	<table>
+		<tr>
+			<td>Tiền lương</td>
+			<td><input type="text" id="tienluong"></td>
+		</tr>
+		<tr>
+			<td>Xếp loại</td>
+			<td>
+				<select name="loai">
+					<option value="a">Loại A</option>
+					<option value="b">Loại B</option>
+					<option value="c">Loại C</option>
+					<option value="d">Loại D</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><button type="button" onclick="tinh_tien_thuong(loai)">Tính</button></center></td>
+		</tr>
+		<tr>
+			<td colspan="2"><label id="xuattien"></label></td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function tinh_tien_thuong(loai){
+		switch(loai){
+			case 'a':
+				document.getElementById("xuattien").innerText = 'Tiền thưởng là: ' + tienluong.value*2 + 'đồng';
+				break;
+			case 'b':
+				document.getElementById("xuattien").innerText = 'Tiền thưởng là: ' + tienluong.value*1.8 + 'đồng';
+				break;
+			case 'c':
+				document.getElementById("xuattien").innerText = 'Tiền thưởng là: ' + tienluong.value*1.2+ 'đồng';
+				break;
+			case 'd':
+				document.getElementById("xuattien").innerText = 'Tiền thưởng là: ' + tienluong.value*0.8 + 'đồng';
+				break;
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To do list</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1> Quản lý Todo</h1>
+		<section id="section-add">
+			<form>
+				<input type="text" name="toDo" id="newToDo">
+				<button class="bnt-submit" onClick="event.preventDefault(); onAddClick();"> Add </button>
+			</form>
+		</section>
+		<section id="section-list">
+			<ul id="toDo-list"></ul>
+		</section>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

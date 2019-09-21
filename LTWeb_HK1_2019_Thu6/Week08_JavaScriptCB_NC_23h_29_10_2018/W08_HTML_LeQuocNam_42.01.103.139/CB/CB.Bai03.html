@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script language="javascript">
+		function ketqua(diem) {
+			if (diem == null || diem == "")
+				document.getElementById("kq").innerHTML ="Plese enter the score!";
+			else{
+				if (diem>=5)
+					document.getElementById("kq").innerHTML="Được lên lớp";
+				else document.getElementById("kq").innerHTML="Ở lại lớp";
+			}
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if...else</title>
+	<link rel="stylesheet" type="text/css" href="js.css">
+</head>
+<body>
+	<h1 style="color: #008000; text-align: center"> Kết quả cuối năm học</h1>
+	<table>
+		<tbody>
+			<tr>
+				<td>Điểm trung bình: </td>
+				<td> 
+					<input type="text" name="dtb" id="dtb">
+				</td>
+			</tr>
+			<tr>
+				<td>Kết quả: </td>
+				<td>
+					<textarea name="kq" id="kq"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center">
+					<button type="button" name="xuat" id="xuat" onclick="ketqua(dtb.value)">Xuất kết quả</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

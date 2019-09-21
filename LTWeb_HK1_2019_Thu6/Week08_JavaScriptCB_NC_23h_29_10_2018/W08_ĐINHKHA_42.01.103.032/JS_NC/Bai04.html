@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.04 - Các thao tác trên mảng</title>
+
+<script language="javascript">
+	var mang=[];
+
+	function tao_mang() {
+		//xóa mảng cũ
+		if (mang.length > 0)
+			mang.length = 0;
+		var n = Math.floor(Math.random()*5) + 5;
+		for (i=0; i<n; i++)
+			mang.push(Math.floor(Math.random()*49) + 1);
+		return mang;
+	}
+
+	function sap_xep(tang) {
+		if (tang)
+			mang.sort(function(a,b) {return a-b});
+		else 
+			mang.sort(function(a,b) {return b-a;});
+		return mang;
+	}
+
+	function them(vt, gt){
+		if (!isNaN(viTri) && !isNaN(gt) && vt != '' && gt != '') {
+			mang.splice(vt, 0, gt);
+			return mang;
+		}
+		else
+			alert ("Hãy nhập số!");
+	}
+</script>
+</head>
+
+<body>
+<h3 align="center" style="color:#C09">Các thao tác trên mảng</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#039" bordercolor="#039" cellpadding="3">
+<tr><td width = 20%><input type = "button" value = "Tạo mảng"  onclick="mangbd.innerHTML=tao_mang();"></td><td><label id = "mangbd" ></label></td></tr>
+
+<tr><td colspan = "2"><label id = "mangkq" style="color:#F90"> Giá trị mảng sau khi xử lý</label></td></tr>
+
+<tr><td colspan = "2" align="center"> <input type = "radio" name = "kieusx" value ="tang" checked = "checked" onclick="mangkq.innerHTML=sap_xep(true);"> Sắp xếp tăng <input type = "radio" name = "kieusx" value ="giam" onclick="mangkq.innerHTML=sap_xep(false);"> Sắp xếp giảm </td></tr>
+
+<tr><td colspan="2"> Thêm vào vị trí: <input type = "text" id = "vitrithem" size = "10"> Giá trị:<input type = "text" id = "giatri" size = "10"> &nbsp;<input type = "button" id = "them" value = "Thêm" onclick="mangkq.innerHTML=them(vitrithem.value,giatri.value);"></td></tr>
+
+</table>
+</form>
+</body>
+</html>

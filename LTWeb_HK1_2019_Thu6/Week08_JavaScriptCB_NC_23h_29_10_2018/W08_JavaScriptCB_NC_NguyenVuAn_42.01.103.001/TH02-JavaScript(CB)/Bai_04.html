@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai04_CB</title>
+</head>
+
+<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			margin: auto;
+			text-align: center;
+			background-color: #CC7A00;
+			color: #FFFFB3;
+		}
+</style>
+
+<body>
+	<h1 style="text-align: center; color: brown">Xếp loại cuối năm học</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td>Điểm trung bình HKI: </td>
+    			<td><input type="text" size="10" id="HKI"></td>
+  			</tr>
+			
+ 			<tr>
+    			<td>Điểm trung bình HKII: </td>
+    			<td><input type="text" size="10" id="HKII"></td>
+  			</tr>
+
+ 			<tr>
+    			<td>Điểm trung bình cuối năm: </td>
+    			<td><input type="text" size="10" id="TBCN"></td>
+  			</tr>
+
+ 			<tr>
+    			<td>Xếp loại: </td>
+    			<td><input type="text" size="10" id="XLoai" style="color: red; font-weight: bold"></td>
+  			</tr>
+
+  			<tr>
+    			<td colspan="2">
+    				<input type="button" onclick="Xuat_ket_qua()" value="Xếp loại">
+    			</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+				<script>
+					function Xuat_ket_qua() {
+						var dtb1 = document.getElementById("HKI").value;
+						var dtb2 = document.getElementById("HKII").value;
+						var dtbn = [dtb1 - (-dtb2*2)] / 3;
+
+						var xl;
+
+						if (dtbn >= 9 && dtbn <= 10) {
+							xl = "Giỏi";
+						}
+
+						else if (dtbn >= 7 && dtbn < 9) {
+							xl = "Khá";
+						}
+
+						else if (dtbn >= 5 && dtbn < 7) {
+							xl = "Trung bình";
+						}
+
+						else {
+							xl = "Yếu";
+						}
+						document.getElementById("TBCN").value = dtbn;
+						document.getElementById("XLoai").value = xl;
+					}
+				</script>
+
+</html>

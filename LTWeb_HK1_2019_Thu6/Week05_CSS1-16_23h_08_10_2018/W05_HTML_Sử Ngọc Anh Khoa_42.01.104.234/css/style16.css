@@ -1,0 +1,36 @@
+table{
+
+}
+td.tinh{
+	color: white;
+	vertical-align: top;
+	text-align: left;
+	background-color: blue;
+	font-weight: bold;
+
+}
+p.ab{
+	color: blue;
+	font-weight: bold;
+}
+ul li.uu{
+	text-align: top;
+}
+table tr th img.hinh{
+	z-index: -1;
+	width: 100px;
+}
+table tr th img#hinh2{
+	
+}
+#dong1{
+	font-size: 50px;
+	position: absolute;
+	top: -2%;
+	left: 10%;
+	color: #3F10F0;
+}
+/*table tr td ul td a.aa{
+	color: white;
+	background-color: blue;
+}*/

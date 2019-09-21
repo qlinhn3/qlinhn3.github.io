@@ -1,0 +1,9 @@
+table,tr,td{
+			background-color: #ffe680;
+			border-collapse: collapse;
+			border: 1px solid #ff9900;
+			padding: 5px;
+			margin: auto;
+			text-align: center;
+			color: #ff5c33;
+		}

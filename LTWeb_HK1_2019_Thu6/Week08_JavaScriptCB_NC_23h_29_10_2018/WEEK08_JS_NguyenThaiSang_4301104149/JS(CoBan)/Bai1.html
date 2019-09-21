@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sử dụng hộp thọai</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('td').css('background-color',"lightgreen")
+          $('button').click(function(){
+            alert('Chào bạn ' + $('input').val())
+          })
+      })
+    </script>
+    <style media="screen">
+      table,tr,td {
+        margin: auto;
+        border:2px solid black;
+        border-collapse: collapse;
+        text-align: center
+      }
+      td:first-child {
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="Name">Nhập tên bạn</label>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+            <td><button type="button">Xuất câu chào</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

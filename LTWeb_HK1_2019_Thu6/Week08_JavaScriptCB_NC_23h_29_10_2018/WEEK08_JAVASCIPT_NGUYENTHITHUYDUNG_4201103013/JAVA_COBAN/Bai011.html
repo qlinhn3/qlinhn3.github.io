@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 1000px;
+			margin-top: 160px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: auto;
+
+		}
+		table{
+			border: 1;
+			text-align: center;
+			background-color: #8BE2A2;
+			padding: 0 auto;
+			width: 300px;
+			height: 80px;
+		}
+	</style>
+</head>
+<body>
+	<form >
+		<div>
+		<table align="center">
+			<tr>
+				<td>Nhập tên bạn:</td>
+				<td><input type="text" name="nameid"></td>
+			</tr>
+			<tr>
+				<td colspan = "2"> <input type = "button" name "XuatCauChao"  value = "Xuất câu chào" onclick = "alert('Chào bạn'+ document.getElementById('nameid').value)">
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+</body>
+</html>

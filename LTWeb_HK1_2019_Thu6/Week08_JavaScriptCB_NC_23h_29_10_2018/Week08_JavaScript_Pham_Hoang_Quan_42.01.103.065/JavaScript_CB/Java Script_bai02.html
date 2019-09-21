@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sử dụng hộp thoại</title>
+	<style>
+		table, th, td, tr{
+			border: 1px solid #33cc33;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #99ff33;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body onload="chao1()">
+	<form>
+	<table>
+		<tr>
+			<td style="color: #ff6666"><label id="Ten" ></label></td>
+		</tr>
+		<tr>
+			<td>Nhập tên bạn: <input type="text" id="hotenmoi"></td>
+		</tr>
+		<tr>
+			<td><center><button type="button" onclick="chao2(hotenmoi)">Thay đổi câu chào</button></center></td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function chao1(){
+		var person = prompt("Script Prompt: Hãy nhập tên của bạn" , "Phạm Thị Nhung");
+		document.getElementById("Ten").innerText = "Chào bạn " + person;
+	}
+	function chao2(name){
+		document.getElementById("Ten").innerText = "Chào bạn " + name.value;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+table,tr,td{
+	color: #006600;
+	border: 1px solid  #006600;
+	background-color: #ccffe6;
+	padding: 5px;
+}
+table{
+	border-collapse: collapse;
+}

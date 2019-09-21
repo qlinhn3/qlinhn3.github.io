@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: green; text-align: center;">Kết quả cuối năm học</h2>
+		<table>
+			<tr>
+				<td>Điểm trung bình</td>
+				<td><input type="text" id="txtPoint" required=""></td>
+			</tr>
+			<tr>
+				<td>Kết quả</td>
+				<td><input type="text" id="txtResult"></td>
+			</tr>
+			<tr>
+				<td colspan ="2"><input type="button" value="Xuất kết quả" onclick="txtResult.value=tinhDiem()" ></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>	
+<script type="text/javascript">
+	function tinhDiem(){
+		var p=parseFloat(txtPoint.value);
+		if(p<5) return "Ở lại lớp";
+		else return "Được lên lớp";
+	}
+</script>

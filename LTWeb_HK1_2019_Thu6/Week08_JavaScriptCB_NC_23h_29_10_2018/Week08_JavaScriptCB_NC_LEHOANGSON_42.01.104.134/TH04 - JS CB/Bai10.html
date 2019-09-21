@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 7</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: green; text-align: center;">Tìm số đầu tiên chia hết cho 5 và 7</h2>
+		<table>
+			<tr>
+				<td>
+				Nhập từ số
+				<input type="text" id="txtStart" required="">
+				đến số
+				<input type="text" id="txtEnd" required="">
+			</td>
+				<td>
+					<input type="button" value="In" onclick="txtResult.innerHTML=tinh()" >
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><label id="txtResult"></label></td>
+			</tr>
+			<tr>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function tinh(){
+		var kq='Số đầu tiên nằm trong khoảng từ '+txtStart.value + ' đến ' + txtEnd.value +' chia hết cho 5 và 7 là: ';
+		var i,s=parseInt(txtStart.value),e=parseInt(txtEnd.value);
+		var check=false;
+		if(isNaN(s) || s<0 || isNaN(e) || e<0) return 'Số nhập không hợp lệ !';
+		if(s>e) return 'Dữ liệu không chính xác !';
+		for(i=1;i<e-s;i++){
+			var x=s+i;
+			if(x%5==0 && x%7==0) {
+				check=true;
+				return kq+=x;
+			}
+		}
+		if(!check) return'Không có số nào phù hợp !';
+	}
+</script>

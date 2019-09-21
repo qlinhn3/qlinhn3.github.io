@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bai01_NC</title>
+<script language="javascript">
+</script>
+</head>
+
+<body>
+<h3 align="center" style="color:#CC6600">Phân tích chuỗi</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse" bordercolor="#CC6600" cellpadding="3">
+<tr><td>Nhập họ tên: </td><td><input type = "text" id = "HoTen" size = "30"> &nbsp; <input type = "button" id = "phantich" value = "Phân tích" onclick="tachTen(HoTen.value)"></td></tr>
+<tr><td>Họ:</td><td align="center"><label id = "Ho" style="color:blue"></label></td></tr>
+<tr><td>Lót:</td><td align="center"><label id = "Lot" style="color:blue"></label></td></tr>
+<tr><td>Tên:</td><td align="center"><label id = "Ten" style="color:blue"></label></td></tr>
+
+</table>
+</form>
+</body>
+</html>
+<script>
+	function tachTen(Name) {
+		if (Name==''){
+			alert("Please enter a number");
+		}
+		else{
+			arr=Name.split(" ");
+			document.getElementById('Ho').innerHTML=arr[0];
+			document.getElementById('Ten').innerHTML=arr[arr.length-1];
+			var i;
+			var lot="";
+			for (i=1;i<arr.length-1;++i){
+				lot=lot+arr[i]+" ";
+			}
+			document.getElementById('Lot').innerHTML=lot;
+		}
+	}
+</script>

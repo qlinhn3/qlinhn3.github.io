@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Sử dụng đối tượng DOM và các sự kiện</title>
+    <link rel="stylesheet" href="../css/BAI11.css">
+  </head>
+  <body>
+    <h1>Tính chi phí du lịch</h1>
+    <table>
+      <tr class="center">
+        <td><label>Chọn tour</label></td>
+        <td><label>Chọn dịch vụ</label></td>
+      </tr>
+      <tr>
+        <td class="top">
+          <select name="tour">
+            <option>Các tour</option>
+            <option value="4">Nha Trang (4 ngày 3 đêm)</option>
+            <option value="2">Vũng Tàu (2 ngày 1 đêm)</option>
+            <option value="5">Huế - Đà Nẵng - Hội An (5 ngày 4 đêm)</option>
+            <option value="5">Hà Nội - Hạ Long - Ninh Bình (5 ngày 4 đêm)</option>
+            <option value="3">Tây nguyên (3 ngày 2 đêm)</option>
+          </select>
+          <p class="center" style="color:red">Gồm các điểm tham quan</p>
+          <div id="group">
+
+          </div>
+        </td>
+        <td>
+          <ul>
+            <li><input type="checkbox" id=a value="100000"><label>Ăn uống</label></li>
+            <li><input type="checkbox" id=b value="50000"><label>Tham quan</label></li>
+            <li><input type="checkbox" id=c value="20000"><label>Hướng dẫn viên</label></li>
+            <li><input type="checkbox" id=d value="80000"><label>Xe đưa đón</label></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3>Chọn tiêu chuẩn khách sạn</h3>
+          <section style="margin:0px 30px">
+            <input type="radio" name="level" value="70000" checked> <label>*</label>
+            <input type="radio" name="level" value="150000"> <label>**</label>
+            <input type="radio" name="level" value="250000"> <label>***</label>
+            <input type="radio" name="level" value="350000"> <label>****</label>
+            <input type="radio" name="level" value="500000"> <label>*****</label>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <span style="color:red">Tổng chi phí:</span>
+          <span id="output"></span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="center"><input type="submit" id=_ value="Tính chi phí"></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="../JS/Thu_Vien.js">
+
+    </script>
+    <script type="text/javascript" src="../JS/BAI11.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bai 3.13 - Tạo đồng hồ và lời chào</title>
+</head>
+
+<body onclick="reload()">
+<p align ="center" id = "td" style = "font-size:32px; font-weight: bold; color:#FFFFFF;width: 720px; position: relative;left:630px; background-color: #333399 ">TRUNG TÂM TIN HỌC</p>
+<p align ="center" id = "td2" style = "font-size:26px; font-weight: bold; color:#333399; width: 720px; position: relative; background-color: #D8E9FC ">Đại học khoa học tự nhiên</p>
+</body>
+</html>
+<script type="text/javascript">
+	var cot=630;
+	var cot2=0;
+	var t=setInterval(move, 10);
+	function move() {
+	  if (cot>0){
+		  var x=document.getElementById('td');
+	      cot -= 1;
+	      x.style.left = cot;
+	  }
+	  if (cot2<630){
+	  	var x1=document.getElementById('td2');
+	  	cot2+=1;
+	  	x1.style.left=cot2;
+	  }
+	  if (cot==cot2) clearInterval(t);
+    }
+ 	function reload(){
+ 		location.reload();
+ 	}
+
+</script>

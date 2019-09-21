@@ -1,0 +1,31 @@
+body{
+	font-family: Tahoma;
+	font-size: 12px;
+	
+}
+table{
+	border: 1px solid red;
+	padding: 10px;
+}
+#A{
+	text-align: center;
+	color: #CC0033;
+}
+#t{
+	
+	position: absolute;
+	border-collapse: collapse;
+}
+.c{
+	color: white;
+	background-color: #CC0033;
+	text-align: center;
+}
+.d{
+	text-align: center;
+}
+
+#oh{
+	color: red;
+	text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	
+	<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			background-color: #CCFFFF;
+			color: #00CC00;
+			padding: 5px;
+			text-align: left;
+			margin: auto;
+		}
+
+		h1 {
+			text-align: center;
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="password" name="address"></td>
+			</tr>
+
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+
+			<tr>
+				<td>Phái</td>
+				<td>
+					<input type="radio" name="gender" value="Nam" checked> Nam
+					<input type="radio" name="gender" value="Nữ"> Nữ
+				</td>
+			</tr>
+
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select>
+  						<option value="bác sĩ">Bác sĩ</option>
+  						<option value="kĩ sư">Kĩ sư</option>
+  						<option value="giáo viên">Giáo viên</option>
+  						<option value="khác">khác</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select multiple>
+  						<option value="kem đánh răng"; style="background-color: cyan">Kem đánh răng</option>
+  						<option value="bột giặt">Bột giặt</option>
+  						<option value="dầu gội đầu"; style="background-color: cyan">Dầu gội đầu</option>
+  						<option value="khác">khác</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" name="people"></td>
+			</tr>
+
+			<tr>
+				<td style="text-align: center;" colspan="2"><input type="button" name="Dong y" value="Đồng ý" onclick="display.innerText='Chúc mừng bạn đã đăng ký thành công !!!'"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center; color: #FF0000" colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

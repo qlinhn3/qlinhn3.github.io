@@ -1,0 +1,123 @@
+<script src="js/Vue.js" charset="utf-8"></script>
+
+<div id=demo v-on:keyup.enter="console.log('enter')">
+  <p>{{msg}}</p>
+  <p>{{reverseMsg}}</p>
+  <button type="button" v-on:click="changeMsg">click</button>
+  <my-component v-on:changetab="changeTab" style="color:red">
+
+    <slot st="Hello from child" ></slot>
+    this will display in slot with name h1
+    <template slot=h1>use "slot" to display children in tag</template>
+    <!-- this will display in slot if div is display -> slot not work ? -->
+    <!-- if tag content slot will only display in slot with tag.slot.name -->
+    <div>this will display</div>
+    this is ok : <slot> display this</slot>
+    <div slot="p">this will not display</div>
+    <!-- slot-scope -> get value from child component -> set value with it`name is deactive -->
+    <!-- <p slot-scope="props" v-text="props.text"></p>-->
+    <!-- <p slot-scope="{ text }" v-text="text"></p> -->
+  </my-component>
+  <!-- changeTab == changeTab($event) => get data of event -->
+  <!-- keep-alive make brower remember last thing -->
+  <keep-alive>
+    <div v-bind:is="currentTab"></div>
+  </keep-alive>
+  <pre>
+  {{$data||Json}}
+  </pre>
+</div>
+<div id=demo2>
+  {{saySomeThing()}}
+
+  <temp></temp>
+</div>
+
+<script type="text/x-template" id="hello-world-template">
+  <p>This use script template</p>
+</script>
+
+</script>
+<script type="text/javascript">
+  // local component
+  var vc = Vue.component('com-a',{
+    data:function(){
+      return{
+        msg: "123"
+      }
+    },
+    template: '<p>this is component a value : {{msg}}</p>'
+  })
+  Vue.component('com-b',{
+    template: '<p>this is component b</p>'
+  })
+  var vm = new Vue({
+    el:'#demo', // nhúng Vue vào tag #demo
+    data: { // variable uisng by #demo
+      msg: "",
+      tag: "a"
+    },
+    created: function(){ // use when new Vue is create
+      this.msg = "Hello World !"
+    },
+    methods: {
+      changeMsg : function() {
+        this.msg += ' ' + Math.ceil(Math.random() * 100)
+      },
+      changeTab: function(e) {
+        this.tag = e
+      }
+    },
+    computed: { // change every value in it change
+      reverseMsg: function() {
+        return this.msg.split(' ').reverse().join(' ');
+      },
+      currentTab:function(){
+        return "com-"+this.tag;
+      }
+    },
+    watch :{ // like computed but watch change of variable
+      msg:function() {
+        console.log('change');
+      }
+    },
+    components: { // local component (use in this Vue)
+      'my-component':{
+        data:function() {
+          return {
+            count: 0
+          }
+        },
+        // $emit : make new event
+        // everything in slot will display when we call slot but content nothing
+        template:`
+          <div>
+            <button type="button" @click="$emit('changetab','a')">a</button>
+            <button type="button" @click="$emit('changetab','b')">b</button>
+            <div>
+              This maybe red
+            </div>
+            <button type="button" @click="count++">số lần ấn : {{count}}</button>
+
+            <slot name='h1'></slot>
+            <slot text="Hello from child" ></slot>
+          </div>
+        `
+      }
+    }
+  })
+  // using another Vue data
+  var vo = new Vue({
+    el: '#demo2',
+    methods: {
+      saySomeThing: function(){
+        return vm.tag
+      }
+    },
+    components: {
+      "temp": {
+        template: '#hello-world-template'
+      }
+    }
+  })
+</script>

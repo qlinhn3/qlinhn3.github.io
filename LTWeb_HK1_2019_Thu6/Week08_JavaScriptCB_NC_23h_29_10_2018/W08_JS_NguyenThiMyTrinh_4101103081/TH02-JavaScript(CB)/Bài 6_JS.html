@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Vòng lặp for</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('button').click(function(){
+          var x = parseInt($('input').val());
+          if(!$('#output').length) $('table').append('<tr><td colspan=2 id="output"></td></tr>')
+          if($('#output').text() == "")
+          for(i=0;i<=10;i++)
+            $('#output').append(
+               x + " * " + i + " = " + x*i +"<br>"
+            )
+        })
+      })
+    </script>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      table, tr, td {
+        margin : auto;
+        border: 2px solid black;
+        border-collapse : collapse;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>In bảng cửu chương</h1>
+    <table>
+      <tr>
+        <td>Nhập số </td>
+        <td>
+          <input type="text">
+          <button type="button">In</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

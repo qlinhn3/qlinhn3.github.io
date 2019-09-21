@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		function dao_chuoi(chuoi){
+			var i = chuoi.length;
+			var daonguoc = "",j;
+			for(j=i;j>=0;j--)
+        		daonguoc += chuoi.substr(j,1);	
+        	document.getElementById("xuat").innerHTML = daonguoc;
+		}
+	</script>
+</head>
+<body>
+	<h2 style="text-align: center; color: #e65c00">Đảo chuỗi</h2>
+	<form>
+		<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#ff3333" bordercolor="#ffaa00" cellpadding="3" bgcolor="#ffffb3">
+			<tr>
+				<td>Nhập một chuỗi</td>
+				<td><input type="text" name="string" id="string" size="50">&nbsp;<button type="button" id="thuchien" onclick="dao_chuoi(string.value)">Thực hiện</button></td>
+			</tr>
+			<tr>
+				<td>Chuỗi đảo</td>
+				<td align="center" style="color: #ff3333"><label id ="xuat"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

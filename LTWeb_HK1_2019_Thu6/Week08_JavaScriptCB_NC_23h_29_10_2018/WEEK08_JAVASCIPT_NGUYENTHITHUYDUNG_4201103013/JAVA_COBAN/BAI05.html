@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script>
+		function tien_thuong(tienluong,xeploai) {
+			var heso;
+			switch(xeploai){
+				case 'Loại A':
+				heso=2;
+				break;
+				case 'Loại B':
+				heso=1.8;
+				break;
+				case 'Loại C':
+				heso=1.2;
+				case 'Loại D':
+				heso=0.8;
+				break;
+			}
+			document.getElementById('tienthuongid').innerHTML="Tiền thưởng là: "+tienluong*heso +" "+"đồng";
+		}
+	</script>
+</head>
+<body>
+	<h1 style="text-align: center;color: #1DA634">Tính tiền thưởng cuối năm</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td width="45%">Tiền lương</td>
+				<td><input type="text" name="tienluong" id="tienluongid"></td>
+			</tr>
+			<tr>
+				<td width="45%">Xếp loại</td>
+				<td>
+					<select id="loaiid">
+						<option>Loại A</option>
+						<option>Loại B</option>
+						<option>Loại C</option>
+						<option>Loại D</option>
+					</select>
+				</td>
+			</tr>
+				<td colspan="2" style="text-align: center;"><button type="button" name="Tinh" value="Tính" id="tinhid" onclick="tien_thuong(tienluongid.value,loaiid.value)">Tính</button></td>
+			<tr>
+				<td colspan="2" style="color: #BC1717"><span id="tienthuongid"></span></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

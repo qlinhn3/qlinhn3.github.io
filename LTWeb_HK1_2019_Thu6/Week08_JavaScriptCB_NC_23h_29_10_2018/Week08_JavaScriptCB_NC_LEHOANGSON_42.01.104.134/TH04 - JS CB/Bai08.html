@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 06</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body onload="startWeb()">
+	<form>
+		<h2 style="color: #ff3300; text-align: center;">In bảng cửu chương</h2>
+		<table>
+			<tr>
+				<td>
+					<input type="button" value="In bảng cửu chương" onclick="txtKQ.innerHTML=tinhCuuChuong()" >
+				</td>
+			</tr>
+			<tr>
+				<td>
+						<label id="txtKQ"></label>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	var s;
+	function startWeb(){
+			s = prompt("Nhập số", '');
+			while(isNaN(s)) {
+				alert('Số không hợp lệ !')
+				startWeb();
+			}
+		}
+	function tinhCuuChuong() {
+		var kq='',i;
+		for(i=1;i<=10;i++){
+			var tmp=s * i;
+			kq+=s + '*' + i.toString() + '=' + tmp + '<br>';
+		}
+		return kq;
+
+	}
+</script>

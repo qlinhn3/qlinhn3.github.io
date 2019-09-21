@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc switch</title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			width:30%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 70%;
+			margin: auto;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</body>
+	<h1 style="color: red;text-align: center;">Tính tiền thưởng cuối năm</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="color: red">Tiền lương</td>
+				<td><input type="text" id="tienluong"></td>
+			</tr>
+			<tr>
+				<td style="color: red">Xếp loại</td>
+				<td>
+					<select id="xeploai">
+						<option value=2 selected="selected"  >Loại A</option>
+						<option value=1.8>Loại B</option>
+						<option value=1.2>Loại C</option>
+						<option value=0.8>Loại D</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" value="Tính" onclick="ketqua.innerHTML='Tiền thưởng là '+tienThuong(tienluong.value)">
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;" ><label id="ketqua" style="color: red"></label></td>
+			</tr>
+		</table>
+	</form>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="")
+	}
+	function tienThuong(luong){
+		if (la_so(luong)){
+			var select=document.getElementById('xeploai');
+			for (var i=0;i<select.options.length;++i){
+				if (select.options[i].selected){
+					return luong*select.options[i].value;
+				}
+			}
+		}
+		return 0;
+	}
+</script>

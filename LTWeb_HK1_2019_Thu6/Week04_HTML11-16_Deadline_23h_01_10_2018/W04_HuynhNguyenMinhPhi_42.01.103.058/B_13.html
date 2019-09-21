@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+h1{text-align: center;
+color: RED;
+}
+table, th, td {
+border: 1px solid blue;
+border-collapse: collapse;
+background-color: yellow ;
+margin: auto;
+text-align: left;
+color: blue;
+}
+fieldset{
+border: 3px solid  #8B4513;
+border-color: #8B4513;
+}
+</style>
+</head>
+<body>
+<h1 align="center"> Đăng kí du lịch</h1> 
+<form>
+<table>
+<tr>
+<td> Họ và tên</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td> Địa chỉ</td>
+<td><input type="text" name="Địa chỉ"></td>
+</tr>
+<tr>
+<td>Điện thoại</td>
+<td><input type="text" name="đt"></td>
+</tr>
+<tr>
+<td>
+Khách Việt Nam
+</td>
+<td><input type="checkbox" name="bool"></td>
+</tr>
+<tr>
+<td>Chọn tour</td>
+<td> <select name="tour">
+<optgroup label="Miền Bắc">
+<option value="b1">Hà Nội - Hạ Long- Sapa</option>
+<option value="b2">Hà Nội- Chùa Hương- Ninh Bình</option>
+<option value="b2">Hà Nội- Cát Bà- Tuần Châu</option>
+</optgroup>
+<optgroup label="Miền Trung">Miền Trung
+<option value="t1">Huế- Bạch Mã- Đà Nẵng</option>
+<option value="t2">Nha Trang-Đà lạt</option>
+<option value="t3">Buôn mê thuột- Gia lai- Kon tum</option>
+</optgroup>
+<optgroup label="Miền Nam">Miền Nam
+<option value="n1">TPHCM- Cần Thơ- Cà Mau</option>
+<option value="n2">TpHCM-Mỹ Tho
+</option>
+</optgroup>
+</select>
+</td>	
+</tr>
+<tr>
+<td>Phương tiện</td>
+<td><input type="radio" name="gender" value="maybay" checked> Máy bay
+<input type="radio" name="gender" value="oto"> Xe ô tô<br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<form>
+<fieldset style="color: cholate">
+<legend style="color: chocolate"><b>Số lượng đoàn khách</b></legend>
+Người lớn <input type="text">
+Trẻ em <input type="text">
+</fieldset>
+</form>
+</td>
+</tr>
+<tr>
+<td>Ghi Chú Thêm</td>
+<td> 
+<select name="ghichu" size="2">
+<option value=" gch1">Có trẻ em dưới 6 tuổi</option>
+<option value="gch2">Có 2 người ăn chay</option>
+</select></td>
+<tr>
+<td colspan="2" align="center"><center><input type="button" name="Dong y" value="Đồng ý" onclick="display.innerText='Bạn đã đăng kí thành công'"></center>
+</td>
+</tr>
+<tr>
+<td  colspan="2" id="display" style="color: chocolate; text-align: center;"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

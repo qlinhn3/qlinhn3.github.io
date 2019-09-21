@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bai02_NC</title>
+<script language="javascript">
+
+</script>
+</head>
+
+<body>
+<h3 align="center" style="color:#660033">Nhập ngày sinh của bạn</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse" bordercolor="#CC6600" cellpadding="3">
+<tr><td>Ngày: <input type = "text" id = "ngay" size = "10"> Tháng: <input type = "text" id = "thang" size = "10"> Năm: <input type = "text" id = "nam" size = "10">  </td></tr>
+<tr><td align="center" bgcolor="#CD0000"><label id = "xuat" style="color:white"></label></td></tr>
+
+<tr><td align="center"> <input type = "button" value = "thực hiện" onclick="xuat.innerHTML=displayDate(ngay.value,thang.value,nam.value)"></td></tr>
+
+</table>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+	function displayDate(day,month,year){
+		var d=new Date(year,month-1,day);
+		var thu=["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"];
+		return thu[d.getDay()]+", "+d.toLocaleDateString();
+	}
+</script>

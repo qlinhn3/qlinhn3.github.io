@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script >
+	function myname() {
+		var text;
+		var person = prompt("Script Prompt: Hãy nhập tên của bạn:","");
+		text=person;
+		document.getElementById('nameid').innerHTML="Chào bạn"+" "+text;
+	}
+</script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body onload="myname()">
+<form>
+<div>
+	<table align="center">
+		<tr>
+			<td id="nameid" style="color:#D836DA"></td>
+		</tr>
+		<tr>
+			<td>Hãy nhập tên của bạn: <input type="text" name="hoten" id="hoten" size="60"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><input type="button" name="load" id="load" onclick="mynewname()" value="Thay đổi câu chào"></td>
+		</tr>
+	</table>
+	<script>
+		function mynewname() {
+			document.getElementById("nameid").innerHTML="Chào bạn"+" "+hoten.value;
+		}
+	</script>
+</div>
+</form>
+</body>
+</html>

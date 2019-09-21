@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> </meta>
+	<head>
+		<title> Tạo form và các điều khiển trên form</title>
+		<style>
+			body{
+				text-align:center;
+			}
+			table {
+				margin: auto;
+			}
+			table,tr,td {
+				text-align: center;
+				border: 2px solid black;
+				background-color: lightgreen;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Đăng nhập</h1>
+		<form action="#">
+			<table>
+				<tr>
+					<td><label>Mã người dùng</label></td>
+					<td><input type="username" name="u_name" placeholder="Mã người dùng"></td>
+				</tr>
+				<tr>
+					<td><label>Mật khẩu</label></td>
+					<td><input type="password" name="u_pass" placeholder="password"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="Đồng ý"></td>
+				</tr>
+				<tr >
+					<td colspan="2"><div id='u_name'></div></td>
+				</tr>
+			</table>
+
+		</form>
+
+		<script>
+			var u = window.location.search;
+			if(u) {
+				var u_name = u.slice(8,u.indexOf('&'))
+				if(u_name!=""){
+					document.getElementById('u_name').innerHTML = u_name;
+				}
+			}
+		</script>
+		</body>
+</html

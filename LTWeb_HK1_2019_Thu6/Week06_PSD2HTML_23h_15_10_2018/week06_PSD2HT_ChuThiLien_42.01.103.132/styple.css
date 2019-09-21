@@ -1,0 +1,50 @@
+body{
+	background: #cccccc
+}
+img{
+	float: left;
+	width:170px;
+	height:170px;
+	margin-right:15px;"
+}
+header{
+	background: black;
+	color: white;
+}
+main-wrapper{
+	width: 960px;
+	margin: 0;
+	color: white;
+	text-align: center;
+	float: left 50px ;
+
+}
+header{
+	height: 150px;
+	background: #333333;
+	color: white;
+	text-align:center;
+	font-style: italic;
+	font-weight: bold;
+
+}
+main-content{
+	background: #ffffff;
+	float: left;
+	width: 660px;
+
+}
+aside{
+	width: 350px;
+	background: #e5e5e5;
+	float: right;
+	height:100%;
+	top: 0;
+	right: 0;
+
+}
+footer{
+	clear: both;
+	background: #333333;
+	height: 50px;
+}

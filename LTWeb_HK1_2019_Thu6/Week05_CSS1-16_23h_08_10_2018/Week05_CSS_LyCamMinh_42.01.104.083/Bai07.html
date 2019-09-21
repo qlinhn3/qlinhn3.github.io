@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ký tự đặc biệt, chèn hình ảnh, tạo danh sách và liên kết</title>
+	<style type="text/css">
+		.class1{
+			width: 70px;
+			background-color: #CD919E;
+			color: #FFFFFF;
+		}
+		body{
+			width: 60%;
+			margin: auto;
+		}
+		h1{
+			color: #CD919E;
+			text-align: center;
+		}
+		#square{
+			list-style-type: square;
+		}
+		#circle{
+			list-style-type: circle;
+		}
+		.copyright{
+			text-align: right;
+			background-color: #fbeaed;
+			width: 60%;
+			margin-left: 280px;
+		}
+		.inline-block{
+			display: inline-block;
+		}
+		.font-italic{
+			font-style: italic;
+		}
+		.canhgiua{
+			width: 80%;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Công ty hoa tươi Nhân Ái</h1>
+	<div class="canhgiua">
+		<img src="images/Bai07.gif" alt="image" />
+		<div class="inline-block">
+			<ol>
+				<li><p class="class1">Giới thiệu</p>
+					<ul id="square">
+						<li>Thành lập ngày 25/05/2007</li>
+						<li>Chuyên cung cấp các loại hoa tươi</li>
+						<li>Có trên 200 cửa hàng bán lẻ tại TP.HCM</li>
+						<li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+					</ul>
+				</li>
+				<hr>
+				 <li><p class="class1">Liên hệ</p>
+					<ul id="circle">
+						<li>Điện thoại 84-08-8351056</li>
+						<li>Địa chỉ:  <span class="font-italic" >227 Nguyễn Văn Cừ, Quận 5, TP.HCM</span></li>
+					</ul>
+				</li> 
+			</ol> 
+		</div>
+	</div>
+	<p class="copyright">&copy Copyright:<a href="http://csc.hcmus.edu.vn"> Trung Tâm Tin Học - Đại Học Khoa Học Tự Nhiên TPHCM</a></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 7</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<form>
+		<h2 style="color: green; text-align: center;">Tìm các số chia hết cho 6 và 9</h2>
+		<table>
+			<tr>
+				<td>Nhập số</td>
+				<td>
+					<input type="text" id="txtPoint" required="">
+					<input type="button" value="In" onclick="txtResult.innerHTML=tinh()" >
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><label id="txtResult"></label></td>
+			</tr>
+			<tr>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function tinh(){
+		var kq='Các số chia hết cho 6 và 9 là: ',i,s=parseInt(txtPoint.value);
+		if(isNaN(s) || s<0) return 'Số nhập không hợp lệ !';
+		for(i=18;i<=s;i+=18){
+			kq+=i + ' , ';
+		}
+		return kq;
+	}
+</script>

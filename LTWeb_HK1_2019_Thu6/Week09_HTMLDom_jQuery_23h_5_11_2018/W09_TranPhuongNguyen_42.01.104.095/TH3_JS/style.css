@@ -1,0 +1,15 @@
+h1 div
+{
+	text-align: center;
+	font-size: 40px;
+	color: #F09C09;
+}
+img
+{
+	float:right;
+}
+div p
+{
+	font-size: 15px;
+	font-family: Arial;
+}

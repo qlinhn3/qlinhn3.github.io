@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+	<meta charset="UTF-8">
+	<title>Bai 02</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="startWeb()">
+	<form>
+		<table>
+			<tr>
+				<td colspan ="2" style="color: #ff0066; text-align: left;"><label id="name"></label></td>
+			</tr>
+			<tr>
+				<td>Nhập tên mới</td>
+				<td><input type="text" id="textName" required=""></td>
+			</tr>
+			<tr>
+				<td colspan ="2"><input type="button" value="Thay đổi câu chào" onclick="document.getElementById('name').innerHTML='Chào bạn ' + textName.value;" ></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+		function startWeb(){
+			var t = prompt("Nhập tên của bạn", '');
+			document.getElementById('name').innerHTML='Chào bạn ' + t;
+		}
+	</script>

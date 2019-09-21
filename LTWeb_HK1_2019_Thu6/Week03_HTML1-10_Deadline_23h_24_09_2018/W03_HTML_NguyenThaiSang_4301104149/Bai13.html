@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo form và các điều khiển</title>
+    <style media="screen">
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      table,tr,td {
+        margin: auto;
+        border: 2px solid lightblue;
+        border-collapse: collapse;
+      }
+      table{
+        width: 80%;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đăng ký du lịch</h1>
+    <form>
+      <table id=myTable>
+        <tr>
+          <td>Họ và tên</td>
+          <td>
+            <input type="text" id="fName" name="fName" size="45">
+          </td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <input type="text" id="Ads" name="Ads" size="35">
+          </td>
+        </tr>
+        <tr>
+          <td>Điện Thoại</td>
+          <td>
+            <input type="text" id="sdt" name="sdt">
+          </td>
+        </tr>
+        <tr>
+          <td>Khách Việt Nam</td>
+          <td>
+            <input type="checkbox" name="VNes" value="VNes">
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn tour</td>
+          <td>
+            <select class="" name="">
+              <optgroup label="Miền Bắc">
+                <option value="11">Hà Nội - Hạ Long - Sapa</option>
+                <option value="12">Hà Nội - Chùa Hương - Ninh Bình</option>
+                <option value="13">Hà Nội - Cát Bà - Tuần Châu</option>
+              </optgroup>
+              <optgroup label="Miền Trung">
+                <option value="21">Huế - Bạch Mã - Đà Nẵng</option>
+                <option value="22">Nha Trang - Đà Lạt</option>
+                <option value="23">Buôn Mê Thuột - Gia Lai - Komtum</option>
+              </optgroup>
+              <optgroup label="Miền Nam">
+                <option value="31">TP.HCM - Cần Thơ - Cà Mau</option>
+                <option value="32">TP.HCM - Mỹ Tho</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Phương Tiện</td>
+          <td>
+            <input type="radio" name="vehice" checked value="1">
+            <label for="1">Máy Bay</label>
+            <input type="radio" name="vehice" value="2">
+            <label for="2">Xe ô tô</label>
+          </td>
+        </tr>
+        <tr >
+          <td colspan=2>
+            <fieldset class="center">
+              <legend style="text-align:left">Số Lượng đoàn khách</legend>
+              <label for="au">Người lớn</label>
+              <input type="text" id=au name="au" size=10>
+              <label for="chil">Trẻ con</label>
+              <input type="text" id=chil name="child" size=10>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú thêm</td>
+          <td>
+            <textarea name="name" style="width:250px"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan=2 class="center">
+            <button type="button" onclick="Sub()">Đồng Ý</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      var insert = false;
+      var a = document.getElementById('fName');
+      var b = document.getElementById('Ads');
+      var c = document.getElementById('sdt');
+      var d = document.getElementById('au');
+      var e = document.getElementById('chil')
+      var table = document.getElementById('myTable');
+      function check(x){
+        if(x.length==0) return false;
+        for(i=0;i<x.length;i++)
+          if(x[i]>'9' || x[i] <'0') return false;
+          return true;
+      }
+      function Sub() {
+        let ans;
+        if(!a.value || !b.value || !c.value || (!check(d.value) && !check(e.value)))
+          ans = "Đăng ký thất bại"
+        else ans = "Đăng ký thành công"
+        if(!insert){
+          insert = true
+           var row = table.insertRow(9)
+           var cell = row.insertCell(0)
+           cell.setAttribute("colspan","2")
+           cell.setAttribute('class','center')
+           cell.setAttribute('id','News')
+         }
+         document.getElementById('News').innerHTML = ans
+      }
+    </script>
+  </body>
+</html>

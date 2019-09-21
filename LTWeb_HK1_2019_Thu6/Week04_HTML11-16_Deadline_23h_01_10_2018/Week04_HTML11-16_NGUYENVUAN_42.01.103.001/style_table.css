@@ -1,0 +1,14 @@
+table{
+			border-collapse: collapse;
+		}	
+		h1{
+			text-align: center;
+			color: Tomato;
+		}
+		table,td{
+			border: 1pt solid black;
+			padding: 5px;
+			width:300pt;
+			margin:auto;
+			text-align: center;
+		}

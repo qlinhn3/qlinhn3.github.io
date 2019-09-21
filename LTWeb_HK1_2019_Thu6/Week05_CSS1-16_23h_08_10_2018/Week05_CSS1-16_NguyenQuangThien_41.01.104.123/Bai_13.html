@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	td
+	{
+		text-align: left;
+	}
+	td,tr
+	{
+		background-color: darkblue;
+	}
+	#_1
+	{
+		color: lightblue
+	}
+	#_2
+	{
+		border-color: red;width: 350px;height: 35px
+	}
+	._3
+	{
+		text-align: center
+	}
+	._4
+	{
+		color: red
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+	<table>
+		<form>
+			<h1>Đăng ký du lịch</h1>
+			<tr>
+				<td id="_1">Họ và tên</td>
+				<td><input type="text" name="username" size="65px"></td>
+			</tr>
+			<tr>
+				<td id="_1">Địa chỉ</td>
+				<td><input type="text" name="DiaChi" size="40px"></td>
+			</tr>
+			<tr>
+				<td id="_1">Điện thoại</td>
+				<td><input type="number" name="SDT"></td>
+			</tr>
+			<tr>
+				<td id="_1">Khách Việt Nam</td>
+				<td><input type="checkbox" name="CheckVN"></td>
+			</tr>
+			<tr>
+				<td id="_1">Chọn tour</td>
+				<td>
+					<select name="" id="">
+						<optgroup label="Miền Bắc">Bắc</optgroup>
+						<option value="HN1">Hà Nội - Hạ Long - Sapa</option>
+						<option value="HN1">Hà Nội - Chùa Hương - Ninh Bình</option>
+						<option value="HN1">Hà Nội - Cát Bà - Tuấn Châu</option>
+
+						<optgroup label="Miền Trung">Bắc</optgroup>
+						<option value="HN1">Huế - Đà Nẵng</option>
+						<option value="HN1">Nha Trang - Đà Lạt</option>
+						<option value="HN1">Buôn mê thuộc - Gia Lai - Kontum</option>
+						
+						<optgroup label="Miền Nam">Bắc</optgroup>
+						<option value="HN1">TP.HCM - Cần Thơ - Cà mau</option>
+						<option value="HN1">TP.HCM - Mỹ Tho</option>
+
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td id="_1">Phương tiện</td>
+				<td id="_1">
+					<input type="radio" name="a">Máy Bay
+					<input type="radio" name="a">Xe ô tô
+				</td>
+			</tr>
+			<tr >
+				<td colspan="2" >
+					<center>
+					<fieldset id="_2">
+						<legend style="color: white">Số lượng đoàn khách</legend>
+						<center id="_1">Người lớn <input style="width: 55px" type="number">
+						Trẻ Em <input style="width: 55px" type="number"></center>
+					</fieldset>
+					</center>
+				</td>
+				
+			</tr>
+			<tr>
+				<td id="_1">Ghi chú thêm</td>
+				<td>
+						<select multiple="2" size="2" style="width: 300px">
+							<option value="bc">Có 2 trẻ em dưới 6 tuổi</option>
+							<option value="ac">Có 2 người ăn chay</option>
+						</select>
+
+				</td>
+			</tr>
+			<tr >
+				<td class="_3" colspan="2"><input type="button" name="DongY" value="Đồng ý" onclick="display.innerText='Bạn đã đăng kí thành công!!!'">
+			</tr>
+			<tr>
+				<td class="_3 _4" colspan="2" id="display"></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

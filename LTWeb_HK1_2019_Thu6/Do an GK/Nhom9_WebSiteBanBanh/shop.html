@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!--
+	ustora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	URL: https://www.freshdesignweb.com/ustora/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/symbol.jpg" type="image/x-icon">
+    <title>Shop Page- Tous Les Jours</title>
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<style>
+      .product-title {
+        margin-top: 60px;
+      }
+
+      .product {
+        background-color: #fff;
+      }
+
+      .product .title {
+        font-size: 14px;
+        padding: 8px 0;
+      }
+
+      .product .title span {
+        float: right;
+        font-weight: bold;
+      }
+
+      .product .description {
+        font-size: 12px;
+        height: 60px;
+      }
+
+      .product-clone {
+        position: fixed;
+        z-index: 9999;
+      }
+    </style>
+
+
+
+
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Yêu thích</a></li>
+                            <li><a href="cart.html"><i class="fa fa-user"></i> Giỏ hàng</a></li>
+                            <li><a href="checkout.html"><i class="fa fa-user"></i> Thanh toán</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Giá Trị:</span><span class="value">VNĐ </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">VNĐ</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Ngôn Ngữ :</span><span class="value">Tiếng Việt </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">German</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row" style="background-image: url(img/cupcakes-690040_1920.jpg)">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <h1><a href="./"> <img style="width: 150px;height: 150px"src="img/symbol.jpg"></a></h1>
+                    </div>
+                </div>
+
+
+                 <div class="col-md-4">
+                    <div class="logo">
+                        <br>
+                        <h1 style="text-align: center;color:green;font-size: 50px;">Tous Les Jours</h1>
+                        <p style="text-align: right;color: red;font-size: 20px;font-family: sans-serif;padding-top: 0px;"><b><i>cake for life</i></b></p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                     <div class="shopping-item" data-price="0">
+                        <a href="cart.html">Cart <span class="cart-amunt"><strong>0VNĐ         </strong></span> <i class="fa fa-shopping-cart"></i> <span class="product-count" id="soluong">0</span></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End site branding area -->
+    
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="shop.html">Danh sách sản phẩm</a></li>
+                        <li><a href="single-product.html">Sản phẩm</a></li>
+                        <li><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="checkout.html">Thanh toán</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+    
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Shop</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+     <div class="container">
+      <h1 class="product-title">Sản phẩm</h1>
+      <div class="row">
+        <div class="col-sm-3 product" data-price="340000">
+          <a href="#"><img src="img/banh_1.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Almond Milk Press 1
+            <span>VNĐ340000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="170000">
+          <a href="#"><img src="img/banh_10.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Mini Sfoglier Glassate
+            <span>VNĐ170000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="250000">
+          <a href="#"><img src="img/banh_2.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Crispy apple raisin
+            <span>VNĐ250000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="310000">
+          <a href="#"><img src="img/banh_3.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+         Premium fresh cream No1A
+            <span>VNĐ310000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+
+         <div class="col-sm-3 product" data-price="180000">
+          <a href="#"><img src="img/banh_4.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Red Bean Donut
+            <span>VNĐ180000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+        <div class="col-sm-3 product" data-price="340000">
+          <a href="#"><img src="img/banh_5.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Mango Coconut Cake 1
+            <span>VNĐ340000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+          <div class="col-sm-3 product" data-price="250000">
+          <a href="#"><img src="img/banh_6.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+          Propose heart Cake 1
+            <span>VNĐ250000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+         <div class="col-sm-3 product" data-price="330000">
+          <a href="#"><img src="img/banh_7.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+         Choco Ganache Cake 1
+            <span>VNĐ330000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+    
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+     
+        <div class="col-sm-3 product" data-price="370000">
+          <a href="#"><img src="img/banh_8.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+           Cookie and Cream Ball 2
+            <span>VNĐ370000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+        <div class="col-sm-3 product" data-price="270000">
+          <a href="#"><img src="img/banh_11.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+         Rasberry pastry
+            <span>VNĐ270000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+        <div class="col-sm-3 product" data-price="460000">
+          <a href="#"><img src="img/banh_9.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Magic 4
+            <span>VNĐ460000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+         <div class="col-sm-3 product" data-price="310000">
+          <a href="#"><img src="img/banh_20.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+       Crispy almond cranberry
+            <span>VNĐ250000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+      
+  </div>
+      
+
+ <!--<div class="container">-
+      <h1 class="product-title">Mới Nhất</h1>
+      <div class="row">
+        <div class="col-sm-3 product" data-price="180000">
+          <a href="#"><img src="img/banh_4.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Red Bean Donut
+            <span>VNĐ180000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="340000">
+          <a href="#"><img src="img/banh_5.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Mango Coconut Cake 1
+            <span>VNĐ340000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="250000">
+          <a href="#"><img src="img/banh_6.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+          Propose heart Cake 1
+            <span>VNĐ250000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="330000">
+          <a href="#"><img src="img/banh_7.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+         Choco Ganache Cake 1
+            <span>VNĐ330000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+      </div>
+    <!--</div>-->
+
+  <!--<div class="container">
+      <h1 class="product-title">Ưa chuộng</h1>
+      <div class="row">
+        <div class="col-sm-3 product" data-price="370000">
+          <a href="#"><img src="img/banh_8.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+           Cookie and Cream Ball 2
+            <span>VNĐ370000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="270000">
+          <a href="#"><img src="img/banh_11.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+         Rasberry pastry
+            <span>VNĐ270000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="460000">
+          <a href="#"><img src="img/banh_9.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+            Magic 4
+            <span>VNĐ460000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+
+        <div class="col-sm-3 product" data-price="310000">
+          <a href="#"><img src="img/banh_20.jpg" alt="" class="img-responsive"></a>
+          <div class="title">
+       Crispy almond cranberry
+            <span>VNĐ250000</span>
+          </div>
+          <div class="description">
+            This amazing item is what you wanted since you borned.
+          </div>
+          <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+        </div>
+      </div>
+   <!-- </div>-->
+   
+
+
+
+
+    <!--<div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div id="product-list" class="row"></div>-->
+            
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-pagination text-center">
+                        <nav>
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>                        
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>T<span>ous Les Jours</span></h2>
+                        <p>Tous Les Jours là thương hiệu bánh ngọt tại Hàn Quốc của CJ Foodville, công ty con trực thuộc của tập đoàn CJ. Tous les Jours là cụm từ tiếng Pháp nghĩa là “mỗi ngày”. Các mẫu bánh kem tại đây là sản phẩm độc quyền của công ty bánh kem Tous Les Jours được liên tục thay đổi theo từng thời điểm phù hợp với nhu cầu ngày càng cao của quý khách. Để đảm bảo đơn đặt hàng bánh kem Tous Les Jours được thực hiện tỷ mỉ theo đúng yêu cầu, quý khách vui lòng đặt bánh kem Tous Les Jours trước ngày giao hàng ít nhất 1 ngày và sẽ được giao miễn phí tại thành phố Hồ Chí Minh.</p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Khách hàng</h2>
+                        <ul>
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="#">Lịch sử</a></li>
+                            <li><a href="#">Danh sách yêu thích</a></li>
+                            <li><a href="#">Liên lạc</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Thể loại</h2>
+                        <ul>
+                            <li><a href="#">Các Hãng Nổi Tiếng</a></li>
+                            <li><a href="#">Bánh Các Nước</a></li>
+                            <li><a href="#">Bánh Sinh Nhật</a></li>
+                            <li><a href="#">Bánh khác</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Thông báo</h2>
+                        <p>đăng ký để nhận thông báo về bánh mới cập nhật tại cửa hàng nhanh nhất</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Nhập mail của bạn">
+                                <input type="submit" value="Đăng ký">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer top area -->
+    
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                       <!-- <p>&copy; 2015 uCommerce. All Rights Reserved. <a href="http://www.freshdesignweb.com" target="_blank">freshDesignweb.com</a></p>-->
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="footer-card-icon">
+                        <i class="fa fa-cc-discover"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                        <i class="fa fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer bottom area -->
+   
+   
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <<script src="js/main.js"></script>
+    <!--<script src="js/shop.js"></script>-->
+     <script src="js/script.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+   <!-- <script type="text/javascript">
+     $(document).ready(function() {
+
+    if ( 0 < $('.product button').length ) {
+        $('.product button').click(function() {
+            var offset = $(this).parent().offset();
+            $(this).parent().clone().addClass('product-clone').css({
+                'left' : offset.left + 'px',
+                'top' : parseInt(offset.top-$(window).scrollTop()) + 'px',
+                'width' :  $(this).parent().width() + 'px',
+                'height' : $(this).parent().height() + 'px'
+            }).appendTo($('.product').parent());
+
+            var cart = $('.shopping-item strong').offset();
+            $('.product-clone').animate( { top: parseInt(cart.top-$(window).scrollTop()) + 'px', left: cart.left + 'px', 'height': '0px', 'width': '0px' }, 800, function(){
+                $(this).remove();
+                var price = parseInt($('div.shopping-item').attr('data-price'));
+                var productPrice = parseInt($(this).attr('data-price'));
+                var cartPrice = parseInt(price+productPrice);
+                $('div .shopping-item strong').html( cartPrice+'VNĐ');
+
+                $('div .shopping-item').attr('data-price', cartPrice);
+            });
+        });
+    }
+
+});
+    </script>-->
+
+<script type="text/javascript">
+     $(document).ready(function() {
+    var count=0;
+    if ( 0 < $('.product button').length ) {
+        $('.product button').click(function() {
+            var offset = $(this).parent().offset();
+            $(this).parent().clone().addClass('product-clone').css({
+                'left' : offset.left + 'px',
+                'top' : parseInt(offset.top-$(window).scrollTop()) + 'px',
+                'width' :  $(this).parent().width() + 'px',
+                'height' : $(this).parent().height() + 'px'
+            }).appendTo($('.product').parent());
+
+            var cart = $('.shopping-item strong').offset();
+            $('.product-clone').animate( { top: parseInt(cart.top-$(window).scrollTop()) + 'px', left: cart.left + 'px', 'height': '0px', 'width': '0px' }, 800, function(){
+                $(this).remove();
+                count ++;
+                var price = parseInt($('div.shopping-item').attr('data-price'));
+                var productPrice = parseInt($(this).attr('data-price'));
+                var cartPrice = parseInt(price+productPrice);
+                $('div .shopping-item strong').html( cartPrice+'VNĐ');
+                document.getElementById("soluong").innerText = count;
+                $('div .shopping-item').attr('data-price', cartPrice);
+            });
+        });
+    }
+
+});
+    </script>
+  </body>
+</html>

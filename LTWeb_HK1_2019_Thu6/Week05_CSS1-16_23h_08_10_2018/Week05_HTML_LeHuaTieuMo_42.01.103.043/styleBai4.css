@@ -1,0 +1,23 @@
+
+		body{
+			background-image: url('Bai04.jpg');
+			background-attachment: fixed;
+		}
+		h2{
+			text-align: center;
+			color:#008888; 
+			font-weight: bold
+		}
+		#p1{
+			background-color:#008888;
+			color:#FFFFFF; 
+			font-style: italic; 
+			font-weight: bold  
+		}
+		#p2{
+			color:#339999
+		}
+		#p3{
+			color:#339999 
+		}
+	

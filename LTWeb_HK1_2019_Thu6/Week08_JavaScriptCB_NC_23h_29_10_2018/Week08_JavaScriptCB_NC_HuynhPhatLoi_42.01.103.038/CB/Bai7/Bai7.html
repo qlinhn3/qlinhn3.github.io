@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Vòng lặp for </title>
+	<style>
+		table,td{
+			border : 1px solid #CC7415;
+			border-collapse: collapse;
+			background-color: #DDBF6D;
+			width: 300px;
+			height: 10px;
+		}
+		h1{
+			text-align: center;
+			color: #63121F
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function la_so(so) 
+		{
+			if(isNaN(parseInt(so)))
+				return false
+			else
+				return true
+		}
+		function xuat_ket_qua(so)
+		{
+		 if (la_so(so)) {
+		 	str = "Các số từ 1 đến " + so + ' chia hết cho 6 và 9 là: '
+		 	for(i=1;i<=so;i++)
+		 	{
+		 		if(i%6==0 && i%9==0)
+		 			str += i + ','
+		 	}
+		 	kq.innerText = str
+		 }
+		 else
+		 	kq.innerText = "Sô nhập không hợp lệ"
+		}
+	</script>
+	<h1>Tìm các số chia hết cho 6 và 9</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td>
+					Nhập một số
+				</td>
+				<td>
+					<input type="text" name="so" id="so"><input type="button" value="In" onclick="xuat_ket_qua(so.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<div id="kq">
+				</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

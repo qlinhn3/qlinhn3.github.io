@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" type="text/css" href="style_table.css">
+	<style>
+		td{
+			text-align: left;
+		}	
+	</style>
+</head>
+<body>
+	<h1 style="color: #006600">Phiếu đăng kí tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table style="background-color: #b3ffb3;color: #006600;width:500pt;">
+			<tr>
+				<td>Họ và tên</td>
+				<td style="text-align: left;"><input type="text" name="HoTen" style="width:250pt"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td style="text-align: left;"><input type="text" name="DiaChi" style="width:200pt"></td>
+			</tr>
+			<tr>
+				<td>Điện Thoại</td>
+				<td style="text-align: left;"><input type="text" name="SDT" style="width:150pt"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td style="text-align: left;">
+					<input type="radio" name="Phai" value="Male">Nam <input type="radio" name="Phai" value="Female">Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td style="text-align: left;">
+					<select>
+						<option value="BacSi">Bác sĩ</option>
+						<option value="KySu">Kỹ sư</option>
+						<option value="GiaoVien">Giáo viên</option>
+						<option value="Khac">Khác...</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td style="text-align: left;">
+					<select multiple>
+						<option value="KemDanhRang" style="background-color: blue;color: white">Kem Đánh Răng</option>
+						<option value="BotGiat">Bột Giặt</option>
+						<option value="DauGoiDau" style="background-color: blue;color: white">Dầu Gội Đầu</option>
+						<option value="SuaTam">Sữa Tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td style="text-align: left"><input type="text" name="SoNguoi" style="width:100pt"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" name="DongY" value="Đồng Ý" onclick="thongbao.innerText='Bạn đã đăng ký thành công !!!'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="thongbao" style="color: red;text-align: center;"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

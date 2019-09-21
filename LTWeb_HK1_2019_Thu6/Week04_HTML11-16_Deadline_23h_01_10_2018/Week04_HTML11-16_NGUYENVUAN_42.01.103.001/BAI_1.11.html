@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển trên form</title>
+	<link rel="stylesheet" type="text/css" href="style_table.css">
+</head>
+<body style="width:300pt">
+	<h1>Đăng nhập</h1>
+	<form >
+		<table style="background-color:#66ffff ">
+			<tr>
+				<td>Mã người dùng</td>
+				<td><input type="text" name="Username"></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="DongY" value="Đồng Ý" onclick="display.innerText='Hello '+ Username.value"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

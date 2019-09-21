@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp do...while</title>
+	<style type="text/css">
+			body{
+				width:40%;
+				margin: auto;
+			}
+			table{
+				border-collapse: collapse;
+				background-color: #f9f2a6;
+				width: 30%;
+				margin: auto;
+			}
+			td,tr,table{
+				border:1px solid red;
+				padding: 2px;
+			}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">In bảng cửu chương</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="text-align: center;"><input type="button" value="In bảng cửu chương" onclick="ketqua.innerHTML=Bang_Cuu_Chuong()"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><label style="color: red" id="ketqua"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="");
+	}
+	function Bang_Cuu_Chuong() {
+		do{
+		var n=prompt("Nhập một số");
+		}while(!la_so(n));
+		n=Number(n);
+		var html="";
+		for (var i=1;i<=10;++i)
+			html+=n+"*"+i+"="+n*i+"<br>";
+		return html;
+		
+	}
+</script>

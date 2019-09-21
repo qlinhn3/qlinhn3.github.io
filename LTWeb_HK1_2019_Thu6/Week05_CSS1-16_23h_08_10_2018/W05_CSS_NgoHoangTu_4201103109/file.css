@@ -1,0 +1,14 @@
+table{
+		border-collapse: collapse;
+	}
+	table,td,th{
+		border:1px solid black;
+		padding: 5px;
+		margin: auto;
+		text-align: center;
+		border-color: #990099;
+	}
+	h2{
+		text-align: center;
+		color: #804000;
+	}

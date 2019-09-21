@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo bảng, trộn dòng và cột</title>
+    <style media="screen">
+    body{
+      text-align:center
+    }
+    table,tr, td {
+      border: #eaa45d solid 2px;
+      border-collapse: collapse;
+    }
+    .head {
+      color:white;
+      background-color: #CC0033;
+    }
+    h1:nth-child(0){
+      color:#CC0033
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Chương trình học - ngành lập trình </h1>
+    <table style="margin:auto">
+      <tr class="head">
+        <td rowspan="2">Nhóm học phần</td>
+        <td rowspan="2">Môn học</td>
+        <td colspan="2">Số tiết</td>
+      </tr>
+      <tr class="head">
+        <td>Lý thuyết</th>
+        <td>Thực hành</th>
+      </tr>
+      <tr>
+        <td rowspan="6" style='color:#CC0033'>I <br> Tin học văn phòng</td>
+        <td>Hệ điều hành Windows</td>
+        <td>3</td>
+        <td>5</td>
+      </tr>
+      <tr>
+
+        <td>Sử dụng Internet</td>
+        <td>3</td>
+        <td>5</td>
+      </tr>
+      <tr>
+
+        <td>Soạn thảo văn bản với MS Word</td>
+        <td>24</td>
+        <td>40</td>
+      </tr>
+      <tr>
+
+        <td>Tạo bài trình diễn với MS PowerPoint</td>
+        <td>9</td>
+        <td>15</td>
+      </tr>
+      <tr>
+
+        <td>Xử lý số liệu với MS Excel</td>
+        <td>24</td>
+        <td>40</td>
+      </tr>
+      <tr>
+
+        <td>Tạo trang Web với MS FrontPage</td>
+        <td>9</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td rowspan="2" style='color:#CC0033'>II <br> Kỹ thuật lập trình(VB.NET)</td>
+        <td>Nhập môn lập trình</td>
+        <td>36</td>
+        <td>60</td>
+      </tr>
+      <tr>
+
+        <td>Kỹ thuật lập trình</td>
+        <td>36</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td colspan='4' style="text-align:left">....</td>
+      </tr>
+    </table>
+  </body>
+</html>

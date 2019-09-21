@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+  color: #006600;
+}
+h2{
+  text-align: center;
+  color: #FF3399;
+  background-color: #FECFFD;
+}
+h2 .yc{
+  color: #0000FF;
+  text-decoration: underline;
+}
+p{
+  font-weight: 1000;
+}
+.tho{
+  font-style: italic;
+  text-align: center;
+  background-color: #FFFFCC
+}
+.p1{
+  color: blue;
+}
+.p2{
+  color:red;
+}
+.p3{
+  color:green;
+}
+hr{
+  width: 200px;
+}

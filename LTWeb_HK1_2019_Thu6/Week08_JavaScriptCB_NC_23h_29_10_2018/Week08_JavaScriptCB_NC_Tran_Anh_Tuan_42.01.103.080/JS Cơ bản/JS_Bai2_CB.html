@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function myFunction() {
+	    var txt;
+	    var person=prompt("Script Prompt: Hãy nhập tên của bạn","");
+	    txt=person;
+    	document.getElementById("demo").innerHTML = "Chào bạn"+" "+txt;
+	}
+</script>
+	<title>Explorer User Prompt</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="js.css">
+</head>
+<body onload="myFunction()">
+	<table>
+		<tr>
+			<td id="demo" style="color: #ff0066"></td>
+		</tr>
+		<tr>
+			<td>Nhập tên mới: <input type="text" name="hoten" id="hoten" size="60"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center"><button type="button" name="change" id="change" onclick="myNewFunction()">Thay đổi câu chào</td>
+		</tr>
+	</table>
+	<script>
+	function myNewFunction() {
+    	document.getElementById("demo").innerHTML = "Chào bạn"+" "+hoten.value;
+	}
+</script>
+</body>
+</html>

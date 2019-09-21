@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	
+	<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			background-color: #CCFFFF;
+			color: #00CC00;
+			padding: 5px;
+			text-align: left;
+			margin: auto;
+		}
+
+		h2 {
+			text-align: center;
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Đăng ký du lịch</h2>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="password" name="address"></td>
+			</tr>
+
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name="khach"></td>
+			</tr>
+
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+  						<optgroup label="Miền Bắc">
+    						<option value="Hà Nội - Hạ Long - Sapa">Hà Nội - Hạ Long - Sapa</option>
+    						<option value="Hà Nội - Chùa Hương - Ninh Bình">Hà Nội - Chùa Hương - Ninh Bình</option>
+    						<option value="Hà Nội - Cát Bà - Tuần Châu">Hà Nội - Cát Bà - Tuần Châu</option>
+ 						</optgroup>
+
+
+						<optgroup label="Miền Trung">
+    						<option value="Huế - Bạch Mã - Đà Nẵng">Huế - Bạch Mã - Đà Nẵng</option>
+    						<option value="Nha Trang - Đà Lạt">Nha Trang - Đà Lạt</option>
+    						<option value="Hà Nội - Cát Bà - Tuần Châu">Hà Nội - Cát Bà - Tuần Châu</option>
+ 						</optgroup>
+
+
+						<optgroup label="Miền Nam">
+    						<option value="TP.HCM - Cần Thơ - Cà Mau">TP.HCM - Cần Thơ - Cà Mau</option>
+    						<option value="TP.HCM - Mỹ Tho">TP.HCM - Mỹ Tho</option>
+ 						</optgroup>
+					</select>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>Phương tiện</td>
+				<td>
+					<input type="radio" name="gender" value="Máy bay" checked> Máy bay
+					<input type="radio" name="gender" value="Ô tô"> Ô tô
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<fieldset>
+					<legend>Số lượng đoàn khách</legend>
+					Người lớn: <input type="text">
+					Trẻ em: <input type="text"> 
+					</fieldset>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					Ghi chú: <textarea style="width: 300px"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="text-align: center;" colspan="2"><input type="button" name="Dong y" value="Đồng ý" onclick="display.innerText='Chúc mừng bạn đã đăng ký thành công !!!'"></td>
+			</tr>
+
+			<tr>
+				<td style="text-align: center; color: #FF0000" colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

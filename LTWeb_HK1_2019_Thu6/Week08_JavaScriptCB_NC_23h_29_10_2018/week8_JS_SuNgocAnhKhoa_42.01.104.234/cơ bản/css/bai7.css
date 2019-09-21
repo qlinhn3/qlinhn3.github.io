@@ -1,0 +1,16 @@
+h2{
+	color: #990000;
+	text-align: center;
+}
+table,tr,td{
+	color: #804000;
+	border: 1px solid #804000;
+	padding: 5px;
+	background-color:  #ffffb3;
+}
+table{
+	border-collapse: collapse;
+}
+label{
+	color: #0000b3;
+}

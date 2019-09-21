@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Vòng lặp for</title>
+    <script src="jquery/jquery.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('button').click(function(){
+          let x = parseFloat($('input').val())
+          let txt =""
+          for(i = 1;i<=x;i++)
+            if(i%6==0 && i%9==0){
+              if(txt.length==0) txt+=i
+              else txt += (','+i+" ")
+            }
+          if(!$('#output').length) $('table').append('<tr><td colspan=2 id="output"></td></tr>')
+          if($('#output').text() == "") $('#output').append(
+            "Các số từ 1 đến "+ x +" chia hết cho 6 và 9 là: "+txt
+          )
+        })
+      })
+    </script>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      table, tr, td {
+        margin : auto;
+        border: 2px solid black;
+        border-collapse : collapse;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Các số chia hết cho 6 và 9</h1>
+    <table>
+      <tr>
+        <td>Nhập số </td>
+        <td>
+          <input type="text">
+          <button type="button">In</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="fullname"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td><input type="radio" name="gender" value="Nam">Nam
+					<input type="radio" name="gender" value="Nữ">Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select name="job">
+						<option value="Giáo viên" selected>Giáo viên</option>
+						<option value="Kỹ sư">Kỹ sư</option>
+						<option value="Bác sĩ">Bác sĩ</option>
+						<option value="Khác">Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+			<td>
+				<select size="4" name="product">
+					<option value="Kem đánh răng" selected>Kem đánh răng</option>
+					<option value="Bột giặt">Bột giặt</option>
+					<option value="Dầu gội đầu">Dầu gội đầu</option>
+					<option value="Sữa tắm">Sữa tắm</option>
+					
+				</select>
+			</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td><input type="text" name="guess"></td>
+			</tr>
+			<tr>
+				
+				<td colspan="2"><input type="button" name="DongY" value="Đồng ý" onclick="display.innerHTML='Bạn đã đăng ký thành công'"></td>
+			</tr>
+			<tr>
+				
+				<td colspan="2" id="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

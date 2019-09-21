@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp for</title>
+	<style type="text/css">
+	body{
+			width:30%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 100%;
+			margin: auto;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">Tìm các số chia hết cho 6 và 9</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="color: red">Nhập một số</td>
+				<td><input type="text" id="input" style="width: 30%">
+					<input type="button" value="In" style="width: 45%;margin-left: 10px;" onclick="ketqua.innerHTML=Chia_Het_6_9(input.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><label style="color: blue;" id="ketqua"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="")
+	}
+	function Chia_Het_6_9(value){
+		if (la_so(value)){
+			value=Number(value);
+			var html="Các số chia hết cho 6 và 9 là: ";
+			for (var i=9;i<=value;i+=9){
+				if (i%6===0) html+=i+", ";
+			}
+			return html;
+		}
+		return "Số nhập không hợp lệ";
+	}
+</script>

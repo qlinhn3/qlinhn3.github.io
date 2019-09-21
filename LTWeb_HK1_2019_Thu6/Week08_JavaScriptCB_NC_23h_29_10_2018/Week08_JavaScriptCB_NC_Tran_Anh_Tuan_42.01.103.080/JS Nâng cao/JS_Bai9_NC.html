@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sử dụng đối tượng String</title>
+	<style>
+		h1{
+			text-align: center;
+			font-weight: bold;
+			color: #C26D35;	
+		}
+		table{
+			border-collapse: collapse;
+			margin: auto;
+		}
+		table,tr,td{
+			border: 1px solid #990000;
+			color: #990000;
+			background-color: #FFFDCC;
+			padding: 10px;
+			text-align: left;
+			font-size: 18px;
+		}		
+	</style>
+	<script type="text/javascript">
+		function trim(chuoi){
+			var i=0;
+			var n=chuoi.length;
+			while(i<n){
+				if(chuoi.charAt(i)==' '){
+					++i;						
+				}
+				else break;
+			}
+			var tmp1=chuoi.substr(i,n);
+			var j=tmp1.length-1;
+			while(j>0){
+				if(tmp1.charAt(j)==' '){
+					--j;
+				}
+				else break;  
+			}
+			var tmp2=tmp1.substr(0,j+1);
+			return tmp2;
+		}		
+			
+		function tim_thay_the(chuoi,chuoitim,chuoithe){				
+			var tim=trim(chuoitim);
+			var timHoa=tim.toUpperCase();
+			var the=trim(chuoithe);					
+			var kt=chuoi.search(tim);			
+			if(kt==false)
+				alert("Không tìm thấy!");
+			else{				
+				document.getElementById("chuoikq").innerHTML=chuoi.replace(new RegExp(tim, 'gi'),"<font style='color: #FFFFFF; background-color: #000099;'>"+the+"</font>");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Tìm và thay thế</h1>
+	<table>
+		<tr>
+			<td>Nhập một chuỗi</td>
+			<td>
+				<textarea id="chuoinhap" cols="55"></textarea>
+				<br>				
+				<font id="chuoikq"></font>
+			</td>
+		</tr>
+		<tr>
+			<td>Nhập chuỗi tìm</td>
+			<td><input type="text" id="chuoitim" size="35"></td>
+		</tr>
+		<tr>
+			<td>Nhập chuỗi thay thế</td>
+			<td><input type="text" id="thaythe" size="35"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div align="center"><button type="button" id="xuat" onclick="tim_thay_the(chuoinhap.value,chuoitim.value,thaythe.value)">Tìm và thay thế</button></div>
+			</td>			
+		</tr>
+	</table>
+</body>
+</html>

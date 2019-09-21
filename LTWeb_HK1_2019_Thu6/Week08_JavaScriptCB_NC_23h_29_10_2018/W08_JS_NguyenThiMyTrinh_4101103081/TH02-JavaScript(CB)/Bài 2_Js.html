@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>sử dụng hộp thọai</title>
+    <style media="screen">
+      table,tr,td {
+        background-color: lightgreen;
+        margin: auto;
+        border:2px solid black;
+        border-collapse: collapse;
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form> -->
+      <table>
+        <tr>
+          <td id="output"></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Name">Nhập tên bạn</label>
+            <input type="text" id="input">
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <button type="button" onclick='Sub()'>
+                Thay đổi câu chào</button>
+            </td>
+        </tr>
+      </table>
+    <!-- </form> -->
+    <script type="text/javascript">
+      var name = prompt('nhập tên bạn',name);
+      var output = document.getElementById('output');
+      output.innerHTML = name;
+      function Sub(){
+        output.innerHTML = document.getElementById('input').value
+      }
+    </script>
+  </body>
+</html>

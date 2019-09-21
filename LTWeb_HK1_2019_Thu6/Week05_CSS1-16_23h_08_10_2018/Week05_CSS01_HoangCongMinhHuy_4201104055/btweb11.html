@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển trên form</title>
+	<link rel="stylesheet" href="style011.css">
+</head>
+<body>
+	<script>
+		function XuLy()
+		{
+			document.getElementById('msg').innerHTML = document.getElementById('username').value;
+			//var hidden = document.getElementsByClassName('hidden');
+			//hidden[0].style.display = "block";
+		}
+	</script>
+	<div class="container">
+		<h1>Đăng nhập</h1>
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td>Tên đăng nhập</td>
+					<td><input type="text" id="username"></td>
+				</tr>
+				<tr>
+					<td>Mật khẩu</td>
+					<td><input type="password" id="password"></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<input type="button" value="Check" onclick="XuLy()">
+					</td>
+				</tr>
+				<tr class="hidden">
+					<td colspan="2" style="text-align:center">
+						<p id="msg"></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

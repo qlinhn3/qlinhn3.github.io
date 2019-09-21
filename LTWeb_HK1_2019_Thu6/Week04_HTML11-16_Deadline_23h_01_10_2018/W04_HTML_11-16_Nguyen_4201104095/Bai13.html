@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai13</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 style="color: #062F8B">Đăng ký du lịch</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên </td>
+				<td>
+					<input type="text" name="fullname">
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td>
+					<input type="text" name="diachi">
+				</td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td>
+					<input type="text" name="phone">
+				</td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td>
+					<input type="checkbox" name="khachVN">
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+						<optgroup label="Miền Bắc">
+							<option value="hn-hl-s">Hà Nội-Hạ Long-Sapa</option>
+							<option value="hn-ch-nb">Hà Nội-Chùa Hương-Ninh Bình</option>
+							<option value="hn-cb-tc">Hà Nội-Cát Bà-Tuần Châu</option>
+						</optgroup> 
+						<optgroup label="Miền Trung">
+							<option value="h-bm-dn">Huế-Bạch Mã-Đà Nẵng</option>
+							<option value="nt-dl">Nha Trang-Đà Lạt</option>
+							<option value="bmt-gl-kt">Buôn Ma Thuột-Gia Lai-Kontum</option>
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option value="tp-ct-cm">TP.HCM-Cần Thơ-Cà Mau</option>
+							<option value="tp-mt">TP.HCM-Mỹ Tho</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td>
+					<input type="radio" name="phuongtien" value="maybay">Máy bay
+					<input type="radio" name="phuongtien" value="xeoto">Xe ô tô
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" >
+					<fieldset>
+						<legend style="color: #E72020;"><i>Số lượng đoàn khách</i></legend>
+						<label >Người lớn<input type="text;" name="nguoilon" style="border: 1px;width: 60px;height: 20px;"></label>
+						<label>Trẻ em<input type="text" name="trêm" style="border: 1px;width: 60px;height: 20px;"></label>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<select name="ghichu" multiple="multiple">
+						<option>Có 2 trẻ em dưới 6 tuổi</option>
+						<option>Có 2 người ăn chay</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+				<p><input type="button" name="dongy" value="Đồng ý"  onclick="display.innerText='Bạn đã đăng ký thành công!'"></p>
+				</td>
+			</tr >
+			<tr >
+				<td colspan="2" style="text-align: center;" id="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

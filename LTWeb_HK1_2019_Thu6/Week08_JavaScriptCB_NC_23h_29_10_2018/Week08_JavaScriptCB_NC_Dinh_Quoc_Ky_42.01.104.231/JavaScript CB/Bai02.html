@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sử dụng hộp thoại</title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body onload="Prompt()">
+	<form>
+		<table>
+			<tr>
+				<td colspan="2"><label id="tencuaban" style="color: blue"></label></td>
+			</tr>
+			<tr>
+				<td style="color: red">Nhập tên mới</td>
+				<td><input type="text" name="ten"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" value="Thay đổi câu chào" onclick="tencuaban.innerHTML=ten.value"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function Prompt(){
+		var ten=prompt("Hãy nhập tên của bạn");
+		document.getElementById('tencuaban').innerHTML="Chào bạn "+ten;
+	}
+</script>

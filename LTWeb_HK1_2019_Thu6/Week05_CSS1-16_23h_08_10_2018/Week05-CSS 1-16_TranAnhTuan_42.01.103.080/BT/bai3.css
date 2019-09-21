@@ -1,0 +1,10 @@
+body{
+  background-color: #A06D21;
+   color:white;
+   background-image: url('Bai03.jpg');
+   background-position: center;
+  background-repeat: no-repeat;
+}
+h2{
+  text-align:center;color: #FFCC00;
+}

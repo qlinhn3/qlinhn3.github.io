@@ -1,0 +1,13 @@
+table{
+  margin: auto;
+}
+  table,tr,td {
+    text-align: center;
+    padding: 5px;
+    border: 2px solid red;
+    border-collapse: collapse;
+  }
+  span {
+    background-color: #000099;
+    color: white;
+  }

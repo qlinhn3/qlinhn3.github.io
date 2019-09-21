@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 13</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		h1{
+			color: blue;
+		}
+
+		table{
+			width: 50%;
+			background-color: lightyellow;
+		}
+		td{
+			text-align: left;
+			color:green;
+
+		}
+		fieldset{
+			border: 2px solid red;
+			width: 350px;
+			height: 55px;
+			margin: auto;
+		}
+		legend{
+			font-style: italic;
+			color: orange;
+		}
+		.sl{
+			display: inline-block;
+		}
+		input.sl{
+			display: inline-block;
+			width: 100px;
+		}
+		#result{
+			text-align: center;
+			color: orange;
+			margin: auto; 
+			padding: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Đăng ký du lịch</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="number" name=""></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name=""></td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select name="" id="">
+						<optgroup label="Miền Bắc"></optgroup>
+						<option value="">Hà Nội - Hạ Long - Saga</option>
+						<option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+						<option value="">Hà Nội - Cát Bà - Tuân Châu</option>
+						<optgroup label="Miền Trung"></optgroup>
+						<option value="">Huế - Bạch Mã - Đà Nẵng</option>
+						<option value="">Nha Trang - Đà Lạt</option>
+						<option value="">Buôn Mê Thuộc - Gia Lai - Kontum</option>
+						<optgroup label="Miền Nam"></optgroup>
+						<option value="">TP HCM - Cần Thơ -Cà Mau</option>
+						<option value="">TP HCM - Mỹ Tho</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td> 
+					<input type="checkbox" name="">Máy bay
+					<input type="checkbox" name="">Xe ô tô
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>
+							Số lượng đoàn khách
+						</legend>
+						<p class="sl">Người lớn</p>
+						<input class="sl" type="text" name="">
+						<p class="sl"> Trẻ em</p>
+						<input class="sl" type="text" name="">
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<textarea>
+						Có trẻ....
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" name="" value="Đồng ý" onclick="result.innerHTML='Bạn đã đăng ký thành công'" ></button>
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2"> <p id="result"></p></td>			
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>

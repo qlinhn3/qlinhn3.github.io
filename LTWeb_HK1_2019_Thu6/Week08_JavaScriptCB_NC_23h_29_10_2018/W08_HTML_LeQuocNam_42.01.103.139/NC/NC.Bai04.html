@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.04 - Các thao tác trên mảng</title>
+<script language="javascript" type="text/javascript" src="xuly.js" >
+</script>
+</head>
+<body>
+<h3 align="center" style="color:#C09">Các thao tác trên mảng</h3>
+<form>
+<table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#039" bordercolor="#039" cellpadding="3">
+<tr>
+	<td align="center" width = 7%><input type = "button" value = "Tạo mảng" onclick="mangbd.innerHTML=taoMang()" >
+	</td>
+	<td><label id = "mangbd" ></label></td>
+</tr>
+<tr>
+	<td colspan = "2"><label id = "mangkq" style="color:#F90"> Giá trị mảng sau khi xử lý</label></td>
+</tr>
+<tr>
+	<td colspan = "2" align="center"> 
+		<input type = "radio" name = "kieusx" value ="tang" checked = "checked" onclick="mangkq.innerHTML=sapXep(true)" > Sắp xếp tăng 
+		<input type = "radio" name = "kieusx" value ="giam" onclick="mangkq.innerHTML=sapXep(false)"> Sắp xếp giảm 
+	</td>
+</tr>
+<tr>
+	<td colspan="2"> Thêm vào vị trí: <input type = "text" id = "vitrithem" size = "10"> Giá trị:<input type = "text" id = "giatri" size = "10"> &nbsp;<input type = "button" id = "them" value = "Thêm" onclick="mangkq.innerHTML= thempt(vitrithem.value, giatri.value)"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

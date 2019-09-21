@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo form và các điều khiển</title>
+    <style media="screen">
+      h1, td {
+        color:blue;
+      }
+      h1 {
+        text-align: center;
+      }
+      table,tr,td {
+        background: lightblue;
+        margin: auto;
+        font-size: 20px;
+        border: black 2px solid;
+        border-collapse: collapse;
+      }
+      table {
+        width: 40%;
+      }
+      #center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <form>
+      <table id="myTable">
+        <tr>
+          <td>Họ và tên</td>
+          <td>
+            <input type="text" id="fName" name="fName" size="45">
+          </td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <input type="text" id="Ads" name="Ads" size="35">
+          </td>
+        </tr>
+        <tr>
+          <td>Điện Thoại</td>
+          <td>
+            <input type="text" id="sdt" name="sdt">
+          </td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td>
+            <input type="radio" name="Sex" checked value="Nam">
+            <label for="Nam">Nam</label>
+            <input type="radio" name="Sex" value="Nữ">
+            <label for="Nữ">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Nghề nhiệp</td>
+          <td>
+            <select name="job">
+              <option selected value="Bác sĩ">Bác sĩ</option>
+              <option value="Kỹ sư">Kỹ sư</option>
+              <option value="Giáo viên">Giáo viên</option>
+              <option value="khác">khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn sản phẩm tham gia</td>
+          <td>
+            <select name="pri">
+              <option value="1" selected>Kem đánh răng</option>
+              <option value="2">Bột giặt</option>
+              <option value="3">Dầu gội đầu</option>
+              <option value="4">Sữa tắm</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Số người dự đoán tham gia
+          </td>
+          <td>
+            <input type="text" id="Sum" name="Sum">
+          </td>
+        </tr>
+        <tr>
+          <td colspan=2 style="text-align:center">
+            <button type="button" onclick="Sub()">Đồng Ý</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

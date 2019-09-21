@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.05 - Tính tiền thực đơn</title>
+<script language="javascript">
+
+</script>
+</head>
+
+<body style = "font-family:Tahoma, Geneva, sans-serif">
+<h2 align="center" style = "color:#CC0000">Thực đơn ăn sáng</h2>
+<form id = "nhap">
+<table align = "center" width = "460"  border = "1"  style="border-collapse:collapse; color:#330099" bordercolor="#330099" cellpadding="5">
+<tr align="center" style = "font-weight:bold"><td>Thức ăn</td><td>Nước giải khát</td><td width="130">Dịch vụ khác</td></tr>
+
+<tr>
+    <td align="center">
+    <select id = "thucAn" multiple= "multiple" size = "9"><!--multiple: được phép chọn nhiều, không có thanh lăn-->
+    	<option value = "15000">Phở bò</option>
+      	<option value = "10000"  selected="selected">Cơm tấm</option>
+      	<option value = "16000">Hủ tíếu Nam vang</option>
+    	<option value = "8000">Bánh mì ốp la</option>
+      	<option value = "12000">Hủ tiếu bò kho</option>
+      	<option value = "10000">Bánh mì bò kho</option>
+      	<option value = "14000">Cháo lòng</option>
+      	<option value = "18000">Bún bò huế</option>
+      	<option value = "8000">Bánh cuốn</option>
+    </select>
+    </td>
+    <td align="center">
+    <select id = "giaiKhat" multiple= "multiple" size = "9">
+        <option value = "5000" selected = "selected">Cà phê đá</option>
+      	<option value = "6000">Cà phê sữa đá</option>
+      	<option value = "4000">Nước ngọt các loại</option>
+    	<option value = "3000">Cà phê đen</option>
+      	<option value = "1000">Trà đá</option>
+      	<option value = "8000">Chanh dây</option>
+      	<option value = "12000">Cam tươi</option>
+      	<option value = "6000">Sữa tươi</option>
+      	<option value = "5000">Xí muội</option>
+    </select>
+	</td>
+    <td valign="top">
+	Khăn lạnh <input type="checkbox" value="khan" id = "khan"><br>
+	Phòng lạnh <input type="checkbox" value="phong" id = "phong">    
+    </td>
+</tr>
+
+<tr>
+<td colspan="3"><div id = "tongTien" style="color:#CC0000"> Hóa đơn tính tiền</div></td>
+</tr>
+<tr>
+<td colspan="3" align="center"><input type = "button" id ="tt" style = " background-color:#CC0000; font-weight:bold; color: white" value = "In hóa đơn tính tiền" ></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+

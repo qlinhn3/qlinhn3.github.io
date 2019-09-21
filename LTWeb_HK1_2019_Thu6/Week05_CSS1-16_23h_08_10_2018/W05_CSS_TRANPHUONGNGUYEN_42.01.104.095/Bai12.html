@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai12</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 style="color: #146C05;">Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<form>
+		<table style="width: 40%">
+			<tr>
+				<td>Họ và tên</td>
+				<td>
+					<input type="text" name="username">
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="diachi"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td>
+					<input type="radio" name="gioitinh" value="nam">Nam
+					<input type="radio" name="gioitinh" value="nu">Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select name="nghenghiep" >
+						<option value="bacsi" >Bác sĩ</option>
+						<option value="kisu" >Kỹ sư</option>
+						<option value="khac" >Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select name="chonsp" multiple="multiple">
+						<option value="kemdanhrang" >Kem đánh răng</option>
+						<option>Bột giặt</option>
+						<option>Dầu gội đầu</option>
+						<option>Sửa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td>
+					<input type="text" name="dudoan">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" name="dongy"  value="Đồng ý" onclick="display.innerText='Bạn đã đăng kí thành công!!!'+ username.value">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;" ip="display"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

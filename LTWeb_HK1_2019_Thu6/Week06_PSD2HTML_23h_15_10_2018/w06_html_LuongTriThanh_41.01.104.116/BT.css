@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400px;
+}
+.container{
+	height: 100vh;
+	width: 100vw;
+	background: green url(image/background_1.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.box-center{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	width: 360px;
+	height: 400px;
+	background: #fff;
+	position: absolute;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0 ,0, 0.5)
+}
+.avatar{
+	display: block;
+	margin-top: 25px;
+}
+.author{
+	margin: 4px 25px 0;
+	font-size: 34px;
+	line-height: 1em;
+	color: #f499cc;
+}
+.work{
+	font-size: 20px;
+	font-weight: 300px;
+}
+.list-icon{
+	margin: 0 auto;
+	width: 200px;
+}
+.list-icon .icon {
+	text-decoration: none;
+	float: left;
+	margin: 10px 10px;
+}

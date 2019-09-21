@@ -1,0 +1,20 @@
+td.tinh{
+	color: #0993F3 !important;
+	vertical-align: top;
+	text-align: left;
+
+}
+.hinh{
+	z-index: -1;
+	width: 100px;
+}
+#hinh2{
+	overflow-y: 1;
+}
+#dong1{
+	font-size: 50px;
+	position: absolute;
+	top: -2%;
+	left: 10%;
+	color: #3F10F0;
+}

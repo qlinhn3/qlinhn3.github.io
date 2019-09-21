@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table,td{
+			border : 1px solid #48B506;
+			border-collapse: collapse;
+			background-color: #8EFCBA;
+		}
+		h1{
+			text-align: center;
+			color: #0B7B1D
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function tinh_tien_thuong() {
+			var tienluong = document.getElementById('tl');
+			var xeploai = document.getElementById('xl');
+			switch (xeploai){
+				case 'A' : display.innerText ='Tiền thưởng là: '+ tienluong.value*2   + ' đồng';
+				break;
+				case 'B' : display.innerText ='Tiền thưởng là: '+ tienluong.value*1.8 + ' đồng';
+				break;
+				case 'C' : display.innerText ='Tiền thưởng là: '+ tienluong.value*1.2 + ' đồng';
+				break;
+				case 'D' : display.innerText ='Tiền thưởng là: '+ tienluong.value*0.8 + ' đồng';
+				break;
+				default: display.innerText ='Tiền thưởng là: '+ tienluong.value     + ' đồng';
+
+			}
+
+		}
+	</script>
+	<h1>Tính tiền thưởng cuối năm</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td>
+					Tiền lương
+				</td>
+				<td>
+					<input type="text" name='tl' id="tl">
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Xếp loại
+				</td>
+				<td id="xl" >
+					<select>
+						<option value="A" id="A" name="A">Loại A</option>
+						<option value="B" id="B" name="B">Loại B</option>
+						<option value="C" id="C" name="C">Loại C</option>
+						<option value="D" id="D" name="D">Loại D</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" name="tinh" value="Tính" id="tinh" onclick="tinh_tien_thuong()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label id='display' style="font-weight: bold;color: red"></label>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

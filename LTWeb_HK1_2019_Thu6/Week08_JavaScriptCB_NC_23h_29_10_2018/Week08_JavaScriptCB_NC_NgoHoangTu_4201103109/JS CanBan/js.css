@@ -1,0 +1,11 @@
+table{
+  border-collapse: collapse;
+  background-color: #bbff99;
+}
+table,td{
+  border: 1px solid #2a8000;
+  padding: 5px;
+  margin: auto;
+  border-color: #2a8000;
+  color: #339900;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cấu trúc if ... else</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#button').click(function(){
+        var txt;
+        var point =( parseFloat($('#I').val()) + parseFloat($('#II').val()) )/2;
+        $('#output').val(point);
+        if(point < 5) txt="Yếu"
+        else if(point < 7) txt="Trung bình"
+        else if(point < 9) txt="Khá"
+        else if(point <= 10) txt="Giỏi"
+        $('#_II').text(txt)
+       })
+    })
+    </script>
+    <style media="screen">
+      table,tr,td {
+        background-color: lightgreen;
+        margin: auto;
+        border:2px solid black;
+        border-collapse: collapse;
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:green; text-align:center">Xếp loại cuối năm học</h1>
+    <table>
+      <tr>
+        <td>Điểm trung bình HKI:</td>
+        <td><input type="text" id="I"></td>
+      </tr>
+      <tr>
+        <td>Điểm trung bình HKII:</td>
+        <td><input type="text" id="II"></td>
+      </tr>
+      <tr>
+        <td>Kết quả :</td>
+        <td>
+          <input type="text" id="output" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td>Xếp loại :</td>
+        <td id="_II">
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2><button type="button" id="button">Đồng ý</button></td>
+      </tr>
+    </table>
+  </body>
+</html>

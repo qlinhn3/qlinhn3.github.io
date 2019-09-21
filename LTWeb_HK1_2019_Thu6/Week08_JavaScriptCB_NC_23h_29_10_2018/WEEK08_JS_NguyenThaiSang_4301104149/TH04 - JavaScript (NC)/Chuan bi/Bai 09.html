@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sử dụng đối tượng String</title>
+    <link rel="stylesheet" href="../css/master.css">
+  </head>
+  <body>
+    <h1 style="color: orange;text-align:center;">Tìm và thay thế</h1>
+    <table>
+      <tr>
+        <td><label>Nhập một chuỗi</label></td>
+        <td>
+          <textarea name="name" rows="2" cols="50" id=input></textarea>
+          <p id="output"></p>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Nhập chuỗi tìm</label></td>
+        <td ><input type="text" id=find size=50></td>
+      </tr>
+      <tr>
+        <td><label>Nhập chuỗi thay thế</label></td>
+        <td><input type="text" id=replace size=50></td>
+      </tr>
+      <tr>
+        <td colspan='2'><input type="submit"
+           value="tìm và thay thế"
+           onclick="Replace(output,input.value,find.value,replace.value)"
+           ></td>
+      </tr>
+    </table>
+    <script src="../JS/BAI9.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<h1 style="color:#7f007f"><center> Đăng ký du lịch</center> </h1>
+	<table style="background: #990000; color: #ff007f;border="1" >
+		<tr>
+			<td>Họ và tên</td>
+			<td><input type="text" name="fullname"></td>
+		</tr>
+		<tr>
+			<td>Địa chỉ</td>
+			<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+			<td>Điện thoại</td>
+			<td><input type="number" name="phone"></td>
+		</tr>
+		<tr>
+			<td>Khách Việt Nam</td>
+			<td> <input type="radio" name="vietnam" value="vietnam"></td>
+		</tr>
+		<tr>
+			<td>Chọn tour</td>
+			<td><select>
+				<optgroup label="Miền Bắc">
+   					<option value="tour1.1">Hà Nội - Hạ Long - Sapa</option>
+    				<option value="tour1.2">Hà Nội - Chùa Hương - Ninh Bình</option>
+    				<option value="tour1.3"> Hà Nội - Cát Bà - Tuấn Châu</option>
+  				</optgroup>
+  				<optgroup label="Miền Trung">
+    				<option value="tour2.1">Huế - Bạch Mã - Đà Nẵng</option>
+    				<option value="tour2.2">Nha Trang - Đà Lạt</option>
+    				<option value="tour2.3">Buôn mê thuột - Gia Lai - Kontum</option>
+ 				 </optgroup>
+ 				 <optgroup label="Miền Nam">
+ 				 		<option value="tour3.1"> TP.HCM - Cần Thơ - Cà Mau</option>
+ 				 		<option value="tour3.2">TP.HCM - Mỹ Tho</option>
+ 				 </optgroup>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Phương tiện</td>
+			<td><input type="radio" name="by" value="airplane">Máy bay<input type="radio" name="by" value="oto">Xe ô tô</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<legend style="color: #ff7f00 "> Số lượng hàng khách</legend><left>
+					Người lớn: <input type="number" name="adult">
+					Trẻ em: <input type="number" name="children"> </left>
+				</fieldset>
+			</td>
+			
+		</tr>
+		<tr>
+			<td>Ghi chú thêm</td>
+			<td><input type="text" name="note"></td>
+		</tr>
+		<tr>
+			 <td colspan="2"><center><input type="button" name="DongY" value="Đồng Ý" ></center></td>
+				
+					</tr>
+		<tr>
+			<td colspan="2" style="color: #ff7f00"><i><center>Bạn đã đăng kí thành công!!!</center></i></td>
+		</tr>
+	</table>
+</body>
+</html>

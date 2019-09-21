@@ -1,0 +1,35 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.lich{
+  margin: auto;
+  width: 250px;
+  height: 300px;
+  border: 2px solid black;
+  outline: 2px dotted green;
+  text-align: center;
+}
+div p {
+  margin: 25px 0px;
+}
+#nam{
+  color: red;
+}
+#thang {
+  font-size: 24px;
+  color: blue;
+}
+#ngay {
+  font-size: 72px;
+  color:red;
+}
+#thu {
+  font-size: 34px;
+  color: blue;
+}
+#Say {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}

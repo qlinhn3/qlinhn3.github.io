@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp for</title>
+	<style type="text/css">
+		body{
+			width:30%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 100%;
+			margin: auto;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">In bảng cửu chương</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Nhập cửu chương</td>
+				<td><input type="text" id="input" style="width: 30%">
+					<input type="button" value="In" style="width: 45%;margin-left: 10px;" onclick="ketqua.innerHTML=In_Bang_Cuu_Chuong(input.value)">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><label style="color: red;" id="ketqua">Kết quả</label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function In_Bang_Cuu_Chuong(value) {
+		value=Number(value);
+		var html="";
+		for (var i=1;i<=10;++i){
+			html+=value+"*"+i+"="+value*i+"<br>";
+		}
+		return html;
+	}
+</script>

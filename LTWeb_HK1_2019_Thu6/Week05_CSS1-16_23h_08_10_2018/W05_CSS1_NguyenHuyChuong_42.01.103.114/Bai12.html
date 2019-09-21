@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" type="text/css" href="123.css">
+	<style type="text/css">
+		td.xanh{
+			text-align: left;
+			color: green;
+		}
+		td.trang{
+			text-align: left;
+		}
+	</style>
+
+</head>
+<body>
+	<h2 align="center" style="color: green ">Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+	<form> 
+		<table bgcolor="#c6ecc6">
+			<tr>
+				<td class="xanh">Họ và tên</td>
+				<td class="trang"><input type="text" name="hovaten" value="Nguyễn Ngọc Quỳnh Nga" size="45"></td>
+			</tr>
+			<tr>
+				<td class="xanh">Địa chỉ</td>
+				<td class="trang"><input type="text" name="diachi" value="2Bia Hùng Vương, Q10" size="30" ></td>
+			</tr>
+			<tr>
+				<td class="xanh">Điện thoại</td>
+				<td class="trang"><input type="number" name="sdt" value="0909097506" size="20"></td>
+			</tr>
+			<tr>
+				<td class="xanh">Phái</td>
+				<td class="trang"><input type="radio" name="phai" value="Nam">Nam
+					<input type="radio" name="phai" value="Nữ" checked>Nữ
+				</td>
+			</tr>
+			<tr>
+				<td class="xanh">Nghề nghiệp</td>
+				<td class="trang">
+					<select>
+						<option value="Bacsi">Bác sĩ</option>
+						<option value="Kysu">Kỹ sư</option>
+						<option value="Giaovien" selected="">Giáo viên</option>
+						<option>Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="xanh">Chọn sản phẩm tham gia</td>
+				<td class="trang">
+					<select size="4" multiple>
+						<option selected >Kem đánh răng</option>
+						<option>Bột giặt</option>
+						<option selected>Dầu gội đầu</option>
+						<option>Sữa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="xanh">Số người dự đoán tham gia</td>
+				<td class="trang"><input type="number" name="songuoithamgia" value="250000" size="7"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" name="DongY" value="Đồng ý" onclick="display.innerText= 'Bạn đã đăng ký thành công!!!'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="display" style="color: red; text-align: center;"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

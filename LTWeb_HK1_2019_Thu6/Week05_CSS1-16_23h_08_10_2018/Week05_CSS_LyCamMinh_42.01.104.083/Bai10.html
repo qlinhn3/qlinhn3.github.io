@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo bảng, trộn dòng và cột</title>
+	<style type="text/css">
+		body{
+			width: 70%;
+			margin:auto;
+			font-size: 20px;
+		}
+		.fonts{
+			display: inline-block;
+			color: red;
+			font-weight: bold;
+			font-size:20px; 
+		}
+		span#square{
+			display: inline-block;
+			height: 8px;
+			width: 8px;
+			background-color: #FFFFFF;
+			border:1px solid #f20;
+			margin:1px 5px;
+		}
+		table,td, th{
+			border: 2px solid #f20;
+			border-collapse: collapse;
+			margin: auto;
+		}
+		#title1{
+			text-align: right;
+			background-color: #FF0000;
+			color: #FFFFFF;
+			width: 90%;
+		}
+		#title2{
+			background-color: #FFBBBB;
+			color: #FF0000;
+			width: 90%;
+		}
+		.bold_italic{
+			font-weight: bold;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th id="title1" colspan="3">Công nghệ dầu gọi dưỡng tóc mới</th>
+			<th rowspan="3" width="10%"><img src="images/Bai10.jpg "/></th>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<th id="title2" colspan="3">Tỏa sáng cùng DOUBLE RICH</th>
+		</tr>
+		<tr>
+			<td colspan="2" width="50%" valign="top">
+				<div class="fonts"><span id="square"></span>Sản phẩm khuyến mãi :</div>
+				<ul>
+					<li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi.</li>
+				</ul>
+				<div class="fonts"><span id="square"></span>Đối tượng tham gia :</div>
+				<ul>
+					<li>
+						 Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi.
+					</li>
+					<li>Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina, công ty quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này, nhân viên siêu thị</li>
+				</ul>
+			</td>
+			<td colspan="2" width="50%" valign="top">
+				<div class="fonts"><span id="square"></span>Cách thức nhận giải : </div>
+				<ol>
+					<li><span class="bold_italic">Giải khuyến khích :</span> Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005</li>
+					<li><span class="bold_italic">Giải đặc biệt, nhất, nhì :</span> khách hàng cắt phần mã vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi). Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sử dụng hộp thoại</title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+		}
+		td,tr,table{
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Nhập tên bạn</td>
+				<td><input type="text" id="ten"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" value="Xuất câu chào" onclick="dialog(ten.value)"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function dialog(name){
+		alert('Chào bạn '+name);
+	}
+</script>

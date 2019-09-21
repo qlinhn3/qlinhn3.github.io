@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  color: orange;
+}
+table {
+  width: 400px;
+}
+table td {
+  width: 50px;
+}
+input[type='number']{
+  width: 50px;
+}
+#output {
+  height: 200px;
+  vertical-align: top;
+}
+#output table tr td {
+  height: 25px;
+}
+.head {
+  font-weight: bold;
+  background-color: lightgray;
+}
+._0{
+  color: red;
+}
+._6{
+  color: blue;
+}
+.current {
+  color:orange;
+}

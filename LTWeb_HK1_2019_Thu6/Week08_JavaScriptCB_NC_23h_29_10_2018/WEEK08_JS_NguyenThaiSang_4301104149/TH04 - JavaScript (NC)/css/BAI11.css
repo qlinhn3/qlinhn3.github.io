@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  color: orange;
+}
+table{
+  margin: auto;
+}
+table,tr,td {
+  padding: 5px;
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+table tr:nth-child(2){
+  height: 250px;
+}
+.center {
+  text-align: center;
+}
+.top {
+  vertical-align: top;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style-type: none;
+}
+#group{
+  display: none;
+  margin: auto;
+  overflow-y: scroll;
+  width: 250px;
+  height: 150px;
+  border:2px double black;
+}
+#id {
+  color:red;
+  font-weight: bold;
+}

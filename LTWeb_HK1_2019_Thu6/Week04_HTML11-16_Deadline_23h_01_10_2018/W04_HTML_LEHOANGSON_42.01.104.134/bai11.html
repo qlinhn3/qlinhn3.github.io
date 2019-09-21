@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function myFunction(){
+			var d=document.getElementsByName("username")[0].value.trim();
+			if(d!=""){
+				document.getElementById("display").innerHTML="Hello " + d;
+			}
+			else {
+				alert("Không được để trống");
+			}
+		}
+	</script>
+	<style type="text/css">
+		h1{
+			color:orange;
+		}
+		table,tr,td{
+			background-color: lightblue;
+			border:1px solid red;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>Đăng nhập</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Mã người dùng</td>
+				<td><input type="text" name="username" required=""></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" id="password" required=""></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="Dong Y" value="Đồng ý" onclick="myFunction()"></td>
+				
+			</tr>
+			<tr>
+				<td colspan="2" id="display"></td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

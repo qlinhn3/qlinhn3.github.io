@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng lặp for</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #e67300;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #e67300;
+			background-color: #ffdd99;
+			color: #e67300;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<table>
+		<h1>Tìm các số chia hết cho 6 và 9</h1>
+		<tr>
+			<td>Nhập một số</td>
+			<td><input type="text" id="num"><button onclick="xuat_ket_qua(num)">In</button></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="color: blue"><label id="ketqua"></label>
+			</td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function la_so(so){
+		var a = parseInt(so.value);
+		return !(isNaN(a));
+	}
+	function xuat_ket_qua(so){
+		if (la_so(so)){
+			document.getElementById("ketqua").innerText = "Số nhập không hợp lệ!";
+		}
+		else {
+			var a = parseInt(so.value);
+			var i;
+			var text = "Các số từ 1 đến " + a + "chia hết cho 6 và 9 là: ";
+			for (i=1; i<=a; i++) {
+				if (i%6==0 && i%9==0) text += a + ", ";
+			}
+			document.getElementById("ketqua").innerText = text;
+		}
+	}
+</script>
+</body>
+</html>

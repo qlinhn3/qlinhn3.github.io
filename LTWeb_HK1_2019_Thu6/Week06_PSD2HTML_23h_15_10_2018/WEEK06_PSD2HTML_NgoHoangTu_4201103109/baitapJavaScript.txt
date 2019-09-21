@@ -1,0 +1,10 @@
+﻿- JavaScript là sự lựa chọn để làm Web apps
+- Dùng được backend và front end (phần lớn là front end)
+- Không so sánh các số kiểu float với nhau
+- Không có hàm main
+- Khai báo hàm :
+function name_of_function(var1, var2, var3, ...)
+{
+    // Some code
+}
+JavaScript có thể sử dụng phía server với framework 

@@ -1,0 +1,101 @@
+
+
+bt.css
+body{
+	background: #CCCCCC;
+	margin:0;
+}
+#main-wrapper{
+	width: 70%;
+	margin: 0 auto;
+	background: #FFFFFF;
+	color: black;
+}
+ footer{
+	background: #333333;
+	padding: 20px;
+	color: white;
+	text-align: center;
+
+}
+
+header{
+	background: #E2EBFB;
+	padding: 20px;
+	color: black;
+	text-align: center;
+	background-image: url('../image/btr.jpg');
+	background-position: cover;
+	background-repeat: no-repeat;
+	
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #366EFC;
+}
+nav li{
+	float: left;
+	border-right: 1px solid #333333;
+	padding: 0px;
+}
+nav li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+nav li a:hover{
+	background-color: black;
+}
+.main-content{
+	width:100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+section{
+	width:75%;
+	background: #ffffff;
+	height: 100%;
+	
+	overflow: scroll;
+}
+aside{
+	width:25%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 94%;
+	background:#FFFFFF;
+
+	padding: 20px;
+	overflow: auto;
+}
+aside li a{
+	text-decoration: none;
+	display: inline;
+}
+
+table,th,td{
+	border-collapse: collapse;
+	padding: 10px;
+	margin-right: 15px;
+	border:1px solid black;
+}
+.img{
+	
+	margin-right: 15px;
+	width: 250px;
+	height:250px;
+	background: #dddddd;
+}
+.imgs{
+	
+	
+	background: #dddddd;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo bảng, trộn dòng và cột</title>
+	<style>
+		body{
+			font-family: Tahoma;
+			font-size: 12px;
+		}
+		h2{
+			color: #CC0033; 
+			text-align: center;
+		}
+		table{
+			width: 500px;
+		}
+		table, th, td, tr{
+			border: 1px solid pink;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		tr.head, td.head{
+			text-align: center;
+			border: 1px solid pink;
+			background-color: #CC0033;
+			color: #FFFFFF;
+			font-weight: bold;
+		}
+		td.first{
+			border: 1px solid pink;
+			text-align :center; 
+			vertical-align: middle;
+			color: #CC0033;
+		}
+	</style>
+</head>
+<body>
+	<h2>Chương trình học - ngành lập trình</h2>
+	<table>
+		<tr class="head">
+			<th width="170" rowspan="2">Nhóm học phần</th>
+			<th rowspan="2">Môn học</th>
+			<th colspan="2">Số tiết</th>
+		</tr>
+		<tr>
+			<td class="head">Lý thuyết</td>
+			<td class="head">Thực hành</td>
+		</tr>
+		<tr>
+			<td rowspan="6" class="first">I<br>Tin học văn phòng</td>
+			<td> Hệ điều hành Windows</td>
+			<td align="center">3</td>
+			<td align="center">5</td>
+		</tr>
+		<tr>
+			<td>Sử dụng Internet</td>
+			<td align="center">3</td>
+			<td align="center">5</td>
+		</tr>
+		<tr>
+			<td>Soạn thảo văn bản với MS Word</td>
+			<td align="center">24</td>
+			<td align="center">40</td>
+		</tr>
+		<tr>
+			<td>Tạo bài trình diễn với MS PowerPoint</td>
+			<td align="center">9</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<td>Xử lý số liệu với MS Excel</td>
+			<td align="center">24</td>
+			<td align="center">40</td>
+		</tr>
+		<tr>
+			<td>Tạo trang Web với MS FrontPage</td>
+			<td align="center">9</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<td rowspan="2" class="first">II<br>Kỹ thuật lập trình (VB.NET)</td>
+			<td>Nhập môn lập trình</td>
+			<td align="center">36</td>
+			<td align="center">60</td>
+		</tr>
+		<tr>
+			<td>Kỹ thuật lập trình</td>
+			<td align="center">36</td>
+			<td align="center">60</td>
+		</tr>
+		<tr>
+			<td colspan="4">.....</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

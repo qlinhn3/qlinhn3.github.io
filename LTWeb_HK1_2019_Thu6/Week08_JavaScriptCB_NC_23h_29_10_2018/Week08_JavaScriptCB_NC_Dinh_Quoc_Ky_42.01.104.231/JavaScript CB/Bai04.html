@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ...else if</title>
+	<style type="text/css">
+		body{
+			width:30%;
+			margin: auto;
+		}
+		table{
+			border-collapse: collapse;
+			background-color: #f9f2a6;
+			width: 100%;
+		}
+		td,tr,table{
+			border:1px solid red;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red;text-align: center;">Kết quả cuối năm học</h1>
+	<form>
+		<table>
+			<tr>
+				<td style="color: red">Điểm trung bình HK1</td>
+				<td><input type="text" id="hk1"></td>
+			</tr>
+			<tr>
+				<td style="color: red">Điểm trung bình HK2</td>
+				<td><input type="text" id="hk2"></td>
+			</tr>
+			<tr>
+				<td style="color: red">Điểm trung bình cuối năm</td>
+				<td><input type="text" id="cn"></td>
+			</tr>
+			<tr>
+				<td style="color: red">Xếp loại</td>
+				<td><label style="color: red;font-weight: bold;" id="xeploai"></label></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" value="Xuất xếp loại" onclick="xeploai.innerHTML=KetQua(hk1.value,hk2.value)">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function la_so(so){
+		so=so.trim();
+		return (!isNaN(so)&&so!="")
+	}
+	function KetQua(hk1,hk2){
+		if (la_so(hk1)&&la_so(hk2)){
+			hk1=Number(hk1);
+			hk2=Number(hk2);
+			var kq=(hk1+hk2*2)/3;
+			document.getElementById('cn').value=kq;
+			if (kq>=9) return "Giỏi";
+			if (kq>=7) return "Khá";
+			if (kq>=5) return "Trung bình";
+			return "Yếu";
+		}
+		return "Xin vui lòng nhập số";
+//9=< ĐTB cả năm <=10: Giỏi 7=< ĐTB cả năm < 9 : Khá 5=< ĐTB cả năm < 7 : Trung bình ĐTB cả năm < 5 : Yếu 
+	}
+</script>

@@ -1,0 +1,45 @@
+﻿<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bai 3.13 - Tạo đồng hồ và lời chào</title>
+<script language="javascript">
+</script>
+<style>
+	/*.animation{
+		transition: 2s all;
+	}*/
+	#td{
+		margin-left: 720px;
+	}
+	#td2{
+		margin-left: 15px;
+	}
+</style>
+</head>
+
+<body onclick="Move()">
+<p align ="center" class="animation" id = "td" style = "font-size:32px; font-weight: bold; color:#FFFFFF;width: 720px; position: relative; background-color: #333399 ">TRUNG TÂM TIN HỌC</p>
+<p align ="center" class="animation" id = "td2" style = "font-size:26px; font-weight: bold; color:#333399; width: 720px; position: relative; background-color: #D8E9FC ">Đại học khoa học tự nhiên</p>
+</body>
+</html>
+<script type="text/javascript">
+	function Move(){
+		var cot=720;
+		var cot2=15;
+		var left = setInterval(action(), 1);
+		function action(){
+			if(cot==380 && cot2==380) clearInterval(left);
+			if(cot>380){
+				cot--;
+				x.style.left = cot;
+				
+			}
+			else cot=380;
+			if(cot2<380){
+				cot2++;
+				y.style.left = cot2;
+			}
+			else cot2=380;
+		}
+	}
+</script>

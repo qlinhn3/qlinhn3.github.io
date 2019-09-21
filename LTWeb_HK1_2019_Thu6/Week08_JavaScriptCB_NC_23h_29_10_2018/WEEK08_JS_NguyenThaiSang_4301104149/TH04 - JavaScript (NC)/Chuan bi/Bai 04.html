@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập JavaScript (NC) - Bài 3.04 - Các thao tác trên mảng</title>
+
+</head>
+
+<body>
+  <h3 align="center" style="color:#C09" id="demo">Các thao tác trên mảng</h3>
+  <form>
+    <table align = "center" border = "1" cellspacing="0" style="border-collapse:collapse; color:#039" bordercolor="#039" cellpadding="3">
+      <tr>
+        <td width = 20%><input type = "button" value = "Tạo mảng"  id="button_1"></td>
+        <td><label id = "mangbd" ></label></td>
+      </tr>
+      <tr>
+        <td colspan = "2"><label id = "mangkq" style="color:#F90"> Giá trị mảng sau khi xử lý</label></td>
+      </tr>
+      <tr>
+        <td colspan = "2" align="center">
+          <input type = "radio" name = "kieusx" value ="tang" checked = "checked" onclick="update(this.value)"> Sắp xếp tăng
+          <input type = "radio" name = "kieusx" value ="giam" onclick="update(this.value)"> Sắp xếp giảm
+        </td>
+        </tr>
+      <tr>
+        <td colspan="2"> Thêm vào vị trí:
+          <input type = "text" id = "vitrithem" size = "10"> Giá trị:
+          <input type = "text" id = "giatri" size = "10"> &nbsp;
+          <input type = "button" id = "them" value = "Thêm"
+           onclick="Add(vitrithem.value,giatri.value)">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <script language="javascript" src="../JS/Bai4.js"></script>
+</body>
+</html>

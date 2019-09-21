@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai07_CB</title>
+</head>
+
+<style>
+		table, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+			margin: auto;
+			text-align: center;
+			background-color: #CC7A00;
+			color: #FFFFB3;
+		}
+</style>
+
+<body>
+	<h1 style="text-align: center; color: brown">Tìm số đầu tiên chia hết cho 5 và 7</h1>
+	<form>
+		<table>
+ 			<tr>
+    			<td>
+    			Nhập từ số <input type="text" size="10" id="Tuso" name="Tuso">
+    			đến số <input type="text" size="10" id="Denso" name="Denso">
+    			</td>
+    			<td>
+    				<input type="button" value="In" onclick="Xuat_KQ(Tuso.value, Denso.value)">
+    			</td>
+  			</tr>
+
+ 			<tr>
+    			<td colspan="2"><label id="KQua"></label></td>
+  			</tr>
+		</table>
+
+</body>
+				<script>
+
+					function La_so(tuso, denso) {
+					if (isNaN(parseInt(tuso)) || isNaN(parseInt(denso)) || parseInt(tuso) > parseInt(denso))
+						return true;
+					else
+						return false;
+					}
+
+					function Xuat_KQ(tuso, denso) {
+					var str = "";
+					var ts = tuso;
+					if (La_so(tuso, denso) == true)
+						alert ("Số nhập không hợp lệ, vui lòng nhập lại!");
+					else {
+						while (tuso <= denso) {
+							if (tuso % 5 == 0 && tuso % 7 == 0) {
+								str = tuso;
+							break;
+							}
+					tuso++;
+						}
+					document.getElementById("KQua").innerText = "Số đầu tiên nằm trong khoảng từ [" + ts + "; " + denso + "]" + " chia hết cho 5 và 7 là: " + str;
+					}
+					}					
+							
+				</script>
+
+
+</html>

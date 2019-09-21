@@ -1,0 +1,38 @@
+h1
+{
+	color: #FF9900;
+	text-align: center;
+	border: 1px solid #FF9900;
+	margin:2px;
+}
+#khung
+{
+	border: 5px solid #FF9900;
+}
+.ChuTieuDe
+{
+	color: #AA0000;
+	font-size: 45px;
+	font-weight: 900;
+}
+.ChuCam
+{
+	color: #FF6633;
+	font-weight: 600;
+}
+.MauNen
+{
+	background-color: #EE9A00;
+	font-style: italic;
+}
+#tieude
+{
+	color: #FFFFFF;
+	background-color: #FF6633;
+	text-align: right;
+	font-size: 25px;
+}
+#DoanCuoi
+{
+	text-align: right;
+}

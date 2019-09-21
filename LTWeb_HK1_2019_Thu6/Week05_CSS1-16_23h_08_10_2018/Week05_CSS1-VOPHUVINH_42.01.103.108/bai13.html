@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tạo form và các điều khiển</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	table,th,td{
+		border-collapse: collapse;
+		border: 2px solid #3399CC;
+		padding: 6px;
+		margin: auto;
+	}
+</style>
+<body>
+
+	<h1 class="center blued">Đăng ký du lịch</h1>
+	<br>
+<form>
+<table class="bgyl">
+	<tr>
+		<td class="blued">Họ và tên</td>
+		<td><input type="text" name="1" width="300"></td>
+	</tr>
+	<tr>
+		<td class="blued">Địa chỉ</td>
+		<td><input type="text" name="2" width="150"></td>
+	</tr>
+	<tr>
+		<td class="blued">Điện thoại</td>
+		<td><input type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="blued">Chọn tour</td>
+		<td>
+			<select>
+			<optgroup label="Miền Bắc"></optgroup>
+			<option>Hà Nội- Hạ Long - Sapa</option>
+					<option>Hà Nội-Chùa Hương-Ninh Bình</option>
+					<option>Hà Nội-Cát Bà-Tuấn Châu</option>
+			<optgroup label="Miền Trung"></optgroup>
+			<option>Huế-Bạch Mã-Đà Nẵng</option>
+					<option>Nha Trang-Đà Lạt</option>
+					<option selected>Buôn mê thuột-Gia Lai-Kontum</option>
+			<optgroup label="Miền Nam"></optgroup>
+			<option>TP.HCM-Cần Thơ-Cà Mau</option>
+					<option>TP.HCM-Mỹ Tho</option>
+		</select>
+		</td>
+
+	</tr>
+	<tr>
+		<td class="blued">Phương tiện</td>
+		<td class="blued"><input type="radio" name="rd">Máy bay<input type="radio" name="rd" checked="">Xe ô tô</td>
+	</tr>
+	<tr>
+		<td colspan="2" ><fieldset>
+            <legend style="color:#FFCC33;">Số lượng đoàn khách</legend>
+            Người lớn<input type="text">
+            Trẻ em<input type="text">
+            </fieldset></td>
+	</tr>
+	<tr>
+            <td colspan="2" class="center">Ghi chú thêm
+            <select size="2" class="center">
+            <option>Có 2 trẻ em dưới 6 tuổi</option> 
+            <option>Có 2 người ăn chay</option>
+			</select></td>
+            
+            </tr>
+	<tr>
+		<td colspan="2" class="center oranged"><input type="button" name="" value="Đồng ý" onclick="display.innerText='Bạn đã đăng ký thành công !!!'">  </td>
+	</tr>
+	<tr>
+		<td id="display" colspan="2" class="center oranged"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

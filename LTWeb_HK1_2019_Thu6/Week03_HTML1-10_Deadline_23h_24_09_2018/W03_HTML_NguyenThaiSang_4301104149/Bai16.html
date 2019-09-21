@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bài tập tổng hợp</title>
+    <style media="screen">
+     * {
+       margin: 0px;
+       padding: 0px;
+     }
+      table ,tr, td {
+        border : 2px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        vertical-align: top
+      }
+      #Main {
+        background: url("img/Main2.jpg") left no-repeat;
+        text-align: center;
+      }
+      #list > li, .list2 > li{
+        list-style-type: none;
+      }
+      #list > li > h4{
+        background-color: blue;
+        color:white;
+      }
+      .list2 li h4 {
+        color:blue;
+      }
+      .list3 {
+        margin-left: 50px;
+      }
+      .height {
+        height: 150px;
+      }
+      .h_height {
+        height: 120px;
+      }
+      .left p{
+          margin-left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <td colspan=2>
+          <div id=Main>
+            <img src="img/Main.jpg" style="z-index:-1; position:absolute;">
+            <span style="font-size: 54px">Ai?</span>
+            <span style="font-size: 48px">Cái gì?</span>
+            <span style="font-size: 36px">Ở đâu? ...</span>
+            <img src="img/_1.jpg" style="float:right">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:25%;">
+          <ul>
+            <li>
+              <a href="#_1">Tình yêu và gia đình</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#_2">Sức khỏe</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#_3">Du lịch</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#_4">Ẩm thực</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#_5">Âm nhạc</a>
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul id="list" >
+            <li id="_1">
+              <h4>Tình yêu và gia đình</h4>
+              <ul class="list2">
+                <li style="background:url('img/_2.jpg') no-repeat 10px 20px"  class="left height">
+                  <h4>Trầu cau</h4>
+                  <p>Tình yêu là gì? Là ta yêu một người mỗi ngày trong một năm.
+                     Mỗi năm trong một đời người...</p>
+                </li>
+                <hr>
+                <li style="background:url('img/_3.jpg') no-repeat 10px 20px" class="left height">
+                  <h4>Xây dựng hạnh phúc gia đình qua những bữa cơm hàng ngày</h4>
+                  <p>
+                     Nói đến hạnh phúc gia đình chúng ta thường mô tả bằng những
+                     từ thật đẹp đẽ và được thể hiện qua những giá trị đạo đức rất
+                     đáng trân trọng như tình yêu, lòng chung thuỷ,
+                     tình nghĩa vợ chồng, lòng yêu thương, hy sinh cho con cái,
+                     sự quý trọng,
+                     hiếu đễ của con cháu với cha mẹ, ông bà...
+                   </p>
+                </li>
+              </ul>
+              <a href="#Main" style="float:right">Về đầu trang</a>
+            </li>
+            <li id="_2" style="clear:right">
+              <h4>Sức khỏe</h4>
+              <ul class="list2">
+                <li style="background:url('img/_4.jpg') no-repeat 10px 20px" class="left height">
+                  <h4>10 lời khuyên trong dinh dưỡng</h4>
+                  <p>Cơ thể chúng ta cần nhiều chất dinh dưỡng từ nhiều nguồn lương thực khác nhau.
+                     Vì vậy chúng ta nên thay đổi các loại lương thực khác nhau.
+                      Chúng ta không cần kiêng chi cả - quan trọng là chú ý đến số lượng... </p>
+                </li>
+                <hr>
+                <li style="background:url('img/_5.jpg') no-repeat 10px 20px" class="left height">
+                  <h4>Làm sao để bỏ thuốc lá?</h4>
+                  <p>
+                     Sức khoẻ của chính bạn.
+                     Không hút thuốc lá tức là giảm thiểu đáng kể rủi
+                     ro mắc các loại bệnh ung thư và sức khoẻ sẽ tăng lên
+                     đáng kể so với khi còn hút thuốc.
+                  </p>
+                </li>
+              </ul>
+              <a href="#Main" style="float:right"> Về đầu trang</a>
+            </li>
+            <li id="_3" style="clear:right">
+              <h4>Du lịch</h4>
+              <ul class="list2" >
+                <li class="h_height">
+                  <h4>Các tour mới nhất</h4>
+                  <ul class="list3">
+                    <li>Côn Minh - Đại Lý - Lệ Giang</li>
+                    <li>Đến Macau xem casino</li>
+                    <li>Về Cà mau ăn tôm tít</li>
+                  </ul>
+                </li>
+                <hr>
+                <li class="h_height">
+                  <h4>Các điểm du lịch nổi tiếng trên thế giới</h4>
+                  <ul class="list3">
+                    <li>Đảo Bali xinh đẹp - Indonexia</li>
+                    <li>Thành cổ Rome và tháp nghiêng Pisa</li>
+                    <li>Vạn Lý Trường Thành</li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="#Main">Về đầu trang</a>
+            </li>
+            <li id="_4" style="background:url('img/_6.jpg') no-repeat right" >
+              <h4>Ẩm thực</h4>
+              <ul style="list-style-type: square" class="list3">
+                <li>Các món ăn mới trong tuần</li>
+                <li>Chuyên mục dạy nấu ăn</li>
+                <li>Món ngon Hà Nội </li>
+                <li>Các món ăn dân dã ở miền Tây</li>
+              </ul>
+              <a href="#Main">Về trang đầu</a>
+            </li>
+            <li id="_5">
+              <h4>Âm nhạc</h4>
+              <ul class="list2">
+                <li style="background:url('img/_7.jpg') no-repeat right" class="h_height">
+                  <h4>Nhạc thiếu nhi</h4>
+                  <ul class="list3">
+                    <li>Nắng sân trường</li>
+                    <li>Mẹ yêu không nào</li>
+                    <li>Ba bà đi bán lợn con</li>
+                  </ul>
+                </li>
+                <hr>
+                <li style="background:url('img/_8.jpg') no-repeat right" class="h_height">
+                  <h4>Dân ca</h4>
+                  <ul class="list3">
+                    <li>Bèo dạt mây trôi</li>
+                    <li>Mười thương</li>
+                    <li>Lý cây bông</li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="#Main">Về Trang đầu</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>

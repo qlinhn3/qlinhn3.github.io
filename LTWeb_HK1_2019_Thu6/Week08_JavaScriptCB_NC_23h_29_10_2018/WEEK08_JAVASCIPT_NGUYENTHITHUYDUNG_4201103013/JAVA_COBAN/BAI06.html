@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css2.css">
+	<script >
+		function kt(k) {
+			if(isNaN(parseInt(k)))
+				return true;
+			return false;
+		}
+		function cuu_chuong(k) {
+			var i;
+			var tich="";
+			if(kt(k)==false){
+				for (i = 1; i <= 10; i++) {
+					tich +=k +" "+"*"+" "+ i+" "+"="+" "+k*i +"<br>";
+			}
+			document.getElementById("hienthi").innerHTMLL=tich;
+		}
+	}
+	</script>
+</head>
+<body>
+	<h1>In bảng cửu chương</h1>
+	<table align="center">
+		<tr>
+			<td>Nhập cửu chương</td>
+			<td><input type="text" name="sonhan" id="sonhan">
+			<button type="button" name="in" id="inid" onclick="cuu_chuong(sonhan.value)">In</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"  style="text-align: center;"><label id="hienthi"></label></td>
+		</tr>
+	</table>
+</body>
+</html>

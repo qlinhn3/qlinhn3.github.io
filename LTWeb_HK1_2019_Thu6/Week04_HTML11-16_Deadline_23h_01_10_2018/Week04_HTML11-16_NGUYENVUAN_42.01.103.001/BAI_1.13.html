@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" type="text/css" href="style_table.css">
+	<style>
+		td{
+			text-align: left;
+		}	
+	</style>
+</head>
+<body>
+	<h1 style="color: DodgerBlue">Đăng ký du lịch</h1>
+	<form>
+		<table style="background-color: #ffffcc; color: DodgerBlue;height: 300px;width:400px">
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="HoTen" style="width:300px"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="DiaChi" style="width:250px"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="SDT" style="width:200px"></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name="KhachVN"></td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+						<optgroup label="Miền Bắc">
+							<option value="HN-HL-SP">Hà Nội - Hạ Long - Sapa</option>
+							<option value="HN-CH-NB">Hà Nội - Chùa Hương - Ninh Bình</option>
+							<option value="HN-CB-TC">Hà Nội - Cát Bà - Tuần Châu</option>
+						</optgroup>
+						<optgroup label="Miền Trung">
+							<option value="H-BM-DN">Huế - Bạch Mã - Đà Nẵng</option>
+							<option value="NT-DL">Nha Trang - Đà Lạt</option>
+							<option value="BMT-GL-KT">Buôn Mê Thuột - Gia Lai - Kontum</option>
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option value="HCM-CT-CM">TP.HCM - Cần Thơ - Cà Mau</option>
+							<option value="HCM-MT">TP.HCM - Mỹ Tho</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương Tiện</td>
+				<td>
+					<input type="radio" name="PhuongTien" value="MB">Máy Bay <input type="radio" name="PhuongTien" value="OTO">Xe ô tô
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<fieldset style="border: 2pt solid red;width:350px;height: 55px: center">
+						<legend style="font-style: normal;color: #ff6600;" ><i>Số lượng đoàn khách</i></legend>
+						Người lớn <input type="text" name="nguoilon" style="width:70px;">  Trẻ em<input type="text" name="treem" style="width:70px">
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<div>
+						<textarea style="width:300px"></textarea>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="button" name="DongY" value="Đồng Ý" onclick="thongbao.innerText='Bạn đã đăng ký thành công !!!'"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="thongbao" style="text-align: center;color: #ff6600"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

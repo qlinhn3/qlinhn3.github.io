@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	table{
+		border-collapse: collapse;
+		color: #004d00;
+	}
+	table,td,th{
+		border:1px solid black;
+		padding: 5px;
+		margin: auto;
+		border-color: #003300;
+	}
+	h1{
+		color: #004d00;
+		text-align: center;
+	}
+</style>
+	<title>Bài 12</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<table bgcolor="#ccffcc">
+		<tr>
+			<td>Họ và tên</td>
+			<td><input type="text" id="hoten" size="60"></td>
+		</tr>
+		<tr>
+			<td>Địa chỉ</td>
+			<td><input type="text" id="diachi" size="40"></td>
+		</tr>
+		<tr>
+			<td>Điện thoại</td>
+			<td><input type="text" id="dt" size="20"></td>
+		</tr>
+		<tr>
+			<td>Phái</td>
+			<td><input type="radio" id="phai" value="nam">Nam<input type="radio" id="phai" value="nu" checked>Nữ</td>
+		</tr>
+		<tr>
+			<td>Nghề nghiệp</td>
+			<td><select>
+				<option value="gv">Giáo viên</option>
+  				<option value="bacsi">Bác sĩ</option>
+  				<option value="kysu">Kỹ sư</option>
+  				<option value="noitro">Nội trợ</option>
+			</select> </td>
+		</tr>
+		<tr>
+			<td>Chọn sản phẩm tham gia</td>
+			<td><select multiple="2">
+				<option value="kdr">Kem đánh răng</option>
+  				<option value="bg">Bột giặt</option>
+  				<option value="dgd">Dầu gội đầu</option>
+  				<option value="st">Sữa tắm</option>
+			</select> </td>
+		</tr>
+		<tr>
+			<td>Số người dự đoán tham gia</td>
+			<td><input type="text" id="nguoi"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center"><input type="button" value="Đồng ý" id="dy" onclick="hienthi.innerText = 'Bạn đã đăng ký thành công!!!' "></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="color: #ff00bf; text-align: center"><span id="hienthi"></span></td>
+		</tr>
+	</table>
+
+</body>
+</html>>

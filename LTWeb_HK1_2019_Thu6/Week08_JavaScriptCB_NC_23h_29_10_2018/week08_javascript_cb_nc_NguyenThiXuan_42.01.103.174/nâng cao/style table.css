@@ -1,0 +1,27 @@
+*{
+	box-sizing:  border-box;
+}
+table{
+  border-collapse: collapse;
+  background-color: #bbff99;
+}
+table, td{
+	color: #007f00;
+	background-color: #66ff66;
+	border: 1px solid #007f00;
+	padding: 5px;
+	margin: auto;
+	border-color: #006600;
+}
+
+.left {
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+.center {
+	text-align: center;
+	color: #b30000;
+}

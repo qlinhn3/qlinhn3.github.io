@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Document</title>
+	<style type="text/css">
+	
+	
+	h1{
+		text-align: center;
+		color: blue;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	table,td{
+		border: 2px solid black;
+		padding:30px;
+		margin:auto;
+		text-align: center;
+
+	}
+
+	
+	</style>
+</head>
+<body>
+	<h1>Đăng ký du lịch</h1>
+	<form style="color: blue;">
+		<table style="background-color: #FAFBD0" style="color:blue;">
+
+			<tr>
+				<td>Họ tên</td>
+				<td><input type="text" name="text"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="text"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="id" name="id"></td>
+			</tr>
+			<tr>
+				<td>Khác hàng Việt Nam</td>
+				<td><input type="checkbox" name=" ">
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+						<optgroup label="Miền Bắc">
+							<option>Hà nội-Hạ Long-Sapa</option>
+							<option>Hà Nội-Chùa Hương-Ninh Bình</option>
+							<option>
+								Hà Nội-Cát Bà-Tuần Châu
+							</option>
+						</optgroup>
+						<optgroup label="Miền TRung">
+							<option>Huế-Bạch Mã-Đà Nẵng</option>
+							<option>Nha Trang-Đà Lạt</option>
+							<option>Buôn Mê Thuột-Gia Lai-Kontum</option>
+							
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option>TPHCM-Cần Thơ-Cà Mau</option>
+							<option>TPHCM-Mỹ Tho</option>
+							
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan="2">
+					<form>
+ 				<fieldset>
+  				<legend>Số lượng đoàn khách</legend>
+ 				 Người lớn<input type="id"> Trẻ em<input type="id"
+				 </fieldset>
+				</form>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<textarea rows="2" cols="40">
+						Có 2 trẻ em dưỡi 6 tuổi  Có 2 người ăn chay
+	
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> <input type="button" name="Đồng ý" value="Đồng ý" onclick="display.innerText='Bạn đã đăng kí thành công!!!'+username.value"></td>
+			
+		</tr>
+		<tr>
+			<td colspan="2" id="display" style="color: red;"></td>
+		</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

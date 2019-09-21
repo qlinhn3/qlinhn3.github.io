@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cấu trúc if ... else</title>
+	<style>
+		body{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h1{
+			text-align: center;
+			color: #009933;
+		}
+		table, th, tr, td{
+			border: 1px solid;
+			border-color: #009900;
+			background-color: #00ff00;
+			color: #009933;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kết quả cuối năm học</h1>
+	<form>
+	<table>
+		<tr>
+			<td>Điểm trung bình:</td>
+			<td><input type="text" id="diemtb"></td>
+		</tr>
+		<tr>
+			<td>Kết quả:</td>
+			<td><input type="text" id="ketqua"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><button type="button" onclick="xuat_ket_qua(diemtb)">Xuất kết quả</button></center></td>
+		</tr>
+	</table>
+	</form>
+<script>
+	function xuat_ket_qua(diem){
+		if (diem.value < 5) {
+			ketqua.value = "Ở lại lớp";
+		}
+		else {
+			ketqua.value = "Được lên lớp";
+		}
+	}
+</script>
+</body>
+</html>
